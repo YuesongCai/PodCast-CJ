@@ -1,0 +1,359 @@
+[
+  {
+    "display": "All-In",
+    "author": "Chamath Jason Sacks Friedberg",
+    "itunes_id": 1502871393,
+    "itunes_name": "All-In with Chamath, Jason, Sacks & Friedberg",
+    "itunes_author": "All-In Podcast, LLC",
+    "feed": "https://rss.libsyn.com/shows/254861/destinations/1928300.xml",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts124/v4/c7/d2/92/c7d292ea-44b3-47ff-2f5e-74fa5b23db6c/mza_7005270671777648882.png/600x600bb.jpg",
+    "genres": [
+      "Technology",
+      "Podcasts",
+      "Business",
+      "Entrepreneurship"
+    ],
+    "episode_count": 406,
+    "last_release": "2026-08-05T20:19:00Z",
+    "match_score": 60.0,
+    "alternatives": []
+  },
+  {
+    "display": "The Joe Rogan Experience",
+    "author": "Joe Rogan",
+    "itunes_id": 360084272,
+    "itunes_name": "The Joe Rogan Experience",
+    "itunes_author": "Joe Rogan",
+    "feed": "https://feeds.megaphone.fm/GLT1412515089",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/55/27/6b/55276bd9-c638-2c12-32cc-d4a010c0ddc0/mza_18179661083595555224.jpg/600x600bb.jpg",
+    "genres": [
+      "Comedy",
+      "Podcasts"
+    ],
+    "episode_count": 2000,
+    "last_release": "2026-08-06T17:00:00Z",
+    "match_score": 140,
+    "alternatives": [
+      {
+        "name": "The Joe Rogan Experience",
+        "author": "Joe Rogan",
+        "feed": "https://rss.buzzsprout.com/2548179.rss",
+        "score": 140
+      },
+      {
+        "name": "Today's Guest on the Joe Rogan Experience:",
+        "author": "Adam Cerniglia",
+        "feed": "https://anchor.fm/s/13189fe4/podcast/rss",
+        "score": 60.0
+      },
+      {
+        "name": "The Joe Rogan AI Experience",
+        "author": "Joe Rogan AI",
+        "feed": "https://rss.buzzsprout.com/2170846.rss",
+        "score": 55.0
+      }
+    ]
+  },
+  {
+    "display": "Acquired",
+    "author": "Ben Gilbert and David Rosenthal",
+    "itunes_id": 1050462261,
+    "itunes_name": "Acquired",
+    "itunes_author": "Ben Gilbert and David Rosenthal",
+    "feed": "https://feeds.transistor.fm/acquired",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/a8/e1/de/a8e1deff-9f88-4e55-a541-b0dc793c0cdc/mza_11539673419613154037.jpg/600x600bb.jpg",
+    "genres": [
+      "Technology",
+      "Podcasts",
+      "Business",
+      "Investing"
+    ],
+    "episode_count": 215,
+    "last_release": "2026-06-22T05:54:00Z",
+    "match_score": 140,
+    "alternatives": [
+      {
+        "name": "ACQ2 by Acquired",
+        "author": "Ben Gilbert and David Rosenthal",
+        "feed": "https://feeds.transistor.fm/acq2",
+        "score": 100
+      }
+    ]
+  },
+  {
+    "display": "Invest Like the Best",
+    "author": "Patrick O'Shaughnessy",
+    "itunes_id": 1154105909,
+    "itunes_name": "Invest Like the Best with Patrick O'Shaughnessy",
+    "itunes_author": "Colossus | Investing & Business Podcasts",
+    "feed": "https://feeds.megaphone.fm/CLS2859450455",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/61/ae/be/61aebe7a-06e8-7390-3ae5-f2fc5889e36c/mza_10827489189939068066.jpg/600x600bb.jpg",
+    "genres": [
+      "Investing",
+      "Podcasts",
+      "Business",
+      "Technology"
+    ],
+    "episode_count": 591,
+    "last_release": "2026-08-04T08:00:00Z",
+    "match_score": 60.0,
+    "alternatives": [
+      {
+        "name": "Invest Like the Best with Patrick O'Shaughnessy",
+        "author": "Colossus | Investing & Business Podcasts",
+        "feed": "https://feeds.megaphone.fm/CLS2859450455",
+        "score": 60.0
+      },
+      {
+        "name": "What Works on Wall Street Podcast",
+        "author": "Jim O'Shaughnessy",
+        "feed": "https://rss.libsyn.com/shows/110927/destinations/610396.xml",
+        "score": 10.0
+      },
+      {
+        "name": "Business Breakdowns",
+        "author": "Colossus | Investing & Business Podcasts",
+        "feed": "https://feeds.megaphone.fm/breakdowns",
+        "score": 0.0
+      }
+    ]
+  },
+  {
+    "display": "BG2Pod",
+    "author": "Brad Gerstner Bill Gurley",
+    "itunes_id": 1727278168,
+    "itunes_name": "BG2Pod with Brad Gerstner and Bill Gurley",
+    "itunes_author": "BG2Pod",
+    "feed": "https://anchor.fm/s/f06c2370/podcast/rss",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/PodcastSource126/v4/4b/ab/e5/4babe58b-7cda-b2b3-40a5-bcac3f262764/33f9cff7-dc0b-4293-a5bf-d8cc62ab8c98.jpg/600x600bb.jpg",
+    "genres": [
+      "Technology",
+      "Podcasts"
+    ],
+    "episode_count": 44,
+    "last_release": "2026-03-15T16:25:00Z",
+    "match_score": 60.0,
+    "alternatives": []
+  },
+  {
+    "display": "Dwarkesh Podcast",
+    "author": "Dwarkesh Patel",
+    "itunes_id": 1516093381,
+    "itunes_name": "Dwarkesh Podcast",
+    "itunes_author": "Dwarkesh Patel",
+    "feed": "https://apple.dwarkesh-podcast.workers.dev/feed.rss",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/e8/fe/ce/e8fece6e-c97f-8dd5-19a2-5c3b1f93f8e4/mza_726727706016079768.jpg/600x600bb.jpg",
+    "genres": [
+      "Technology",
+      "Podcasts",
+      "Science"
+    ],
+    "episode_count": 135,
+    "last_release": "2026-08-03T17:32:00Z",
+    "match_score": 140,
+    "alternatives": []
+  },
+  {
+    "display": "No Priors",
+    "author": "Sarah Guo Elad Gil",
+    "itunes_id": 1668002688,
+    "itunes_name": "No Priors: Artificial Intelligence | Technology | Startups",
+    "itunes_author": "Conviction",
+    "feed": "https://feeds.megaphone.fm/nopriors",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/8f/46/88/8f4688ec-087f-28a1-7f6d-0d401d2e8a00/mza_14043856542292072583.jpg/600x600bb.jpg",
+    "genres": [
+      "Technology",
+      "Podcasts",
+      "Business",
+      "Entrepreneurship"
+    ],
+    "episode_count": 173,
+    "last_release": "2026-08-06T10:00:00Z",
+    "match_score": 60.0,
+    "alternatives": []
+  },
+  {
+    "display": "a16z Podcast",
+    "author": "Andreessen Horowitz",
+    "itunes_id": 842818711,
+    "itunes_name": "The a16z Show",
+    "itunes_author": "Andreessen Horowitz",
+    "feed": "https://feeds.simplecast.com/JGE3yC0V",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/3e/04/91/3e049169-5b95-784c-2197-01cfff9f41eb/mza_10026788811025472218.jpg/600x600bb.jpg",
+    "genres": [
+      "Technology",
+      "Podcasts",
+      "Business",
+      "Entrepreneurship"
+    ],
+    "episode_count": 1000,
+    "last_release": "2026-08-06T10:00:00Z",
+    "match_score": 55.0,
+    "alternatives": [
+      {
+        "name": "a16z Live",
+        "author": "Andreessen Horowitz",
+        "feed": "https://feeds.simplecast.com/AuWJKpna",
+        "score": 55.0
+      },
+      {
+        "name": "16 Minutes News by a16z",
+        "author": "Andreessen Horowitz",
+        "feed": "https://feeds.simplecast.com/j9kKMsfH",
+        "score": 55.0
+      },
+      {
+        "name": "Raising Health",
+        "author": "Andreessen Horowitz, a16z Bio + Health",
+        "feed": "https://feeds.simplecast.com/BXDamaKF",
+        "score": 25.0
+      }
+    ]
+  },
+  {
+    "display": "Odd Lots",
+    "author": "Bloomberg",
+    "itunes_id": 1056200096,
+    "itunes_name": "Odd Lots",
+    "itunes_author": "Bloomberg",
+    "feed": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/8a94442e-5a74-4fa2-8b8d-ae27003a8d6b/982f5071-765c-403d-969d-ae27003a8d83/podcast.rss",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/f3/99/6a/f3996a52-e4a4-bf0d-b7d6-e376c4058568/mza_15550359494736224565.jpg/600x600bb.jpg",
+    "genres": [
+      "Investing",
+      "Podcasts",
+      "Business",
+      "News",
+      "News Commentary"
+    ],
+    "episode_count": 1259,
+    "last_release": "2026-08-06T08:00:00Z",
+    "match_score": 140,
+    "alternatives": [
+      {
+        "name": "Stock Movers",
+        "author": "iHeartPodcasts",
+        "feed": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/deb345cd-6d73-4a24-a6e3-b2a50138dd86/a55c6f22-aa32-4a58-aebd-b2a50138e2b2/podcast.rss",
+        "score": 0.0
+      }
+    ]
+  },
+  {
+    "display": "The Journal",
+    "author": "The Wall Street Journal",
+    "itunes_id": 1469394914,
+    "itunes_name": "The Journal.",
+    "itunes_author": "The Wall Street Journal & Spotify Studios",
+    "feed": "https://video-api.shdsvc.dowjones.io/api/podcasts/feed/the%20journal",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/91/0e/ca/910eca32-75a3-48b6-9be7-f45799ef5f2f/mza_9869666721903280546.jpg/600x600bb.jpg",
+    "genres": [
+      "Daily News",
+      "Podcasts",
+      "News",
+      "Business News"
+    ],
+    "episode_count": 1818,
+    "last_release": "2026-08-06T19:39:00Z",
+    "match_score": 125,
+    "alternatives": [
+      {
+        "name": "The Garage: Tools For Retail Media Innovation",
+        "author": "Adweek",
+        "feed": "https://feeds.acast.com/public/shows/624489e813888000165b50f5",
+        "score": 15.0
+      },
+      {
+        "name": "The Garage: Tools For Retail Media Innovation",
+        "author": "Adweek",
+        "feed": "https://feeds.acast.com/public/shows/624489e813888000165b50f5",
+        "score": 15.0
+      },
+      {
+        "name": "The Collier Landry Show",
+        "author": "Don't Touch My Radio",
+        "feed": "https://feeds.megaphone.fm/moving-past-murder",
+        "score": 15.0
+      }
+    ]
+  },
+  {
+    "display": "Prof G Markets",
+    "author": "Scott Galloway",
+    "itunes_id": 1744631325,
+    "itunes_name": "Prof G Markets",
+    "itunes_author": "Vox Media Podcast Network",
+    "feed": "https://feeds.megaphone.fm/profgmarkets",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/7a/23/3b/7a233bad-e655-5d9a-e9a4-532b2ad03f2f/mza_14391801209796191046.jpg/600x600bb.jpg",
+    "genres": [
+      "Investing",
+      "Podcasts",
+      "Business",
+      "Entrepreneurship"
+    ],
+    "episode_count": 388,
+    "last_release": "2026-08-07T08:15:00Z",
+    "match_score": 100.0,
+    "alternatives": [
+      {
+        "name": "The Prof G Pod with Scott Galloway",
+        "author": "Vox Media Podcast Network",
+        "feed": "https://feeds.megaphone.fm/WWO6655869236",
+        "score": 20.0
+      }
+    ]
+  },
+  {
+    "display": "Bloomberg Surveillance",
+    "author": "Bloomberg",
+    "itunes_id": 296237493,
+    "itunes_name": "Bloomberg Surveillance",
+    "itunes_author": "Bloomberg",
+    "feed": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/8e704079-ca57-4eac-9741-ae27003e2b7f/9739700c-72c3-4176-ae55-ae27003e2b96/podcast.rss",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/02/c5/36/02c5367b-22cc-2555-ff0c-d8a7981014ea/mza_17425960332446088310.jpg/600x600bb.jpg",
+    "genres": [
+      "Business News",
+      "Podcasts",
+      "News",
+      "Business",
+      "Investing"
+    ],
+    "episode_count": 1997,
+    "last_release": "2026-08-07T16:46:00Z",
+    "match_score": 140,
+    "alternatives": []
+  },
+  {
+    "display": "Hard Fork",
+    "author": "The New York Times",
+    "itunes_id": 1528594034,
+    "itunes_name": "Hard Fork",
+    "itunes_author": "The New York Times",
+    "feed": "https://feeds.simplecast.com/6HKOhNgS",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/de/c5/20/dec52092-6be0-9007-875c-6aa8e690a905/mza_12490014444602578825.jpg/600x600bb.jpg",
+    "genres": [
+      "Technology",
+      "Podcasts"
+    ],
+    "episode_count": 209,
+    "last_release": "2026-08-07T11:00:00Z",
+    "match_score": 140,
+    "alternatives": []
+  },
+  {
+    "display": "Training Data",
+    "author": "Sequoia Capital",
+    "itunes_id": 1750736528,
+    "itunes_name": "Training Data",
+    "itunes_author": "Sequoia Capital",
+    "feed": "https://feeds.megaphone.fm/trainingdata",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/25/92/fa/2592fa6c-707c-af74-9b56-1c79c44f7ff5/mza_14036821823134754209.png/600x600bb.jpg",
+    "genres": [
+      "Technology",
+      "Podcasts",
+      "Business"
+    ],
+    "episode_count": 105,
+    "last_release": "2026-08-04T09:00:00Z",
+    "match_score": 140,
+    "alternatives": []
+  }
+]

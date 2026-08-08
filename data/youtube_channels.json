@@ -1,0 +1,475 @@
+{
+  "Y Combinator Startup Podcast": {
+    "channel": "Y Combinator",
+    "channel_id": "UCcefcZRL2oaA_uBNeo5UOWg",
+    "channel_url": "https://www.youtube.com/channel/UCcefcZRL2oaA_uBNeo5UOWg",
+    "evidence_score": 7.2,
+    "name_sim": 1.0,
+    "verify": {
+      "episode": "How To Design In The Agent Era",
+      "dur_diff": "0.0%",
+      "title_sim": 0.57,
+      "matched": "How To Stand Out From The Crowd With Great Design"
+    },
+    "verified": true
+  },
+  "Odds on Open": {
+    "channel": "Odds on Open",
+    "channel_id": "UC-IS3QJjWEsT9GyLkMP8lTg",
+    "channel_url": "https://www.youtube.com/channel/UC-IS3QJjWEsT9GyLkMP8lTg",
+    "evidence_score": 7,
+    "name_sim": 1.0,
+    "verify": {
+      "episode": "World's #1 Oil Hedge Fund Manager: How I Made 200% While Eve",
+      "dur_diff": "0.0%",
+      "title_sim": 1.0,
+      "matched": "World's #1 Oil Hedge Fund Manager: How I Made 200% While Eve"
+    },
+    "verified": true
+  },
+  "Capital Allocators": {
+    "channel": "Capital Allocators with Ted Seides",
+    "channel_id": "UCbzQ_YWf9RsBP9ATbmv5kxQ",
+    "channel_url": "https://www.youtube.com/channel/UCbzQ_YWf9RsBP9ATbmv5kxQ",
+    "evidence_score": 0.8,
+    "name_sim": 1.0,
+    "verify": {
+      "episode": "WTT: The Anatomy of a Blow-Up",
+      "note": "频道内搜不到该集"
+    },
+    "verified": false
+  },
+  "UBS Global Research Pod Hub": {
+    "channel": null,
+    "error": "全局搜索无任何结果"
+  },
+  "Short Briefings on Long Term Thinking": {
+    "channel": "Baillie Gifford UK",
+    "channel_id": "UCRMC0Hnl-KRfUdMeEu-Sssw",
+    "channel_url": "https://www.youtube.com/channel/UCRMC0Hnl-KRfUdMeEu-Sssw",
+    "evidence_score": 3,
+    "name_sim": 0.67,
+    "verify": {
+      "episode": "SpaceX: past, present, future – and finding the next world-c",
+      "dur_diff": "2.5%",
+      "title_sim": 1.0,
+      "matched": "SpaceX: past, present, future – and finding the next world-c"
+    },
+    "verified": true
+  },
+  "Grit": {
+    "channel": "Kleiner Perkins",
+    "channel_id": "UCkNsANayKfsdXFXHpBm8LQg",
+    "channel_url": "https://www.youtube.com/channel/UCkNsANayKfsdXFXHpBm8LQg",
+    "evidence_score": 9,
+    "name_sim": 1.0,
+    "verify": {
+      "episode": "Ex-Twitter CEO on Why AI Needs a New Internet | Parag Agrawa",
+      "dur_diff": "0.0%",
+      "title_sim": 1.0,
+      "matched": "Ex-Twitter CEO on Why AI Needs a New Internet | Parag Agrawa"
+    },
+    "verified": true
+  },
+  "Generating Alpha": {
+    "channel": "Generating Alpha Podcast",
+    "channel_id": "UCS29VVHY6bxDOSZQwPp7Kdg",
+    "channel_url": "https://www.youtube.com/channel/UCS29VVHY6bxDOSZQwPp7Kdg",
+    "evidence_score": 12,
+    "name_sim": 1.0,
+    "verify": {
+      "episode": "Episode 56: Gavin Baker - Managing Partner of Atreides Manag",
+      "dur_diff": "0.0%",
+      "title_sim": 1.0,
+      "matched": "Episode 56: Gavin Baker - Managing Partner of Atreides Manag"
+    },
+    "verified": true
+  },
+  "Chat With Traders": {
+    "channel": "Chat With Traders",
+    "channel_id": "UCdnzT5Tl6pAkATOiDsPhqcg",
+    "channel_url": "https://www.youtube.com/channel/UCdnzT5Tl6pAkATOiDsPhqcg",
+    "evidence_score": 9.4,
+    "name_sim": 1.0,
+    "verify": {
+      "episode": "329 · Peter Brandt - How a 50-Year Veteran Thinks About Risk",
+      "dur_diff": "2.0%",
+      "title_sim": 1.0,
+      "matched": "How a 50-Year Veteran Thinks About Risk Management · Peter B"
+    },
+    "verified": true
+  },
+  "Lenny's Podcast": {
+    "channel": "Lenny's Podcast",
+    "channel_id": "UC6t1O76G0jYXOAoYCm153dA",
+    "channel_url": "https://www.youtube.com/channel/UC6t1O76G0jYXOAoYCm153dA",
+    "evidence_score": 7.4,
+    "name_sim": 1.0,
+    "verify": {
+      "episode": "This CPO regrets that product management exists | Tom Verril",
+      "dur_diff": "0.0%",
+      "title_sim": 0.73,
+      "matched": "Inside the new world of product management | Tom Verrilli (C"
+    },
+    "verified": true
+  },
+  "In Good Company": {
+    "channel": "Norges Bank Investment Management",
+    "channel_id": "UCRhQsN8AVIfZuBNeRV1A37w",
+    "channel_url": "https://www.youtube.com/channel/UCRhQsN8AVIfZuBNeRV1A37w",
+    "evidence_score": 2,
+    "name_sim": 1.0,
+    "verify": {
+      "episode": "HIGHLIGHTS: Susan Cain",
+      "note": "频道内搜不到该集"
+    },
+    "verified": false
+  },
+  "Talks at GS": {
+    "channel": "Goldman Sachs",
+    "channel_id": "UCyz6-taovlaOkPsPtK4KNEg",
+    "channel_url": "https://www.youtube.com/channel/UCyz6-taovlaOkPsPtK4KNEg",
+    "evidence_score": 6.4,
+    "name_sim": 1.0,
+    "verify": {
+      "episode": "Demond Martin on Purpose, Community, and Giving What You Hav",
+      "dur_diff": "6.1%",
+      "title_sim": 1.0,
+      "matched": "Demond Martin on Purpose, Community, and Giving What You Hav"
+    },
+    "verified": true
+  },
+  "Global Research Unlocked": {
+    "channel": "Bank of America",
+    "channel_id": "UCtHZ1qs5h4sx9TijVBQCMIA",
+    "channel_url": "https://www.youtube.com/channel/UCtHZ1qs5h4sx9TijVBQCMIA",
+    "evidence_score": 9,
+    "name_sim": 0.26,
+    "verify": {
+      "episode": "Global Rates & FX Views: NFP & refunding review",
+      "dur_diff": "0.1%",
+      "title_sim": 1.0,
+      "matched": "Global Rates & FX Views: NFP & refunding review"
+    },
+    "verified": true
+  },
+  "David Senra": {
+    "channel": "Founders Podcast",
+    "channel_id": "UCQ-rrUCsJLNjFdPtKq0YOfA",
+    "channel_url": "https://www.youtube.com/channel/UCQ-rrUCsJLNjFdPtKq0YOfA",
+    "evidence_score": 10.2,
+    "name_sim": 1.0,
+    "verify": {
+      "episode": "#427 How Raymond Plank Built a $50 Billion Oil Company",
+      "note": "频道内搜不到该集"
+    },
+    "verified": false
+  },
+  "Latent Space": {
+    "channel": "Latent Space",
+    "channel_id": "UCxBcwypKK-W3GHd_RZ9FZrQ",
+    "channel_url": "https://www.youtube.com/channel/UCxBcwypKK-W3GHd_RZ9FZrQ",
+    "evidence_score": 6,
+    "name_sim": 1.0,
+    "verify": {
+      "episode": "The Inference Engineering Masterclass — Philip Kiely & Ali T",
+      "dur_diff": "1.4%",
+      "title_sim": 0.69,
+      "matched": "Next 100x in AI: Inference, Networking, & Self-Optimizing Mo"
+    },
+    "verified": true
+  },
+  "Lex Fridman Podcast": {
+    "channel": "Lex Fridman",
+    "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
+    "channel_url": "https://www.youtube.com/channel/UCSHZKyawb77ixDdsGog4iWA",
+    "evidence_score": 12,
+    "name_sim": 1.0,
+    "verify": {
+      "episode": "#499 – Gary Gallagher: American Civil War, Slavery, Lincoln,",
+      "dur_diff": "2.9%",
+      "title_sim": 1.0,
+      "matched": "Gary Gallagher: American Civil War, Slavery, Lincoln, Grant "
+    },
+    "verified": true
+  },
+  "The Cognitive Revolution": {
+    "channel": "Cognitive Revolution \"How AI Changes Everything\"",
+    "channel_id": "UCjNRVMBVI30Sak_p6HRWhIA",
+    "channel_url": "https://www.youtube.com/channel/UCjNRVMBVI30Sak_p6HRWhIA",
+    "evidence_score": 12.2,
+    "name_sim": 0.67,
+    "verify": {
+      "episode": "Pick Your Poison: Zvi Mowshowitz on the Unipolar/Multipolar ",
+      "dur_diff": "0.4%",
+      "title_sim": 1.0,
+      "matched": "Pick Your Poison: Zvi Mowshowitz on the Unipolar/Multipolar "
+    },
+    "verified": true
+  },
+  "The Long-Short": {
+    "channel": "COMICS STORM",
+    "channel_id": "UCUuo-M_o1go4rtPwJHNpyAg",
+    "channel_url": "https://www.youtube.com/channel/UCUuo-M_o1go4rtPwJHNpyAg",
+    "evidence_score": 0.2,
+    "name_sim": 0.39,
+    "verify": {
+      "episode": "140. Competing for capital: Strengthening Asia-Pacific's ass",
+      "note": "频道内搜不到该集"
+    },
+    "verified": false
+  },
+  "Basis Points": {
+    "channel": "Basis Points",
+    "channel_id": "UCk5pJkQN-ShJ1vxoEczNeig",
+    "channel_url": "https://www.youtube.com/channel/UCk5pJkQN-ShJ1vxoEczNeig",
+    "evidence_score": 12,
+    "name_sim": 1.0,
+    "verify": {
+      "episode": "Why financial advice has become generic (and how to actually",
+      "dur_diff": "0.1%",
+      "title_sim": 1.0,
+      "matched": "Why Financial Advice Has Become Generic (and How to Actually"
+    },
+    "verified": true
+  },
+  "Longriver Podcast": {
+    "channel": null,
+    "error": "全局搜索无任何结果"
+  },
+  "Investing In Integrity": {
+    "channel": null,
+    "error": "全局搜索无任何结果"
+  },
+  "FP&A Today": {
+    "channel": "FP&A Today",
+    "channel_id": "UCAdXAk4baoZtkMx-jxwf-HA",
+    "channel_url": "https://www.youtube.com/channel/UCAdXAk4baoZtkMx-jxwf-HA",
+    "evidence_score": 6,
+    "name_sim": 1.0,
+    "verify": {
+      "episode": "Lessons from a finance revolution at Mars, with Colin Moss",
+      "dur_diff": "1.5%",
+      "title_sim": 1.0,
+      "matched": "Lessons from a finance revolution at Mars, with Colin Moss"
+    },
+    "verified": true
+  },
+  "In the Know": {
+    "channel": "The Verdict.",
+    "channel_id": "UCTwCO644iZTmzUu3rWhBrYg",
+    "channel_url": "https://www.youtube.com/channel/UCTwCO644iZTmzUu3rWhBrYg",
+    "evidence_score": 0.2,
+    "name_sim": 0.5,
+    "verify": {
+      "episode": "Alex Irving: European Airlines, Ready for Take Off",
+      "note": "频道内搜不到该集"
+    },
+    "verified": false
+  },
+  "ACQ2 by Acquired": {
+    "channel": "Acquired",
+    "channel_id": "UCyFqFYfTW2VoIQKylJ04Rtw",
+    "channel_url": "https://www.youtube.com/channel/UCyFqFYfTW2VoIQKylJ04Rtw",
+    "evidence_score": 12.4,
+    "name_sim": 1.0,
+    "verify": {
+      "episode": "The Insane Productivity of Andrew Ross Sorkin",
+      "dur_diff": "3.1%",
+      "title_sim": 1.0,
+      "matched": "ACQ2: The Insane Productivity of Andrew Ross Sorkin"
+    },
+    "verified": true
+  },
+  "Masters of Scale": {
+    "channel": "Rapid Response and Masters of Scale",
+    "channel_id": null,
+    "channel_url": null,
+    "evidence_score": 4,
+    "name_sim": 1.0
+  },
+  "The Turnaround Podcast": {
+    "channel": "FreiLibertas Law Limited",
+    "channel_id": "UCWzwWr13TM2692SYEJc-U3g",
+    "channel_url": "https://www.youtube.com/channel/UCWzwWr13TM2692SYEJc-U3g",
+    "evidence_score": 12,
+    "name_sim": 0.19,
+    "verify": {
+      "episode": "The Regenerate Leap: Transforming Adversity into Opportunity",
+      "dur_diff": "0.0%",
+      "title_sim": 1.0,
+      "matched": "The Regenerate Leap: Transforming Adversity into Opportunity"
+    },
+    "verified": true
+  },
+  "All-In": {
+    "channel": "All-In Podcast",
+    "channel_id": "UCESLZhusAkFfsNsApnjF_Cg",
+    "channel_url": "https://www.youtube.com/channel/UCESLZhusAkFfsNsApnjF_Cg",
+    "evidence_score": 6,
+    "name_sim": 1.0,
+    "verify": {
+      "episode": "Google's AI Brain Drain, SpaceX's Huge Quarter, Airtable's 9",
+      "dur_diff": "0.0%",
+      "title_sim": 1.0,
+      "matched": "Google’s AI Brain Drain, SpaceX's Huge Quarter, Airtable’s 9"
+    },
+    "verified": true
+  },
+  "The Joe Rogan Experience": {
+    "channel": "PowerfulJRE",
+    "channel_id": "UCzQUP1qoWDoEbmsQxvdjxgQ",
+    "channel_url": "https://www.youtube.com/channel/UCzQUP1qoWDoEbmsQxvdjxgQ",
+    "evidence_score": 25,
+    "name_sim": 0.23,
+    "verify": {
+      "episode": "#2537 - David Sinclair",
+      "dur_diff": "4.0%",
+      "title_sim": 1.0,
+      "matched": "Joe Rogan Experience #2537 - David Sinclair"
+    },
+    "verified": true
+  },
+  "Acquired": {
+    "channel": "Acquired",
+    "channel_id": "UCyFqFYfTW2VoIQKylJ04Rtw",
+    "channel_url": "https://www.youtube.com/channel/UCyFqFYfTW2VoIQKylJ04Rtw",
+    "evidence_score": 12.4,
+    "name_sim": 1.0,
+    "verify": {
+      "episode": "The Walt Disney Company",
+      "dur_diff": "0.0%",
+      "title_sim": 1.0,
+      "matched": "The Walt Disney Company: The most successful enterprise for "
+    },
+    "verified": true
+  },
+  "Invest Like the Best": {
+    "channel": "Invest Like The Best",
+    "channel_id": "UCpQBb0fToph3jrDulwz1iUQ",
+    "channel_url": "https://www.youtube.com/channel/UCpQBb0fToph3jrDulwz1iUQ",
+    "evidence_score": 1,
+    "name_sim": 1.0,
+    "verify": {
+      "episode": "Gavin Baker - AI Market Jitters - [Invest Like the Best, EP.",
+      "note": "频道内搜不到该集"
+    },
+    "verified": false
+  },
+  "BG2Pod": {
+    "channel": "Bg2 Pod",
+    "channel_id": "UC-yRDvpR99LUc5l7i7jLzew",
+    "channel_url": "https://www.youtube.com/channel/UC-yRDvpR99LUc5l7i7jLzew",
+    "evidence_score": 12,
+    "name_sim": 0.92,
+    "verify": {
+      "episode": "The SpaceX IPO, Fable 5, AI Capex Update & Market Check w/ G",
+      "dur_diff": "0.0%",
+      "title_sim": 1.0,
+      "matched": "The SpaceX IPO, Fable 5, AI Capex Update & Market Check w/ G"
+    },
+    "verified": true
+  },
+  "Dwarkesh Podcast": {
+    "channel": "Dwarkesh Patel",
+    "channel_id": "UCXl4i9dYBrFOabk0xGmbkRA",
+    "channel_url": "https://www.youtube.com/channel/UCXl4i9dYBrFOabk0xGmbkRA",
+    "evidence_score": 12.2,
+    "name_sim": 1.0,
+    "verify": {
+      "episode": "8 Predictions for the Era of Continual Learning",
+      "dur_diff": "0.2%",
+      "title_sim": 1.0,
+      "matched": "8 Predictions for the Era of Continual Learning"
+    },
+    "verified": true
+  },
+  "No Priors": {
+    "channel": "No Priors: AI, Machine Learning, Tech, & Startups",
+    "channel_id": "UCSI7h9hydQ40K5MJHnCrQvw",
+    "channel_url": "https://www.youtube.com/channel/UCSI7h9hydQ40K5MJHnCrQvw",
+    "evidence_score": 12,
+    "name_sim": 1.0,
+    "verify": {
+      "episode": "Chasing Trillion-Dollar Companies, Founder Ambition, Token B",
+      "dur_diff": "0.0%",
+      "title_sim": 1.0,
+      "matched": "Chasing Trillion-Dollar Companies, Founder Ambition, Token B"
+    },
+    "verified": true
+  },
+  "a16z Podcast": {
+    "channel": "a16z",
+    "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+    "channel_url": "https://www.youtube.com/channel/UC9cn0TuPq4dnbTY-CBsm8XA",
+    "evidence_score": 6,
+    "name_sim": 1.0,
+    "verify": {
+      "episode": "The Reality of AI-Powered Cyberattacks | Truffle Security & ",
+      "note": "频道内搜不到该集"
+    },
+    "verified": false
+  },
+  "Odd Lots": {
+    "channel": "Bloomberg Podcasts",
+    "channel_id": "UChF5O40UBqAc82I7-i5ig6A",
+    "channel_url": "https://www.youtube.com/channel/UChF5O40UBqAc82I7-i5ig6A",
+    "evidence_score": 14,
+    "name_sim": 1.0,
+    "verify": {
+      "episode": "How a Sardine Gets From the Ocean to a Can",
+      "dur_diff": "6.0%",
+      "title_sim": 1.0,
+      "matched": "How a Sardine Gets From the Ocean to a Can | Odd Lots"
+    },
+    "verified": true
+  },
+  "The Journal": {
+    "channel": null,
+    "error": "自动解析锁到 The Public Debut（错），已清空改走全局搜索+双重校验"
+  },
+  "Prof G Markets": {
+    "channel": "Prof G Markets",
+    "channel_id": "UCp4CBeq4nzeg9smAvdjPrig",
+    "channel_url": "https://www.youtube.com/channel/UCp4CBeq4nzeg9smAvdjPrig",
+    "evidence_score": 9.0,
+    "name_sim": 1.0,
+    "verify": {
+      "episode": "Aswath Damodaran: Big Tech Has No Idea How AI Pays Off",
+      "note": "频道内搜不到该集"
+    },
+    "verified": false
+  },
+  "Bloomberg Surveillance": {
+    "channel": "Bloomberg Podcasts",
+    "channel_id": "UChF5O40UBqAc82I7-i5ig6A",
+    "channel_url": "https://www.youtube.com/channel/UChF5O40UBqAc82I7-i5ig6A",
+    "evidence_score": 12,
+    "name_sim": 1.0,
+    "verify": {
+      "episode": "Bloomberg Money: Credit Card Indicators and Golf's Changing ",
+      "dur_diff": "0.0%",
+      "title_sim": 1.0,
+      "matched": "Bloomberg Money: Credit Card Indicators and Golf's Changing "
+    },
+    "verified": true
+  },
+  "Hard Fork": {
+    "channel": null,
+    "error": "最佳候选 'Podkey' 证据不足（name_sim 0.27, score 0.4）；候选: ['Podkey']"
+  },
+  "Training Data": {
+    "channel": "Sequoia Capital",
+    "channel_id": "UCWrF0oN6unbXrWsTN7RctTw",
+    "channel_url": "https://www.youtube.com/channel/UCWrF0oN6unbXrWsTN7RctTw",
+    "evidence_score": 12,
+    "name_sim": 1.0,
+    "verify": {
+      "episode": "Chai Discovery's Bitter Lesson: Drug Design Is Another Scali",
+      "dur_diff": "0.0%",
+      "title_sim": 1.0,
+      "matched": "Chai Discovery's Bitter Lesson: Drug Design Is Another Scali"
+    },
+    "verified": true
+  }
+}

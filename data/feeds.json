@@ -1,0 +1,633 @@
+[
+  {
+    "display": "Odds on Open",
+    "author": "Ethan Kho",
+    "itunes_id": 1802640849,
+    "itunes_name": "Odds on Open",
+    "itunes_author": "Ethan Kho",
+    "feed": "https://anchor.fm/s/101506278/podcast/rss",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/ac/97/de/ac97de29-efa7-aee3-269e-ef00a3e27992/mza_653900568553581623.jpg/600x600bb.jpg",
+    "genres": [
+      "Business",
+      "Podcasts"
+    ],
+    "episode_count": 68,
+    "last_release": "2026-07-30T14:00:00Z",
+    "match_score": 140,
+    "alternatives": []
+  },
+  {
+    "display": "Capital Allocators",
+    "author": "Ted Seides",
+    "itunes_id": 1223764016,
+    "itunes_name": "Capital Allocators – Inside the Institutional Investment Industry",
+    "itunes_author": "Ted Seides – Allocator and Asset Management Expert",
+    "feed": "https://rss.libsyn.com/shows/94820/destinations/482814.xml",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/b7/2c/85/b72c8514-3554-1fa8-5931-361010dfd84b/mza_6665040082077933863.jpg/600x600bb.jpg",
+    "genres": [
+      "Investing",
+      "Podcasts",
+      "Business"
+    ],
+    "episode_count": 813,
+    "last_release": "2026-08-05T08:00:00Z",
+    "match_score": 85,
+    "alternatives": [
+      {
+        "name": "The Institutional Edge: Real allocators. Real alpha.",
+        "author": "Angelo Calvello",
+        "feed": "https://feeds.castos.com/r3xro",
+        "score": 15.0
+      },
+      {
+        "name": "The Rob Berger Show",
+        "author": "Rob Berger",
+        "feed": "https://rss.buzzsprout.com/1051513.rss",
+        "score": 0.0
+      },
+      {
+        "name": "Market Makers",
+        "author": "Market Makers",
+        "feed": "https://anchor.fm/s/1079b34c8/podcast/rss",
+        "score": 0.0
+      }
+    ]
+  },
+  {
+    "display": "UBS Global Research Pod Hub",
+    "author": "UBS Global Research",
+    "itunes_id": 1699442321,
+    "itunes_name": "UBS Global Research Pod Hub",
+    "itunes_author": "UBS Global Research",
+    "feed": "https://www.ubs.com/global/en/investment-bank/insights-and-data/global-research/_jcr_content/root/contentarea/mainpar/toplevelgrid_copy/col_1/responsivepodcast.itunes.xml",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/26/1f/61/261f6187-cc8f-cdbd-3c6c-6a8b2a86a996/mza_7470620358261325406.png/600x600bb.jpg",
+    "genres": [
+      "Business News",
+      "Podcasts",
+      "News"
+    ],
+    "episode_count": 144,
+    "last_release": "2026-07-22T15:09:00Z",
+    "match_score": 140,
+    "alternatives": []
+  },
+  {
+    "display": "Short Briefings on Long Term Thinking",
+    "author": "Baillie Gifford",
+    "itunes_id": 1450180015,
+    "itunes_name": "Short Briefings on Long Term Thinking - Baillie Gifford",
+    "itunes_author": "Baillie Gifford",
+    "feed": "https://feeds.blubrry.com/feeds/short_briefings.xml",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/f2/17/a6/f217a645-8d8c-0c54-7318-f8948134a3d6/mza_1384731542389248082.jpg/600x600bb.jpg",
+    "genres": [
+      "Investing",
+      "Podcasts",
+      "Business"
+    ],
+    "episode_count": 64,
+    "last_release": "2026-08-04T05:00:00Z",
+    "match_score": 100,
+    "alternatives": []
+  },
+  {
+    "display": "Grit",
+    "author": "Kleiner Perkins",
+    "feed": "https://feeds.transistor.fm/go-to-market-grit",
+    "itunes_id": 1510985491,
+    "itunes_name": "Grit",
+    "itunes_author": "Kleiner Perkins",
+    "match_score": 140.0
+  },
+  {
+    "display": "Generating Alpha",
+    "author": "Amir Fischer",
+    "itunes_id": 1818899431,
+    "itunes_name": "Generating Alpha Podcast",
+    "itunes_author": "Amir Fischer",
+    "feed": "https://anchor.fm/s/e79435d0/podcast/rss",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/ff/95/14/ff951483-9e95-7cb4-b59f-4f096174682c/mza_2194274551776951361.jpg/600x600bb.jpg",
+    "genres": [
+      "Investing",
+      "Podcasts",
+      "Business"
+    ],
+    "episode_count": 53,
+    "last_release": "2026-06-22T16:41:00Z",
+    "match_score": 100,
+    "alternatives": []
+  },
+  {
+    "display": "Chat With Traders",
+    "author": "Kevin Avery",
+    "itunes_id": 957265404,
+    "itunes_name": "Chat With Traders",
+    "itunes_author": "Kevin Avery",
+    "feed": "https://feeds.megaphone.fm/CWT9205947236",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/6b/a1/95/6ba1954d-a647-700f-319a-ed29c1e4bc61/mza_13658312435268548701.jpeg/600x600bb.jpg",
+    "genres": [
+      "Investing",
+      "Podcasts",
+      "Business",
+      "Education"
+    ],
+    "episode_count": 333,
+    "last_release": "2026-08-05T15:00:00Z",
+    "match_score": 140,
+    "alternatives": []
+  },
+  {
+    "display": "Lenny's Podcast",
+    "author": "Lenny Rachitsky",
+    "itunes_id": 1627920305,
+    "itunes_name": "Lenny's Podcast: Product | Career | Growth",
+    "itunes_author": "Lenny Rachitsky",
+    "feed": "https://api.substack.com/feed/podcast/10845.rss",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/c7/80/a3/c780a365-a1ed-527f-365f-1bd3e51ac6d1/mza_5908526734339724450.jpg/600x600bb.jpg",
+    "genres": [
+      "Technology",
+      "Podcasts",
+      "Business",
+      "Entrepreneurship"
+    ],
+    "episode_count": 355,
+    "last_release": "2026-08-02T12:32:00Z",
+    "match_score": 100,
+    "alternatives": []
+  },
+  {
+    "display": "AI Ascent",
+    "author": "Sequoia Capital",
+    "itunes_id": 1811589292,
+    "itunes_name": "ASCENT",
+    "itunes_author": "Fangdi Pan & Linda Zhang",
+    "feed": null,
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/c1/68/c6/c168c691-0199-a7b0-063d-0afa4c895a7c/mza_3315262494320135191.jpg/600x600bb.jpg",
+    "genres": [
+      "Technology",
+      "Podcasts",
+      "Business"
+    ],
+    "episode_count": 12,
+    "last_release": "2026-06-28T04:03:00Z",
+    "match_score": 40.0,
+    "alternatives": [
+      {
+        "name": "Build Wiz AI Show",
+        "author": "Build Wiz AI",
+        "feed": "https://anchor.fm/s/101f7db20/podcast/rss",
+        "score": 15.0
+      },
+      {
+        "name": "Money is Freedom",
+        "author": "Dana",
+        "feed": "https://media.rss.com/bitcoin-and-the-macro-winds-navigating-monetary-policy-and-market-cycles/feed.xml",
+        "score": 0.0
+      },
+      {
+        "name": "The Dart Board with Daniel Dart",
+        "author": "Rock Yard Ventures",
+        "feed": "https://anchor.fm/s/fed59fa4/podcast/rss",
+        "score": 0.0
+      }
+    ],
+    "blocked": "spotify_only",
+    "note": "Apple/公开 RSS 均无此节目，Spotify 独占（Sequoia Apple Channel）。需走 YouTube 字幕回退。"
+  },
+  {
+    "display": "In Good Company",
+    "author": "Norges Bank Investment Management",
+    "itunes_id": 1614211565,
+    "itunes_name": "In Good Company with Nicolai Tangen",
+    "itunes_author": "Norges Bank Investment Management",
+    "feed": "https://feeds.acast.com/public/shows/622618c7057f3400120d15db",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/91/46/0d/91460d4a-134f-9b4c-1444-1947ca2f7ee0/mza_2926898652345635132.jpeg/600x600bb.jpg",
+    "genres": [
+      "Business",
+      "Podcasts"
+    ],
+    "episode_count": 276,
+    "last_release": "2026-08-05T03:00:00Z",
+    "match_score": 100,
+    "alternatives": []
+  },
+  {
+    "display": "Talks at GS",
+    "author": "Goldman Sachs",
+    "itunes_id": 1373320104,
+    "itunes_name": "Talks at GS",
+    "itunes_author": "Goldman Sachs",
+    "feed": "https://feeds.megaphone.fm/GLD3069230077",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/f1/54/0d/f1540da5-68f7-9437-d72c-773aae89f60b/mza_8090875292193456098.png/600x600bb.jpg",
+    "genres": [
+      "Business",
+      "Podcasts",
+      "Society & Culture"
+    ],
+    "episode_count": 257,
+    "last_release": "2026-08-05T21:40:00Z",
+    "match_score": 140,
+    "alternatives": [
+      {
+        "name": "Goldman Sachs Group Inc Earnings Call Podcast ($GS)",
+        "author": "Castify",
+        "feed": "https://casti.fyi/rss/0bacb3d107bc843c2238d519.xml",
+        "score": 10.0
+      },
+      {
+        "name": "Beta Finch - Goldman Sachs - GS - EN",
+        "author": "Beta Finch",
+        "feed": "https://www.spreaker.com/show/6882094/episodes/feed",
+        "score": 10.0
+      },
+      {
+        "name": "Beta Finch - Goldman Sachs - GS - CN",
+        "author": "Beta Finch",
+        "feed": "https://www.spreaker.com/show/6882095/episodes/feed",
+        "score": 10.0
+      }
+    ]
+  },
+  {
+    "display": "Exponent",
+    "author": "Ben Thompson James Allworth",
+    "itunes_id": 826420969,
+    "itunes_name": "Exponent",
+    "itunes_author": "Ben Thompson / James Allworth",
+    "feed": "https://exponent.fm/feed/",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts114/v4/ad/0b/0d/ad0b0df8-615a-7c9a-6037-95a8be37dae3/mza_11867533799889024193.jpg/600x600bb.jpg",
+    "genres": [
+      "Technology",
+      "Podcasts"
+    ],
+    "episode_count": 198,
+    "last_release": "2022-12-09T23:29:00Z",
+    "match_score": 140,
+    "alternatives": [],
+    "substitute_for": "Stratechery",
+    "note": "CJ 非 Passport 订阅者，Stratechery 播客无公开 feed；这是 Ben Thompson 的公开节目"
+  },
+  {
+    "display": "Sharp Tech with Ben Thompson",
+    "author": "Andrew Sharp and Ben Thompson",
+    "itunes_id": 1646152812,
+    "itunes_name": "Sharp Tech with Ben Thompson",
+    "itunes_author": "Andrew Sharp and Ben Thompson",
+    "feed": "https://sharptech.fm/feed/podcast",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/8c/3e/76/8c3e76f3-485f-3f8b-f6d7-3101bb86ede0/mza_10263603389201953705.png/600x600bb.jpg",
+    "genres": [
+      "Technology",
+      "Podcasts"
+    ],
+    "episode_count": 283,
+    "last_release": "2026-07-23T09:00:00Z",
+    "match_score": 140,
+    "alternatives": [],
+    "substitute_for": "Stratechery",
+    "note": "CJ 非 Passport 订阅者，Stratechery 播客无公开 feed；这是 Ben Thompson 的公开节目"
+  },
+  {
+    "display": "Global Research Unlocked",
+    "author": "BofA Global Research",
+    "itunes_id": 1593086912,
+    "itunes_name": "Global Research Unlocked",
+    "itunes_author": "BofA Global Research",
+    "feed": "https://feed.podbean.com/bofaglobalresearch/feed.xml",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/5e/f0/5e/5ef05e2d-c6d4-b426-05b4-ac1c46523e80/mza_17625991140230937774.jpg/600x600bb.jpg",
+    "genres": [
+      "Investing",
+      "Podcasts",
+      "Business"
+    ],
+    "episode_count": 47,
+    "last_release": "2026-08-04T16:23:00Z",
+    "match_score": 140,
+    "alternatives": [
+      {
+        "name": "Global Research Unlocked",
+        "author": "BofA Global Research",
+        "feed": "https://feed.podbean.com/bofaglobalresearch/feed.xml",
+        "score": 140
+      }
+    ]
+  },
+  {
+    "display": "David Senra",
+    "author": "Scicomm Media",
+    "itunes_id": 1141877104,
+    "itunes_name": "Founders",
+    "itunes_author": "David Senra",
+    "feed": "https://feeds.megaphone.fm/DSLLC6297708582",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/ed/71/4f/ed714f67-f095-a4ef-f38e-d8c02300666a/mza_11432355988627368701.jpg/600x600bb.jpg",
+    "genres": [
+      "Entrepreneurship",
+      "Podcasts",
+      "Business",
+      "History"
+    ],
+    "episode_count": 452,
+    "last_release": "2026-08-01T23:58:00Z",
+    "match_score": 140.0,
+    "alternatives": [],
+    "note": "David Senra 的节目实际叫 Founders，匹配正确"
+  },
+  {
+    "display": "Latent Space",
+    "author": "Latent.Space",
+    "itunes_id": 1674008350,
+    "itunes_name": "Latent Space: The AI Engineer Podcast",
+    "itunes_author": "Latent.Space",
+    "feed": "https://api.substack.com/feed/podcast/1084089.rss",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/2d/c3/b1/2dc3b1c6-2170-e926-04d0-0aaabf848eff/mza_2266632206147105925.jpg/600x600bb.jpg",
+    "genres": [
+      "Technology",
+      "Podcasts",
+      "Science"
+    ],
+    "episode_count": 218,
+    "last_release": "2026-08-03T21:44:00Z",
+    "match_score": 100,
+    "alternatives": []
+  },
+  {
+    "display": "Lex Fridman Podcast",
+    "author": "Lex Fridman",
+    "itunes_id": 1434243584,
+    "itunes_name": "Lex Fridman Podcast",
+    "itunes_author": "Lex Fridman",
+    "feed": "https://lexfridman.com/feed/podcast/",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts115/v4/3e/e3/9c/3ee39c89-de08-47a6-7f3d-3849cef6d255/mza_16657851278549137484.png/600x600bb.jpg",
+    "genres": [
+      "Technology",
+      "Podcasts",
+      "Science"
+    ],
+    "episode_count": 500,
+    "last_release": "2026-07-28T20:06:00Z",
+    "match_score": 140,
+    "alternatives": [
+      {
+        "name": "Lex Fridman Podcast",
+        "author": "Fridman Podcast",
+        "feed": "https://feeds.acast.com/public/shows/6a701c1688c5585c85e3a157",
+        "score": 107.5
+      },
+      {
+        "name": "Lex Fridman Podcast | 5 minute podcast summaries",
+        "author": "5 minute podcast summaries",
+        "feed": "https://www.spreaker.com/show/4920847/episodes/feed",
+        "score": 60.0
+      },
+      {
+        "name": "5 minute podcast summaries of: Tim Ferriss, Hidden Brain, Sam Harris, Lex Fridman, Jordan Peterson",
+        "author": "5 minute podcast summaries",
+        "feed": "https://www.spreaker.com/show/4927606/episodes/feed",
+        "score": 30.0
+      }
+    ]
+  },
+  {
+    "display": "The Cognitive Revolution",
+    "author": "Erik Torenberg Nathan Labenz",
+    "itunes_id": 1669813431,
+    "itunes_name": "\"The Cognitive Revolution\" | AI Builders, Researchers, and Live Player Analysis",
+    "itunes_author": "Erik Torenberg, Nathan Labenz",
+    "feed": "https://feeds.megaphone.fm/RINTP3108857801",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/b1/29/0d/b1290dd6-516c-bc2d-53b6-473d18a3dff2/mza_6540782963388625071.jpeg/600x600bb.jpg",
+    "genres": [
+      "Technology",
+      "Podcasts",
+      "Business",
+      "Entrepreneurship"
+    ],
+    "episode_count": 363,
+    "last_release": "2026-08-02T21:09:00Z",
+    "match_score": 100,
+    "alternatives": []
+  },
+  {
+    "display": "The Long-Short",
+    "author": "AIMA",
+    "itunes_id": 1586662622,
+    "itunes_name": "The Long-Short",
+    "itunes_author": "AIMA",
+    "feed": "https://feeds.acast.com/public/shows/636b781f4a382300110bb134",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts112/v4/df/7b/1a/df7b1af8-c50b-0f59-655e-4cbe20fe44ab/mza_11505775376874210211.jpg/600x600bb.jpg",
+    "genres": [
+      "Business",
+      "Podcasts"
+    ],
+    "episode_count": 155,
+    "last_release": "2026-07-30T11:24:00Z",
+    "match_score": 140,
+    "alternatives": []
+  },
+  {
+    "display": "Basis Points",
+    "author": "Equity Mates Media",
+    "itunes_id": 1799601687,
+    "itunes_name": "Basis Points",
+    "itunes_author": "Equity Mates Media",
+    "feed": "https://feeds.acast.com/public/shows/67bbf55519249d0c1a4bb224",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/06/3d/d5/063dd52c-4d09-1b30-cd50-72d02bfe9f81/mza_1104079997193058951.jpeg/600x600bb.jpg",
+    "genres": [
+      "Investing",
+      "Podcasts",
+      "Business",
+      "Careers"
+    ],
+    "episode_count": 60,
+    "last_release": "2026-08-04T19:02:00Z",
+    "match_score": 140,
+    "alternatives": []
+  },
+  {
+    "display": "Longriver Podcast",
+    "author": "Graham Rhodes",
+    "itunes_id": 1582835756,
+    "itunes_name": "Longriver Podcast",
+    "itunes_author": "Graham Rhodes",
+    "feed": "https://anchor.fm/s/63e575dc/podcast/rss",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts125/v4/63/65/ad/6365ad17-2a80-69f8-d901-12fda61809f9/mza_5733526860909895872.jpg/600x600bb.jpg",
+    "genres": [
+      "Investing",
+      "Podcasts",
+      "Business"
+    ],
+    "episode_count": 33,
+    "last_release": "2026-04-02T09:10:00Z",
+    "match_score": 140,
+    "alternatives": []
+  },
+  {
+    "display": "Y Combinator Startup Podcast",
+    "author": "Y Combinator",
+    "itunes_id": 1236907421,
+    "itunes_name": "Y Combinator Startup Podcast",
+    "itunes_author": "Y Combinator",
+    "feed": "https://anchor.fm/s/8c1524bc/podcast/rss",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/65/d1/1e/65d11ed6-914f-e163-bc7a-d1ea5eda5b79/mza_2184580866640883071.jpg/600x600bb.jpg",
+    "genres": [
+      "Technology",
+      "Podcasts"
+    ],
+    "episode_count": 331,
+    "last_release": "2026-08-06T19:28:00Z",
+    "match_score": 140,
+    "alternatives": [
+      {
+        "name": "Startup School Radio",
+        "author": "Y Combinator",
+        "feed": "https://feeds.soundcloud.com/users/soundcloud:users:150759713/sounds.rss",
+        "score": 47.5
+      }
+    ]
+  },
+  {
+    "display": "Investing In Integrity",
+    "author": "Scholars of Finance",
+    "itunes_id": 1534855787,
+    "itunes_name": "Investing In Integrity",
+    "itunes_author": "Scholars of Finance",
+    "feed": "https://anchor.fm/s/2221ba98/podcast/rss",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts112/v4/4a/39/4a/4a394ac9-dbb9-bf1b-58a7-89f81ec937a3/mza_1374215530065085133.jpg/600x600bb.jpg",
+    "genres": [
+      "Management",
+      "Podcasts",
+      "Business"
+    ],
+    "episode_count": 99,
+    "last_release": "2026-06-04T04:52:00Z",
+    "match_score": 140,
+    "alternatives": []
+  },
+  {
+    "display": "FP&A Today",
+    "author": "Glenn Hopper",
+    "itunes_id": 1623132242,
+    "itunes_name": "FP&A Today",
+    "itunes_author": "Glenn Hopper",
+    "feed": "https://feed.podbean.com/FPAtoday/feed.xml",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts112/v4/6e/34/a8/6e34a8cc-3389-36a0-5e46-b002fddca942/mza_4786918627805141851.jpg/600x600bb.jpg",
+    "genres": [
+      "Management",
+      "Podcasts",
+      "Business"
+    ],
+    "episode_count": 100,
+    "last_release": "2026-07-05T07:02:00Z",
+    "match_score": 140,
+    "alternatives": [
+      {
+        "name": "The Finance & Accounting Show",
+        "author": "Business Talk Library",
+        "feed": "https://rss.buzzsprout.com/1589419.rss",
+        "score": 7.5
+      },
+      {
+        "name": "A Product Market Fit Show | Startup Podcast for Founders",
+        "author": "Mistral.vc",
+        "feed": "https://rss.buzzsprout.com/1889238.rss",
+        "score": 7.5
+      },
+      {
+        "name": "Treasury Leaders (Former Corporate Treasury 101)",
+        "author": "Guillaume, Hussam, Jan-Willem and Philip",
+        "feed": "https://feeds.captivate.fm/corporate-treasury-101/",
+        "score": 0.0
+      }
+    ]
+  },
+  {
+    "display": "In the Know",
+    "author": "Bernstein Research",
+    "itunes_id": 1691164140,
+    "itunes_name": "In the Know",
+    "itunes_author": "Bernstein Research",
+    "feed": "https://feeds.acast.com/public/shows/646f3701b33b760010466789",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/90/71/1c/90711cb7-79e9-3ca4-ae56-58407182549e/mza_7687099709627169342.jpeg/600x600bb.jpg",
+    "genres": [
+      "Business",
+      "Podcasts",
+      "News",
+      "Business News"
+    ],
+    "episode_count": 78,
+    "last_release": "2026-07-15T10:16:00Z",
+    "match_score": 140,
+    "alternatives": []
+  },
+  {
+    "display": "ACQ2 by Acquired",
+    "author": "Ben Gilbert and David Rosenthal",
+    "itunes_id": 1597212401,
+    "itunes_name": "ACQ2 by Acquired",
+    "itunes_author": "Ben Gilbert and David Rosenthal",
+    "feed": "https://feeds.transistor.fm/acq2",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/e7/00/ba/e700baf3-5905-f3f3-5407-1cee00ed7323/mza_1092016977693271801.jpg/600x600bb.jpg",
+    "genres": [
+      "Entrepreneurship",
+      "Podcasts",
+      "Business",
+      "Investing"
+    ],
+    "episode_count": 112,
+    "last_release": "2025-12-08T04:33:00Z",
+    "match_score": 140,
+    "alternatives": []
+  },
+  {
+    "display": "Masters of Scale",
+    "author": "WaitWhat",
+    "itunes_id": 1227971746,
+    "itunes_name": "Masters of Scale",
+    "itunes_author": "WaitWhat",
+    "feed": "https://rss.art19.com/masters-of-scale",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/13/4b/81/134b8173-d713-cbb2-2d3b-4a8692bd87c0/mza_996010941061703843.jpeg/600x600bb.jpg",
+    "genres": [
+      "Management",
+      "Podcasts",
+      "Business",
+      "Entrepreneurship"
+    ],
+    "episode_count": 724,
+    "last_release": "2026-08-06T09:00:00Z",
+    "match_score": 140,
+    "alternatives": [
+      {
+        "name": "Pioneers of AI",
+        "author": "WaitWhat",
+        "feed": "https://rss.art19.com/pioneers-of-ai",
+        "score": 50.0
+      },
+      {
+        "name": "Meditative Story",
+        "author": "WaitWhat",
+        "feed": "https://rss.art19.com/meditative-story",
+        "score": 40.0
+      },
+      {
+        "name": "Rapid Response",
+        "author": "WaitWhat",
+        "feed": "https://rss.art19.com/masters-of-scale-rapid-response",
+        "score": 40.0
+      }
+    ]
+  },
+  {
+    "display": "The Turnaround Podcast",
+    "author": "Stephen Phillips",
+    "itunes_id": 1740325190,
+    "itunes_name": "The Turnaround Podcast",
+    "itunes_author": "Stephen Phillips",
+    "feed": "https://anchor.fm/s/f4a34090/podcast/rss",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/06/3b/82/063b8238-a219-fb0e-5d34-7f93f52581c2/mza_16611093088018820349.jpg/600x600bb.jpg",
+    "genres": [
+      "Education",
+      "Podcasts"
+    ],
+    "episode_count": 26,
+    "last_release": "2026-06-22T11:30:00Z",
+    "match_score": 140,
+    "alternatives": []
+  }
+]

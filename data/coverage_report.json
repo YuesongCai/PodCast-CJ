@@ -1,0 +1,294 @@
+{
+  "generated_at": "2026-08-08T09:59:37.603637+00:00",
+  "rows": [
+    {
+      "show": "Masters of Scale",
+      "eps_30d": 10,
+      "free_paths": [
+        "YT字幕(弱)"
+      ],
+      "gap": null,
+      "measured_sources": [
+        "notes_only"
+      ],
+      "status": "缺口"
+    },
+    {
+      "show": "Talks at GS",
+      "eps_30d": 4,
+      "free_paths": [
+        "YT字幕✓校验"
+      ],
+      "gap": null,
+      "measured_sources": [
+        "notes_only"
+      ],
+      "status": "缺口"
+    },
+    {
+      "show": "The Long-Short",
+      "eps_30d": 3,
+      "free_paths": [
+        "YT字幕(弱)"
+      ],
+      "gap": null,
+      "measured_sources": [
+        "notes_only"
+      ],
+      "status": "缺口"
+    },
+    {
+      "show": "UBS Global Research Pod Hub",
+      "eps_30d": 2,
+      "free_paths": [],
+      "gap": "无官方transcript、无内嵌全文、YouTube 上找不到对应频道",
+      "measured_sources": [
+        "notes_only"
+      ],
+      "status": "缺口"
+    },
+    {
+      "show": "Investing In Integrity",
+      "eps_30d": 1,
+      "free_paths": [],
+      "gap": "无官方transcript、无内嵌全文、YouTube 上找不到对应频道",
+      "measured_sources": [],
+      "status": "缺口"
+    },
+    {
+      "show": "AI Ascent",
+      "eps_30d": null,
+      "free_paths": [],
+      "gap": "Spotify 独占，无公开 RSS",
+      "measured_sources": [],
+      "status": "缺口"
+    },
+    {
+      "show": "Stratechery",
+      "eps_30d": null,
+      "free_paths": [],
+      "gap": "订阅者私有 RSS",
+      "measured_sources": [],
+      "status": "缺口"
+    },
+    {
+      "show": "Longriver Podcast",
+      "eps_30d": 0,
+      "free_paths": [],
+      "gap": "无官方transcript、无内嵌全文、YouTube 上找不到对应频道",
+      "measured_sources": [],
+      "status": "缺口"
+    },
+    {
+      "show": "Capital Allocators",
+      "eps_30d": 9,
+      "free_paths": [
+        "YT字幕(弱)"
+      ],
+      "gap": null,
+      "measured_sources": [],
+      "status": "预期可行"
+    },
+    {
+      "show": "In Good Company",
+      "eps_30d": 9,
+      "free_paths": [
+        "YT字幕(弱)"
+      ],
+      "gap": null,
+      "measured_sources": [],
+      "status": "预期可行"
+    },
+    {
+      "show": "Lenny's Podcast",
+      "eps_30d": 5,
+      "free_paths": [
+        "YT字幕✓校验"
+      ],
+      "gap": null,
+      "measured_sources": [],
+      "status": "预期可行"
+    },
+    {
+      "show": "Latent Space",
+      "eps_30d": 5,
+      "free_paths": [
+        "RSS内嵌全文",
+        "YT字幕✓校验"
+      ],
+      "gap": null,
+      "measured_sources": [],
+      "status": "预期可行"
+    },
+    {
+      "show": "David Senra",
+      "eps_30d": 4,
+      "free_paths": [
+        "YT字幕(弱)"
+      ],
+      "gap": null,
+      "measured_sources": [],
+      "status": "预期可行"
+    },
+    {
+      "show": "Basis Points",
+      "eps_30d": 4,
+      "free_paths": [
+        "YT字幕✓校验"
+      ],
+      "gap": null,
+      "measured_sources": [],
+      "status": "预期可行"
+    },
+    {
+      "show": "Grit",
+      "eps_30d": 2,
+      "free_paths": [
+        "YT字幕✓校验"
+      ],
+      "gap": null,
+      "measured_sources": [],
+      "status": "预期可行"
+    },
+    {
+      "show": "Short Briefings on Long Term Thinking",
+      "eps_30d": 1,
+      "free_paths": [
+        "官方transcript(53%集)",
+        "YT字幕✓校验"
+      ],
+      "gap": null,
+      "measured_sources": [],
+      "status": "预期可行"
+    },
+    {
+      "show": "Lex Fridman Podcast",
+      "eps_30d": 1,
+      "free_paths": [
+        "YT字幕✓校验"
+      ],
+      "gap": null,
+      "measured_sources": [],
+      "status": "预期可行"
+    },
+    {
+      "show": "FP&A Today",
+      "eps_30d": 1,
+      "free_paths": [
+        "YT字幕✓校验"
+      ],
+      "gap": null,
+      "measured_sources": [],
+      "status": "预期可行"
+    },
+    {
+      "show": "In the Know",
+      "eps_30d": 1,
+      "free_paths": [
+        "YT字幕(弱)"
+      ],
+      "gap": null,
+      "measured_sources": [],
+      "status": "预期可行"
+    },
+    {
+      "show": "Generating Alpha",
+      "eps_30d": 0,
+      "free_paths": [
+        "YT字幕✓校验"
+      ],
+      "gap": null,
+      "measured_sources": [],
+      "status": "预期可行"
+    },
+    {
+      "show": "ACQ2 by Acquired",
+      "eps_30d": 0,
+      "free_paths": [
+        "YT字幕✓校验"
+      ],
+      "gap": null,
+      "measured_sources": [],
+      "status": "预期可行"
+    },
+    {
+      "show": "The Turnaround Podcast",
+      "eps_30d": 0,
+      "free_paths": [
+        "YT字幕✓校验"
+      ],
+      "gap": null,
+      "measured_sources": [],
+      "status": "预期可行"
+    },
+    {
+      "show": "Global Research Unlocked",
+      "eps_30d": 18,
+      "free_paths": [
+        "YT字幕✓校验"
+      ],
+      "gap": null,
+      "measured_sources": [
+        "youtube"
+      ],
+      "status": "已实测OK"
+    },
+    {
+      "show": "Y Combinator Startup Podcast",
+      "eps_30d": 13,
+      "free_paths": [
+        "YT字幕✓校验"
+      ],
+      "gap": null,
+      "measured_sources": [
+        "youtube",
+        "youtube",
+        "youtube"
+      ],
+      "status": "已实测OK"
+    },
+    {
+      "show": "The Cognitive Revolution",
+      "eps_30d": 6,
+      "free_paths": [
+        "YT字幕✓校验"
+      ],
+      "gap": null,
+      "measured_sources": [
+        "youtube"
+      ],
+      "status": "已实测OK"
+    },
+    {
+      "show": "Odds on Open",
+      "eps_30d": 5,
+      "free_paths": [
+        "YT字幕✓校验"
+      ],
+      "gap": null,
+      "measured_sources": [
+        "youtube"
+      ],
+      "status": "已实测OK"
+    },
+    {
+      "show": "Chat With Traders",
+      "eps_30d": 2,
+      "free_paths": [
+        "YT字幕✓校验"
+      ],
+      "gap": null,
+      "measured_sources": [
+        "youtube"
+      ],
+      "status": "已实测OK"
+    }
+  ],
+  "summary": {
+    "shows_total": 27,
+    "shows_free_ok": 19,
+    "shows_gap": 8,
+    "gap_eps_30d": 20,
+    "all_eps_30d": 106
+  }
+}

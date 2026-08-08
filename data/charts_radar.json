@@ -1,0 +1,1662 @@
+{
+  "generated_at": "2026-08-08T09:24:12.216044+00:00",
+  "errors": [],
+  "uncovered": [
+    {
+      "rank": 1,
+      "chart": "Top Shows (overall)",
+      "name": "The Daily",
+      "author": "The New York Times",
+      "itunes_id": "1200361736",
+      "url": "https://podcasts.apple.com/us/podcast/the-daily/id1200361736",
+      "also_on": [
+        "News#1"
+      ]
+    },
+    {
+      "rank": 1,
+      "chart": "Business",
+      "name": "REAL AF with Andy Frisella",
+      "author": "Andy Frisella",
+      "itunes_id": "1012570406",
+      "url": "https://podcasts.apple.com/us/podcast/real-af-with-andy-frisella/id1012570406?uo=2",
+      "also_on": [
+        "Business/Investing#1"
+      ]
+    },
+    {
+      "rank": 1,
+      "chart": "Technology",
+      "name": "Tomorrow, Today",
+      "author": "Shekhar Natarajan",
+      "itunes_id": "1848156557",
+      "url": "https://podcasts.apple.com/us/podcast/tomorrow-today/id1848156557?uo=2"
+    },
+    {
+      "rank": 2,
+      "chart": "Top Shows (overall)",
+      "name": "Crime Junkie",
+      "author": "Audiochuck",
+      "itunes_id": "1322200189",
+      "url": "https://podcasts.apple.com/us/podcast/crime-junkie/id1322200189"
+    },
+    {
+      "rank": 2,
+      "chart": "News",
+      "name": "Pod Save America",
+      "author": "Pod Save America",
+      "itunes_id": "1192761536",
+      "url": "https://podcasts.apple.com/us/podcast/pod-save-america/id1192761536?uo=2"
+    },
+    {
+      "rank": 2,
+      "chart": "Business",
+      "name": "Unblinded with Sean Callagy",
+      "author": "Sean Callagy",
+      "itunes_id": "1844970260",
+      "url": "https://podcasts.apple.com/us/podcast/unblinded-with-sean-callagy/id1844970260?uo=2"
+    },
+    {
+      "rank": 2,
+      "chart": "Business/Investing",
+      "name": "Habits and Hustle",
+      "author": "Jen Cohen",
+      "itunes_id": "1451897026",
+      "url": "https://podcasts.apple.com/us/podcast/habits-and-hustle/id1451897026?uo=2"
+    },
+    {
+      "rank": 3,
+      "chart": "News",
+      "name": "Up First from NPR",
+      "author": "NPR",
+      "itunes_id": "1222114325",
+      "url": "https://podcasts.apple.com/us/podcast/up-first-from-npr/id1222114325?uo=2"
+    },
+    {
+      "rank": 3,
+      "chart": "Business/Investing",
+      "name": "Young and Profiting with Hala Taha (Entrepreneurship, Sales, Marketing)",
+      "author": "Hala Taha | Entrepreneurship, Sales, Marketing | YAP Media Network",
+      "itunes_id": "1368888880",
+      "url": "https://podcasts.apple.com/us/podcast/young-and-profiting-with-hala-taha-entrepreneurship/id1368888880?uo=2"
+    },
+    {
+      "rank": 4,
+      "chart": "Top Shows (overall)",
+      "name": "Dateline NBC",
+      "author": "NBC News",
+      "itunes_id": "1464919521",
+      "url": "https://podcasts.apple.com/us/podcast/dateline-nbc/id1464919521"
+    },
+    {
+      "rank": 4,
+      "chart": "News",
+      "name": "The Megyn Kelly Show",
+      "author": "SiriusXM",
+      "itunes_id": "1532976305",
+      "url": "https://podcasts.apple.com/us/podcast/the-megyn-kelly-show/id1532976305?uo=2"
+    },
+    {
+      "rank": 4,
+      "chart": "Business/Investing",
+      "name": "Proven Podcast",
+      "author": "Charles Schwartz",
+      "itunes_id": "1744386875",
+      "url": "https://podcasts.apple.com/us/podcast/proven-podcast/id1744386875?uo=2"
+    },
+    {
+      "rank": 5,
+      "chart": "Business",
+      "name": "The Vault Unlocked",
+      "author": "Kayvon Kay",
+      "itunes_id": "1837193185",
+      "url": "https://podcasts.apple.com/us/podcast/the-vault-unlocked/id1837193185?uo=2"
+    },
+    {
+      "rank": 5,
+      "chart": "News",
+      "name": "The Bulwark Daily",
+      "author": "The Bulwark",
+      "itunes_id": "1447684472",
+      "url": "https://podcasts.apple.com/us/podcast/the-bulwark-daily/id1447684472?uo=2"
+    },
+    {
+      "rank": 5,
+      "chart": "Business/Investing",
+      "name": "Coffeez with Joe Shalaby",
+      "author": "Joseph Shalaby",
+      "itunes_id": "1726674707",
+      "url": "https://podcasts.apple.com/us/podcast/coffeez-with-joe-shalaby/id1726674707?uo=2"
+    },
+    {
+      "rank": 5,
+      "chart": "Technology",
+      "name": "The Room Podcast",
+      "author": "Claudia Laurie and Madison McIlwain",
+      "itunes_id": "1539670094",
+      "url": "https://podcasts.apple.com/us/podcast/the-room-podcast/id1539670094?uo=2"
+    },
+    {
+      "rank": 6,
+      "chart": "Top Shows (overall)",
+      "name": "Mick Unplugged",
+      "author": "Mick Hunt",
+      "itunes_id": "1731755953",
+      "url": "https://podcasts.apple.com/us/podcast/mick-unplugged/id1731755953"
+    },
+    {
+      "rank": 6,
+      "chart": "News",
+      "name": "The Ben Shapiro Show",
+      "author": "The Daily Wire",
+      "itunes_id": "1047335260",
+      "url": "https://podcasts.apple.com/us/podcast/the-ben-shapiro-show/id1047335260?uo=2"
+    },
+    {
+      "rank": 6,
+      "chart": "Business/Investing",
+      "name": "The Level Up Podcast w/ Paul Alex",
+      "author": "Paul Alex Espinoza",
+      "itunes_id": "1733135157",
+      "url": "https://podcasts.apple.com/us/podcast/the-level-up-podcast-w-paul-alex/id1733135157?uo=2"
+    },
+    {
+      "rank": 6,
+      "chart": "Technology",
+      "name": "AI Business Daily",
+      "author": "Cast Nexa",
+      "itunes_id": "1896801264",
+      "url": "https://podcasts.apple.com/us/podcast/ai-business-daily/id1896801264?uo=2"
+    },
+    {
+      "rank": 7,
+      "chart": "Top Shows (overall)",
+      "name": "Morbid",
+      "author": "Ash Kelley & Alaina Urquhart",
+      "itunes_id": "1379959217",
+      "url": "https://podcasts.apple.com/us/podcast/morbid/id1379959217"
+    },
+    {
+      "rank": 7,
+      "chart": "Business",
+      "name": "The Ramsey Show",
+      "author": "Ramsey Network",
+      "itunes_id": "77001367",
+      "url": "https://podcasts.apple.com/us/podcast/the-ramsey-show/id77001367?uo=2"
+    },
+    {
+      "rank": 7,
+      "chart": "News",
+      "name": "The Tucker Carlson Show",
+      "author": "Tucker Carlson Network",
+      "itunes_id": "1719657632",
+      "url": "https://podcasts.apple.com/us/podcast/the-tucker-carlson-show/id1719657632?uo=2"
+    },
+    {
+      "rank": 7,
+      "chart": "Business/Investing",
+      "name": "Creators Inc. Podcast",
+      "author": "Andy Bachman",
+      "itunes_id": "1883749200",
+      "url": "https://podcasts.apple.com/us/podcast/creators-inc-podcast/id1883749200?uo=2"
+    },
+    {
+      "rank": 7,
+      "chart": "Technology",
+      "name": "Eye On A.I.",
+      "author": "Craig S. Smith",
+      "itunes_id": "1438378439",
+      "url": "https://podcasts.apple.com/us/podcast/eye-on-a-i/id1438378439?uo=2"
+    },
+    {
+      "rank": 8,
+      "chart": "Top Shows (overall)",
+      "name": "Pardon My Take",
+      "author": "Barstool Sports",
+      "itunes_id": "1089022756",
+      "url": "https://podcasts.apple.com/us/podcast/pardon-my-take/id1089022756"
+    },
+    {
+      "rank": 8,
+      "chart": "News",
+      "name": "Pivot",
+      "author": "New York Magazine",
+      "itunes_id": "1073226719",
+      "url": "https://podcasts.apple.com/us/podcast/pivot/id1073226719?uo=2"
+    },
+    {
+      "rank": 8,
+      "chart": "Business/Investing",
+      "name": "Founder's Story",
+      "author": "IBH Media",
+      "itunes_id": "1505698509",
+      "url": "https://podcasts.apple.com/us/podcast/founders-story/id1505698509?uo=2"
+    },
+    {
+      "rank": 8,
+      "chart": "Technology",
+      "name": "Building AI Boston",
+      "author": "Building AI Boston",
+      "itunes_id": "1787830122",
+      "url": "https://podcasts.apple.com/us/podcast/building-ai-boston/id1787830122?uo=2"
+    },
+    {
+      "rank": 9,
+      "chart": "Business",
+      "name": "The Learning Leader Show With Ryan Hawk",
+      "author": "Ryan Hawk",
+      "itunes_id": "985396258",
+      "url": "https://podcasts.apple.com/us/podcast/the-learning-leader-show-with-ryan-hawk/id985396258?uo=2"
+    },
+    {
+      "rank": 9,
+      "chart": "News",
+      "name": "Candace",
+      "author": "Candace Owens",
+      "itunes_id": "1750591415",
+      "url": "https://podcasts.apple.com/us/podcast/candace/id1750591415?uo=2"
+    },
+    {
+      "rank": 9,
+      "chart": "Business/Investing",
+      "name": "Business MVP",
+      "author": "Sammy Peterson",
+      "itunes_id": "6788010464",
+      "url": "https://podcasts.apple.com/us/podcast/business-mvp/id6788010464?uo=2"
+    },
+    {
+      "rank": 9,
+      "chart": "Technology",
+      "name": "Search Engine",
+      "author": "PJ Vogt",
+      "itunes_id": "1614253637",
+      "url": "https://podcasts.apple.com/us/podcast/search-engine/id1614253637?uo=2"
+    },
+    {
+      "rank": 10,
+      "chart": "Business",
+      "name": "The Diary Of A CEO with Steven Bartlett",
+      "author": "DOAC",
+      "itunes_id": "1291423644",
+      "url": "https://podcasts.apple.com/us/podcast/the-diary-of-a-ceo-with-steven-bartlett/id1291423644?uo=2"
+    },
+    {
+      "rank": 10,
+      "chart": "Business/Investing",
+      "name": "Creating Confidence with Heather Monahan",
+      "author": "Heather Monahan | YAP Media",
+      "itunes_id": "1462192400",
+      "url": "https://podcasts.apple.com/us/podcast/creating-confidence-with-heather-monahan/id1462192400?uo=2"
+    },
+    {
+      "rank": 10,
+      "chart": "Technology",
+      "name": "Inside AsembleAI: DeepTech, AI & Science",
+      "author": "Mac & Sam",
+      "itunes_id": "1827749077",
+      "url": "https://podcasts.apple.com/us/podcast/inside-asembleai-deeptech-ai-science/id1827749077?uo=2"
+    },
+    {
+      "rank": 10,
+      "chart": "News",
+      "name": "The MeidasTouch Podcast",
+      "author": "MeidasTouch Network",
+      "itunes_id": "1510240831",
+      "url": "https://podcasts.apple.com/us/podcast/the-meidastouch-podcast/id1510240831?uo=2"
+    },
+    {
+      "rank": 11,
+      "chart": "Top Shows (overall)",
+      "name": "48 Hours",
+      "author": "CBS News",
+      "itunes_id": "965818306",
+      "url": "https://podcasts.apple.com/us/podcast/48-hours/id965818306"
+    },
+    {
+      "rank": 11,
+      "chart": "Business/Investing",
+      "name": "The Money Mondays",
+      "author": "Dan Fleyshman",
+      "itunes_id": "1664983297",
+      "url": "https://podcasts.apple.com/us/podcast/the-money-mondays/id1664983297?uo=2"
+    },
+    {
+      "rank": 11,
+      "chart": "Technology",
+      "name": "The AI Daily Brief: Artificial Intelligence News and Analysis",
+      "author": "Nathaniel Whittemore",
+      "itunes_id": "1680633614",
+      "url": "https://podcasts.apple.com/us/podcast/the-ai-daily-brief-artificial-intelligence-news/id1680633614?uo=2"
+    },
+    {
+      "rank": 11,
+      "chart": "News",
+      "name": "The Dan Bongino Show",
+      "author": "Cumulus Podcast Network | Dan Bongino",
+      "itunes_id": "965293227",
+      "url": "https://podcasts.apple.com/us/podcast/the-dan-bongino-show/id965293227?uo=2"
+    },
+    {
+      "rank": 12,
+      "chart": "Top Shows (overall)",
+      "name": "The Shawn Ryan Show",
+      "author": "Shawn Ryan",
+      "itunes_id": "1492492083",
+      "url": "https://podcasts.apple.com/us/podcast/the-shawn-ryan-show/id1492492083"
+    },
+    {
+      "rank": 12,
+      "chart": "Business",
+      "name": "Bred To Lead | With Dr. Jake Tayler Jacobs",
+      "author": "SIPS Healthcare Solutions",
+      "itunes_id": "1744976367",
+      "url": "https://podcasts.apple.com/us/podcast/bred-to-lead-with-dr-jake-tayler-jacobs/id1744976367?uo=2"
+    },
+    {
+      "rank": 12,
+      "chart": "Business/Investing",
+      "name": "The Code To Winning",
+      "author": "Kagiso Dikane",
+      "itunes_id": "1743122445",
+      "url": "https://podcasts.apple.com/us/podcast/the-code-to-winning/id1743122445?uo=2"
+    },
+    {
+      "rank": 12,
+      "chart": "Technology",
+      "name": "TED Radio Hour",
+      "author": "NPR",
+      "itunes_id": "523121474",
+      "url": "https://podcasts.apple.com/us/podcast/ted-radio-hour/id523121474?uo=2"
+    },
+    {
+      "rank": 12,
+      "chart": "News",
+      "name": "Morning Wire",
+      "author": "The Daily Wire",
+      "itunes_id": "1576594336",
+      "url": "https://podcasts.apple.com/us/podcast/morning-wire/id1576594336?uo=2"
+    },
+    {
+      "rank": 13,
+      "chart": "Business/Investing",
+      "name": "Finding Peak with Ryan Hanley",
+      "author": "Ryan Hanley",
+      "itunes_id": "1480262657",
+      "url": "https://podcasts.apple.com/us/podcast/finding-peak-with-ryan-hanley/id1480262657?uo=2"
+    },
+    {
+      "rank": 13,
+      "chart": "Technology",
+      "name": "Bourbon with Brad",
+      "author": "Completely Offensively LLC",
+      "itunes_id": "1870310599",
+      "url": "https://podcasts.apple.com/us/podcast/bourbon-with-brad/id1870310599?uo=2"
+    },
+    {
+      "rank": 13,
+      "chart": "News",
+      "name": "NPR News Now",
+      "author": "NPR",
+      "itunes_id": "121493675",
+      "url": "https://podcasts.apple.com/us/podcast/npr-news-now/id121493675?uo=2"
+    },
+    {
+      "rank": 14,
+      "chart": "Business/Investing",
+      "name": "The Entrepreneur DNA",
+      "author": "Justin Colby, Bleav",
+      "itunes_id": "1723959859",
+      "url": "https://podcasts.apple.com/us/podcast/the-entrepreneur-dna/id1723959859?uo=2"
+    },
+    {
+      "rank": 14,
+      "chart": "Technology",
+      "name": "DGTL Voices with Ed Marx",
+      "author": "Marx Advisory",
+      "itunes_id": "1552066046",
+      "url": "https://podcasts.apple.com/us/podcast/dgtl-voices-with-ed-marx/id1552066046?uo=2"
+    },
+    {
+      "rank": 14,
+      "chart": "News",
+      "name": "IHIP News",
+      "author": "Jennifer Welch & Angie Sullivan",
+      "itunes_id": "1761444284",
+      "url": "https://podcasts.apple.com/us/podcast/ihip-news/id1761444284?uo=2"
+    },
+    {
+      "rank": 15,
+      "chart": "Top Shows (overall)",
+      "name": "Good Hang with Amy Poehler",
+      "author": "The Ringer",
+      "itunes_id": "1795483480",
+      "url": "https://podcasts.apple.com/us/podcast/good-hang-with-amy-poehler/id1795483480"
+    },
+    {
+      "rank": 15,
+      "chart": "Business/Investing",
+      "name": "Living The Red Life",
+      "author": "Rudy Mawer",
+      "itunes_id": "1662990704",
+      "url": "https://podcasts.apple.com/us/podcast/living-the-red-life/id1662990704?uo=2"
+    },
+    {
+      "rank": 15,
+      "chart": "News",
+      "name": "The Headlines",
+      "author": "The New York Times",
+      "itunes_id": "1758855019",
+      "url": "https://podcasts.apple.com/us/podcast/the-headlines/id1758855019?uo=2"
+    },
+    {
+      "rank": 16,
+      "chart": "Business",
+      "name": "3 Takeaways™",
+      "author": "Lynn Thoman",
+      "itunes_id": "1526080983",
+      "url": "https://podcasts.apple.com/us/podcast/3-takeaways/id1526080983?uo=2"
+    },
+    {
+      "rank": 16,
+      "chart": "Technology",
+      "name": "Darknet Diaries",
+      "author": "Jack Rhysider",
+      "itunes_id": "1296350485",
+      "url": "https://podcasts.apple.com/us/podcast/darknet-diaries/id1296350485?uo=2"
+    },
+    {
+      "rank": 16,
+      "chart": "News",
+      "name": "The NPR Politics Podcast",
+      "author": "NPR",
+      "itunes_id": "1057255460",
+      "url": "https://podcasts.apple.com/us/podcast/the-npr-politics-podcast/id1057255460?uo=2"
+    },
+    {
+      "rank": 17,
+      "chart": "Business/Investing",
+      "name": "The Prof G Pod with Scott Galloway",
+      "author": "Vox Media Podcast Network",
+      "itunes_id": "1498802610",
+      "url": "https://podcasts.apple.com/us/podcast/the-prof-g-pod-with-scott-galloway/id1498802610?uo=2"
+    },
+    {
+      "rank": 17,
+      "chart": "Technology",
+      "name": "American Alchemy with Jesse Michels",
+      "author": "Jesse Michels",
+      "itunes_id": "1771917740",
+      "url": "https://podcasts.apple.com/us/podcast/american-alchemy-with-jesse-michels/id1771917740?uo=2"
+    },
+    {
+      "rank": 17,
+      "chart": "News",
+      "name": "Today, Explained",
+      "author": "Vox",
+      "itunes_id": "1346207297",
+      "url": "https://podcasts.apple.com/us/podcast/today-explained/id1346207297?uo=2"
+    },
+    {
+      "rank": 18,
+      "chart": "Business",
+      "name": "The Home Service Expert Podcast",
+      "author": "Tommy Mello: $200 Million Founder|Forbes, Inc., Entrepreneur Columnist",
+      "itunes_id": "1341478446",
+      "url": "https://podcasts.apple.com/us/podcast/the-home-service-expert-podcast/id1341478446?uo=2"
+    },
+    {
+      "rank": 18,
+      "chart": "Business/Investing",
+      "name": "The Cast Nexa Show",
+      "author": "Cast Nexa",
+      "itunes_id": "1876135394",
+      "url": "https://podcasts.apple.com/us/podcast/the-cast-nexa-show/id1876135394?uo=2"
+    },
+    {
+      "rank": 18,
+      "chart": "Technology",
+      "name": "Better Offline",
+      "author": "Cool Zone Media and iHeartPodcasts",
+      "itunes_id": "1730587238",
+      "url": "https://podcasts.apple.com/us/podcast/better-offline/id1730587238?uo=2"
+    },
+    {
+      "rank": 19,
+      "chart": "Top Shows (overall)",
+      "name": "Armchair Expert with Dax Shepard",
+      "author": "Armchair Umbrella",
+      "itunes_id": "1345682353",
+      "url": "https://podcasts.apple.com/us/podcast/armchair-expert-with-dax-shepard/id1345682353"
+    },
+    {
+      "rank": 19,
+      "chart": "Business/Investing",
+      "name": "The Paul Morris Podcast",
+      "author": "Paul Mark Morris",
+      "itunes_id": "1700948403",
+      "url": "https://podcasts.apple.com/us/podcast/the-paul-morris-podcast/id1700948403?uo=2"
+    },
+    {
+      "rank": 19,
+      "chart": "News",
+      "name": "The Matt Walsh Show",
+      "author": "The Daily Wire",
+      "itunes_id": "1367210511",
+      "url": "https://podcasts.apple.com/us/podcast/the-matt-walsh-show/id1367210511?uo=2"
+    },
+    {
+      "rank": 20,
+      "chart": "Top Shows (overall)",
+      "name": "The Ezra Klein Show",
+      "author": "New York Times Opinion",
+      "itunes_id": "1548604447",
+      "url": "https://podcasts.apple.com/us/podcast/the-ezra-klein-show/id1548604447"
+    },
+    {
+      "rank": 20,
+      "chart": "Business",
+      "name": "Marketplace",
+      "author": "Marketplace",
+      "itunes_id": "201853034",
+      "url": "https://podcasts.apple.com/us/podcast/marketplace/id201853034?uo=2"
+    },
+    {
+      "rank": 20,
+      "chart": "Business/Investing",
+      "name": "Nunn Better Podcast",
+      "author": "Ricky Ricardo - Nunn Better Media",
+      "itunes_id": "1894334347",
+      "url": "https://podcasts.apple.com/us/podcast/nunn-better-podcast/id1894334347?uo=2"
+    },
+    {
+      "rank": 20,
+      "chart": "Technology",
+      "name": "Reshaping Workflows with Dell Pro Precision and NVIDIA RTX PRO GPUs",
+      "author": "Dell Technologies AI Factory with NVIDIA",
+      "itunes_id": "1802645201",
+      "url": "https://podcasts.apple.com/us/podcast/reshaping-workflows-with-dell-pro-precision-and-nvidia/id1802645201?uo=2"
+    },
+    {
+      "rank": 20,
+      "chart": "News",
+      "name": "Apple News Today",
+      "author": "Apple News",
+      "itunes_id": "1473872585",
+      "url": "https://podcasts.apple.com/us/podcast/apple-news-today/id1473872585?uo=2"
+    },
+    {
+      "rank": 21,
+      "chart": "Business/Investing",
+      "name": "BILFPOD",
+      "author": "Mara Dorne",
+      "itunes_id": "1804972211",
+      "url": "https://podcasts.apple.com/us/podcast/bilfpod/id1804972211?uo=2"
+    },
+    {
+      "rank": 21,
+      "chart": "Technology",
+      "name": "Plaintext with Rich",
+      "author": "Rich Greene",
+      "itunes_id": "1864969176",
+      "url": "https://podcasts.apple.com/us/podcast/plaintext-with-rich/id1864969176?uo=2"
+    },
+    {
+      "rank": 21,
+      "chart": "News",
+      "name": "Serial",
+      "author": "Serial Productions & The New York Times",
+      "itunes_id": "917918570",
+      "url": "https://podcasts.apple.com/us/podcast/serial/id917918570?uo=2"
+    },
+    {
+      "rank": 22,
+      "chart": "Top Shows (overall)",
+      "name": "World War II with Tom Hanks",
+      "author": "The HISTORY Channel | Back Pocket Studios | Audacy",
+      "itunes_id": "1896760409",
+      "url": "https://podcasts.apple.com/us/podcast/world-war-ii-with-tom-hanks/id1896760409"
+    },
+    {
+      "rank": 22,
+      "chart": "Business/Investing",
+      "name": "Fuel Your Drive by Josh York",
+      "author": "Josh York",
+      "itunes_id": "1442743951",
+      "url": "https://podcasts.apple.com/us/podcast/fuel-your-drive-by-josh-york/id1442743951?uo=2"
+    },
+    {
+      "rank": 22,
+      "chart": "Technology",
+      "name": "The Vergecast",
+      "author": "The Verge",
+      "itunes_id": "430333725",
+      "url": "https://podcasts.apple.com/us/podcast/the-vergecast/id430333725?uo=2"
+    },
+    {
+      "rank": 22,
+      "chart": "News",
+      "name": "The Glenn Beck Program",
+      "author": "Mercury Radio Arts",
+      "itunes_id": "620967489",
+      "url": "https://podcasts.apple.com/us/podcast/the-glenn-beck-program/id620967489?uo=2"
+    },
+    {
+      "rank": 23,
+      "chart": "Top Shows (overall)",
+      "name": "The Mel Robbins Podcast",
+      "author": "Mel Robbins",
+      "itunes_id": "1646101002",
+      "url": "https://podcasts.apple.com/us/podcast/the-mel-robbins-podcast/id1646101002"
+    },
+    {
+      "rank": 23,
+      "chart": "Business/Investing",
+      "name": "From Underdog to Entrepreneur: Building Dreams with Pat Miller",
+      "author": "Pat Miller",
+      "itunes_id": "1858680853",
+      "url": "https://podcasts.apple.com/us/podcast/from-underdog-to-entrepreneur-building-dreams-with-pat/id1858680853?uo=2"
+    },
+    {
+      "rank": 23,
+      "chart": "Technology",
+      "name": "Galaxy Brain",
+      "author": "The Atlantic",
+      "itunes_id": "1378618386",
+      "url": "https://podcasts.apple.com/us/podcast/galaxy-brain/id1378618386?uo=2"
+    },
+    {
+      "rank": 23,
+      "chart": "News",
+      "name": "WSJ What’s News",
+      "author": "The Wall Street Journal",
+      "itunes_id": "152016440",
+      "url": "https://podcasts.apple.com/us/podcast/wsj-whats-news/id152016440?uo=2"
+    },
+    {
+      "rank": 24,
+      "chart": "Top Shows (overall)",
+      "name": "The Dylan Gemelli Podcast",
+      "author": "Dylan Gemelli",
+      "itunes_id": "1780873400",
+      "url": "https://podcasts.apple.com/us/podcast/the-dylan-gemelli-podcast/id1780873400"
+    },
+    {
+      "rank": 24,
+      "chart": "Business",
+      "name": "Embracing Marketing Mistakes",
+      "author": "Prohibition PR",
+      "itunes_id": "1693209578",
+      "url": "https://podcasts.apple.com/us/podcast/embracing-marketing-mistakes/id1693209578?uo=2"
+    },
+    {
+      "rank": 24,
+      "chart": "Business/Investing",
+      "name": "Amplify Speakers Podcast",
+      "author": "Chris Sund",
+      "itunes_id": "1874167939",
+      "url": "https://podcasts.apple.com/us/podcast/amplify-speakers-podcast/id1874167939?uo=2"
+    },
+    {
+      "rank": 24,
+      "chart": "Technology",
+      "name": "TBPN",
+      "author": "John Coogan & Jordi Hays",
+      "itunes_id": "1772360235",
+      "url": "https://podcasts.apple.com/us/podcast/tbpn/id1772360235?uo=2"
+    },
+    {
+      "rank": 24,
+      "chart": "News",
+      "name": "Armstrong & Getty On Demand",
+      "author": "iHeartPodcasts",
+      "itunes_id": "1259438987",
+      "url": "https://podcasts.apple.com/us/podcast/armstrong-getty-on-demand/id1259438987?uo=2"
+    },
+    {
+      "rank": 25,
+      "chart": "Top Shows (overall)",
+      "name": "The Toast",
+      "author": "Dear Media",
+      "itunes_id": "1368081567",
+      "url": "https://podcasts.apple.com/us/podcast/the-toast/id1368081567"
+    },
+    {
+      "rank": 25,
+      "chart": "Business",
+      "name": "Planet Money",
+      "author": "NPR",
+      "itunes_id": "290783428",
+      "url": "https://podcasts.apple.com/us/podcast/planet-money/id290783428?uo=2"
+    },
+    {
+      "rank": 25,
+      "chart": "Technology",
+      "name": "Waveform: The MKBHD Podcast",
+      "author": "MKBHD",
+      "itunes_id": "1474429475",
+      "url": "https://podcasts.apple.com/us/podcast/waveform-the-mkbhd-podcast/id1474429475?uo=2"
+    },
+    {
+      "rank": 25,
+      "chart": "News",
+      "name": "Global News Podcast",
+      "author": "BBC World Service",
+      "itunes_id": "135067274",
+      "url": "https://podcasts.apple.com/us/podcast/global-news-podcast/id135067274?uo=2"
+    },
+    {
+      "rank": 25,
+      "chart": "Business/Investing",
+      "name": "Aspire with Emma Grede",
+      "author": "Emma Grede | Audacy",
+      "itunes_id": "1811878340",
+      "url": "https://podcasts.apple.com/us/podcast/aspire-with-emma-grede/id1811878340?uo=2"
+    },
+    {
+      "rank": 26,
+      "chart": "Top Shows (overall)",
+      "name": "My Favorite Murder with Karen Kilgariff and Georgia Hardstark",
+      "author": "Exactly Right and iHeartPodcasts",
+      "itunes_id": "1074507850",
+      "url": "https://podcasts.apple.com/us/podcast/my-favorite-murder-with-karen-kilgariff-and/id1074507850"
+    },
+    {
+      "rank": 26,
+      "chart": "Business",
+      "name": "The MORE Show",
+      "author": "Justin Colby, Bleav, Justin Colby",
+      "itunes_id": "714464552",
+      "url": "https://podcasts.apple.com/us/podcast/the-more-show/id714464552?uo=2"
+    },
+    {
+      "rank": 26,
+      "chart": "Technology",
+      "name": "The In-Between Tech and Trust Podcast",
+      "author": "Eva Simone Lihotzky",
+      "itunes_id": "1828521905",
+      "url": "https://podcasts.apple.com/us/podcast/the-in-between-tech-and-trust-podcast/id1828521905?uo=2"
+    },
+    {
+      "rank": 26,
+      "chart": "News",
+      "name": "Deadline: White House",
+      "author": "Nicolle Wallace, MS NOW",
+      "itunes_id": "1367201919",
+      "url": "https://podcasts.apple.com/us/podcast/deadline-white-house/id1367201919?uo=2"
+    },
+    {
+      "rank": 26,
+      "chart": "Business/Investing",
+      "name": "BigDeal",
+      "author": "Codie Sanchez",
+      "itunes_id": "1736593333",
+      "url": "https://podcasts.apple.com/us/podcast/bigdeal/id1736593333?uo=2"
+    },
+    {
+      "rank": 27,
+      "chart": "Top Shows (overall)",
+      "name": "MrBallen Podcast: Strange, Dark & Mysterious Stories",
+      "author": "Ballen Studios",
+      "itunes_id": "1608813794",
+      "url": "https://podcasts.apple.com/us/podcast/mrballen-podcast-strange-dark-mysterious-stories/id1608813794"
+    },
+    {
+      "rank": 27,
+      "chart": "News",
+      "name": "Bulwark Takes",
+      "author": "The Bulwark",
+      "itunes_id": "1794450472",
+      "url": "https://podcasts.apple.com/us/podcast/bulwark-takes/id1794450472?uo=2"
+    },
+    {
+      "rank": 27,
+      "chart": "Business/Investing",
+      "name": "The Tim Ferriss Show",
+      "author": "Tim Ferriss: Bestselling Author, Human Guinea Pig",
+      "itunes_id": "863897795",
+      "url": "https://podcasts.apple.com/us/podcast/the-tim-ferriss-show/id863897795?uo=2"
+    },
+    {
+      "rank": 28,
+      "chart": "Top Shows (overall)",
+      "name": "The Rest Is History",
+      "author": "Goalhanger",
+      "itunes_id": "1537788786",
+      "url": "https://podcasts.apple.com/us/podcast/the-rest-is-history/id1537788786"
+    },
+    {
+      "rank": 28,
+      "chart": "News",
+      "name": "Breaking Points with Krystal and Saagar",
+      "author": "iHeartPodcasts",
+      "itunes_id": "1570045623",
+      "url": "https://podcasts.apple.com/us/podcast/breaking-points-with-krystal-and-saagar/id1570045623?uo=2"
+    },
+    {
+      "rank": 28,
+      "chart": "Business/Investing",
+      "name": "Total Disruption Podcast",
+      "author": "Michael Libercci, Dr. Jake Clendenning",
+      "itunes_id": "1795796281",
+      "url": "https://podcasts.apple.com/us/podcast/total-disruption-podcast/id1795796281?uo=2"
+    },
+    {
+      "rank": 29,
+      "chart": "Top Shows (overall)",
+      "name": "Love Trapped",
+      "author": "iHeartPodcasts and Glass Podcasts",
+      "itunes_id": "1878220033",
+      "url": "https://podcasts.apple.com/us/podcast/love-trapped/id1878220033"
+    },
+    {
+      "rank": 29,
+      "chart": "Technology",
+      "name": "Deep Questions with Cal Newport",
+      "author": "Cal Newport",
+      "itunes_id": "1515786216",
+      "url": "https://podcasts.apple.com/us/podcast/deep-questions-with-cal-newport/id1515786216?uo=2"
+    },
+    {
+      "rank": 29,
+      "chart": "News",
+      "name": "Ruthless Podcast",
+      "author": "Josh Holmes, Comfortably Smug, Michael Duncan and John Ashbrook",
+      "itunes_id": "1535384390",
+      "url": "https://podcasts.apple.com/us/podcast/ruthless-podcast/id1535384390?uo=2"
+    },
+    {
+      "rank": 29,
+      "chart": "Business/Investing",
+      "name": "Coffee N° 5 with Lara Schmoisman",
+      "author": "Lara Schmoisman",
+      "itunes_id": "1484537932",
+      "url": "https://podcasts.apple.com/us/podcast/coffee-n-5-with-lara-schmoisman/id1484537932?uo=2"
+    },
+    {
+      "rank": 30,
+      "chart": "Technology",
+      "name": "What Comes Next with Arun",
+      "author": "Arunansu Pattanayak",
+      "itunes_id": "6788060249",
+      "url": "https://podcasts.apple.com/us/podcast/what-comes-next-with-arun/id6788060249?uo=2"
+    },
+    {
+      "rank": 30,
+      "chart": "News",
+      "name": "Letters from an American",
+      "author": "Heather Cox Richardson",
+      "itunes_id": "1730358737",
+      "url": "https://podcasts.apple.com/us/podcast/letters-from-an-american/id1730358737?uo=2"
+    },
+    {
+      "rank": 30,
+      "chart": "Business/Investing",
+      "name": "Quest for Success",
+      "author": "Dr. Jerry Cunningham",
+      "itunes_id": "1806233971",
+      "url": "https://podcasts.apple.com/us/podcast/quest-for-success/id1806233971?uo=2"
+    },
+    {
+      "rank": 31,
+      "chart": "Top Shows (overall)",
+      "name": "Fantasy Footballers - Fantasy Football Podcast",
+      "author": "Fantasy Football",
+      "itunes_id": "917453719",
+      "url": "https://podcasts.apple.com/us/podcast/fantasy-footballers-fantasy-football-podcast/id917453719"
+    },
+    {
+      "rank": 31,
+      "chart": "Business",
+      "name": "The Mello Millionaire with Tommy Mello",
+      "author": "Mello Studios",
+      "itunes_id": "1822867941",
+      "url": "https://podcasts.apple.com/us/podcast/the-mello-millionaire-with-tommy-mello/id1822867941?uo=2"
+    },
+    {
+      "rank": 31,
+      "chart": "Technology",
+      "name": "Triple Click",
+      "author": "Maximum Fun",
+      "itunes_id": "1507834679",
+      "url": "https://podcasts.apple.com/us/podcast/triple-click/id1507834679?uo=2"
+    },
+    {
+      "rank": 31,
+      "chart": "News",
+      "name": "The President's Daily Brief",
+      "author": "The First TV",
+      "itunes_id": "1617887885",
+      "url": "https://podcasts.apple.com/us/podcast/the-presidents-daily-brief/id1617887885?uo=2"
+    },
+    {
+      "rank": 31,
+      "chart": "Business/Investing",
+      "name": "Year One",
+      "author": "Year One",
+      "itunes_id": "1896678307",
+      "url": "https://podcasts.apple.com/us/podcast/year-one/id1896678307?uo=2"
+    },
+    {
+      "rank": 32,
+      "chart": "Business",
+      "name": "Financial Audit",
+      "author": "Caleb Hammer",
+      "itunes_id": "1691595080",
+      "url": "https://podcasts.apple.com/us/podcast/financial-audit/id1691595080?uo=2"
+    },
+    {
+      "rank": 32,
+      "chart": "News",
+      "name": "Interesting Times with Ross Douthat",
+      "author": "New York Times Opinion",
+      "itunes_id": "1438024613",
+      "url": "https://podcasts.apple.com/us/podcast/interesting-times-with-ross-douthat/id1438024613?uo=2"
+    },
+    {
+      "rank": 32,
+      "chart": "Business/Investing",
+      "name": "James Reed: all about business",
+      "author": "Reed Global",
+      "itunes_id": "1773330038",
+      "url": "https://podcasts.apple.com/us/podcast/james-reed-all-about-business/id1773330038?uo=2"
+    },
+    {
+      "rank": 33,
+      "chart": "Top Shows (overall)",
+      "name": "The Jamie Kern Lima Show",
+      "author": "Jamie Kern Lima",
+      "itunes_id": "1728723635",
+      "url": "https://podcasts.apple.com/us/podcast/the-jamie-kern-lima-show/id1728723635"
+    },
+    {
+      "rank": 33,
+      "chart": "Technology",
+      "name": "Well There‘s Your Problem",
+      "author": "WTYP is Justin Roczniak, November Kelly, Liam McAnderson, and friends.",
+      "itunes_id": "1487829595",
+      "url": "https://podcasts.apple.com/us/podcast/well-there-s-your-problem/id1487829595?uo=2"
+    },
+    {
+      "rank": 33,
+      "chart": "News",
+      "name": "The World and Everything In It",
+      "author": "WORLD Radio",
+      "itunes_id": "454755642",
+      "url": "https://podcasts.apple.com/us/podcast/the-world-and-everything-in-it/id454755642?uo=2"
+    },
+    {
+      "rank": 33,
+      "chart": "Business/Investing",
+      "name": "My First Million",
+      "author": "Hubspot Media",
+      "itunes_id": "1469759170",
+      "url": "https://podcasts.apple.com/us/podcast/my-first-million/id1469759170?uo=2"
+    },
+    {
+      "rank": 34,
+      "chart": "Top Shows (overall)",
+      "name": "The Dan Le Batard Show",
+      "author": "Dan Le Batard",
+      "itunes_id": "934820588",
+      "url": "https://podcasts.apple.com/us/podcast/the-dan-le-batard-show/id934820588"
+    },
+    {
+      "rank": 34,
+      "chart": "Technology",
+      "name": "The Green Blueprint",
+      "author": "Latitude Media",
+      "itunes_id": "1593203014",
+      "url": "https://podcasts.apple.com/us/podcast/the-green-blueprint/id1593203014?uo=2"
+    },
+    {
+      "rank": 34,
+      "chart": "News",
+      "name": "Lovett or Leave It",
+      "author": "Lovett or Leave It",
+      "itunes_id": "1216346463",
+      "url": "https://podcasts.apple.com/us/podcast/lovett-or-leave-it/id1216346463?uo=2"
+    },
+    {
+      "rank": 34,
+      "chart": "Business/Investing",
+      "name": "The Game with Alex Hormozi",
+      "author": "Alex Hormozi",
+      "itunes_id": "1254720112",
+      "url": "https://podcasts.apple.com/us/podcast/the-game-with-alex-hormozi/id1254720112?uo=2"
+    },
+    {
+      "rank": 35,
+      "chart": "Top Shows (overall)",
+      "name": "Betrayal Weekly",
+      "author": "iHeartPodcasts | Glass Podcasts",
+      "itunes_id": "1615637724",
+      "url": "https://podcasts.apple.com/us/podcast/betrayal-weekly/id1615637724"
+    },
+    {
+      "rank": 35,
+      "chart": "Business",
+      "name": "Growth Triggers: Content Marketing & AI",
+      "author": "Luis Diaz",
+      "itunes_id": "1387192254",
+      "url": "https://podcasts.apple.com/us/podcast/growth-triggers-content-marketing-ai/id1387192254?uo=2"
+    },
+    {
+      "rank": 35,
+      "chart": "Technology",
+      "name": "Endless Thread",
+      "author": "WBUR",
+      "itunes_id": "1321060753",
+      "url": "https://podcasts.apple.com/us/podcast/endless-thread/id1321060753?uo=2"
+    },
+    {
+      "rank": 35,
+      "chart": "News",
+      "name": "Victor Davis Hanson: In His Own Words",
+      "author": "Victor Davis Hanson | The Daily Signal",
+      "itunes_id": "1566731706",
+      "url": "https://podcasts.apple.com/us/podcast/victor-davis-hanson-in-his-own-words/id1566731706?uo=2"
+    },
+    {
+      "rank": 35,
+      "chart": "Business/Investing",
+      "name": "One Part Lion - One Part Lamb with Stephen Scoggins",
+      "author": "Stephen Scoggins",
+      "itunes_id": "1557786484",
+      "url": "https://podcasts.apple.com/us/podcast/one-part-lion-one-part-lamb-with-stephen-scoggins/id1557786484?uo=2"
+    },
+    {
+      "rank": 36,
+      "chart": "Business",
+      "name": "The Chad Durfee Show",
+      "author": "Chad Durfee",
+      "itunes_id": "6794391270",
+      "url": "https://podcasts.apple.com/us/podcast/the-chad-durfee-show/id6794391270?uo=2"
+    },
+    {
+      "rank": 36,
+      "chart": "Technology",
+      "name": "硅谷101",
+      "author": "硅谷101",
+      "itunes_id": "1498541229",
+      "url": "https://podcasts.apple.com/us/podcast/%E7%A1%85%E8%B0%B7101/id1498541229?uo=2"
+    },
+    {
+      "rank": 36,
+      "chart": "News",
+      "name": "All In with Chris Hayes",
+      "author": "MS NOW, Chris Hayes",
+      "itunes_id": "1314170606",
+      "url": "https://podcasts.apple.com/us/podcast/all-in-with-chris-hayes/id1314170606?uo=2"
+    },
+    {
+      "rank": 36,
+      "chart": "Business/Investing",
+      "name": "DecaMillionaire Decoded",
+      "author": "Justin Goodbread",
+      "itunes_id": "1332958360",
+      "url": "https://podcasts.apple.com/us/podcast/decamillionaire-decoded/id1332958360?uo=2"
+    },
+    {
+      "rank": 37,
+      "chart": "Top Shows (overall)",
+      "name": "Live Free with Josh Howerton",
+      "author": "Lakepointe Church",
+      "itunes_id": "1669321198",
+      "url": "https://podcasts.apple.com/us/podcast/live-free-with-josh-howerton/id1669321198"
+    },
+    {
+      "rank": 37,
+      "chart": "Business",
+      "name": "How Much Can I Make? — Real Jobs. Real Stories. Career Insights",
+      "author": "Mirav Ozeri - Career Insights Journalist",
+      "itunes_id": "1795698096",
+      "url": "https://podcasts.apple.com/us/podcast/how-much-can-i-make-real-jobs-real-stories-career-insights/id1795698096?uo=2"
+    },
+    {
+      "rank": 37,
+      "chart": "Technology",
+      "name": "Security Now (Audio)",
+      "author": "TWiT",
+      "itunes_id": "79016499",
+      "url": "https://podcasts.apple.com/us/podcast/security-now-audio/id79016499?uo=2"
+    },
+    {
+      "rank": 37,
+      "chart": "News",
+      "name": "Miss Understood with Rachel Uchitel",
+      "author": "Rachel Uchitel",
+      "itunes_id": "1676849476",
+      "url": "https://podcasts.apple.com/us/podcast/miss-understood-with-rachel-uchitel/id1676849476?uo=2"
+    },
+    {
+      "rank": 37,
+      "chart": "Business/Investing",
+      "name": "B2B Vault: The Biz To Biz Podcast",
+      "author": "Allen Kopelman",
+      "itunes_id": "1589977495",
+      "url": "https://podcasts.apple.com/us/podcast/b2b-vault-the-biz-to-biz-podcast/id1589977495?uo=2"
+    },
+    {
+      "rank": 38,
+      "chart": "Business",
+      "name": "Morning Brew Daily",
+      "author": "Morning Brew",
+      "itunes_id": "1480059697",
+      "url": "https://podcasts.apple.com/us/podcast/morning-brew-daily/id1480059697?uo=2"
+    },
+    {
+      "rank": 38,
+      "chart": "Technology",
+      "name": "Our Town",
+      "author": "Bloomberg and iHeartPodcasts",
+      "itunes_id": "1802010242",
+      "url": "https://podcasts.apple.com/us/podcast/our-town/id1802010242?uo=2"
+    },
+    {
+      "rank": 38,
+      "chart": "News",
+      "name": "Morning Joe",
+      "author": "Joe Scarborough, Mika Brzezinski, MS NOW, Willie Geist",
+      "itunes_id": "974299441",
+      "url": "https://podcasts.apple.com/us/podcast/morning-joe/id974299441?uo=2"
+    },
+    {
+      "rank": 38,
+      "chart": "Business/Investing",
+      "name": "The Daily Mastermind",
+      "author": "George Wright III",
+      "itunes_id": "1451120629",
+      "url": "https://podcasts.apple.com/us/podcast/the-daily-mastermind/id1451120629?uo=2"
+    },
+    {
+      "rank": 39,
+      "chart": "Business",
+      "name": "A Bit of Optimism",
+      "author": "Simon Sinek",
+      "itunes_id": "1515385282",
+      "url": "https://podcasts.apple.com/us/podcast/a-bit-of-optimism/id1515385282?uo=2"
+    },
+    {
+      "rank": 39,
+      "chart": "Technology",
+      "name": "Practical AI",
+      "author": "Daniel Whitenack and Chris Benson",
+      "itunes_id": "1406537385",
+      "url": "https://podcasts.apple.com/us/podcast/practical-ai/id1406537385?uo=2"
+    },
+    {
+      "rank": 39,
+      "chart": "News",
+      "name": "What A Day",
+      "author": "What A Day",
+      "itunes_id": "1483692776",
+      "url": "https://podcasts.apple.com/us/podcast/what-a-day/id1483692776?uo=2"
+    },
+    {
+      "rank": 39,
+      "chart": "Business/Investing",
+      "name": "The Way with Dino Katsiametis",
+      "author": "Dino Katsiametis",
+      "itunes_id": "1775300814",
+      "url": "https://podcasts.apple.com/us/podcast/the-way-with-dino-katsiametis/id1775300814?uo=2"
+    },
+    {
+      "rank": 40,
+      "chart": "Top Shows (overall)",
+      "name": "Stuff You Should Know",
+      "author": "iHeartPodcasts",
+      "itunes_id": "278981407",
+      "url": "https://podcasts.apple.com/us/podcast/stuff-you-should-know/id278981407"
+    },
+    {
+      "rank": 40,
+      "chart": "Technology",
+      "name": "What Bitcoin Did",
+      "author": "Danny Knowles",
+      "itunes_id": "1482455669",
+      "url": "https://podcasts.apple.com/us/podcast/what-bitcoin-did/id1482455669?uo=2"
+    },
+    {
+      "rank": 40,
+      "chart": "News",
+      "name": "Consider This from NPR",
+      "author": "NPR",
+      "itunes_id": "1503226625",
+      "url": "https://podcasts.apple.com/us/podcast/consider-this-from-npr/id1503226625?uo=2"
+    },
+    {
+      "rank": 40,
+      "chart": "Business/Investing",
+      "name": "Thinking Boldly!",
+      "author": "Heidi Webb and Julie Field",
+      "itunes_id": "1870916761",
+      "url": "https://podcasts.apple.com/us/podcast/thinking-boldly/id1870916761?uo=2"
+    },
+    {
+      "rank": 41,
+      "chart": "Business",
+      "name": "PBD Podcast",
+      "author": "PBD Podcast",
+      "itunes_id": "1526697745",
+      "url": "https://podcasts.apple.com/us/podcast/pbd-podcast/id1526697745?uo=2"
+    },
+    {
+      "rank": 41,
+      "chart": "Technology",
+      "name": "Uncanny Valley | WIRED",
+      "author": "WIRED",
+      "itunes_id": "266391367",
+      "url": "https://podcasts.apple.com/us/podcast/uncanny-valley-wired/id266391367?uo=2"
+    },
+    {
+      "rank": 41,
+      "chart": "News",
+      "name": "The Michael Knowles Show",
+      "author": "The Daily Wire",
+      "itunes_id": "1266577963",
+      "url": "https://podcasts.apple.com/us/podcast/the-michael-knowles-show/id1266577963?uo=2"
+    },
+    {
+      "rank": 41,
+      "chart": "Business/Investing",
+      "name": "The Mindful Enterprise: Spirituality and Success for the Modern Leader",
+      "author": "Thomas FreeMe",
+      "itunes_id": "6794637754",
+      "url": "https://podcasts.apple.com/us/podcast/the-mindful-enterprise-spirituality-and-success/id6794637754?uo=2"
+    },
+    {
+      "rank": 42,
+      "chart": "Business",
+      "name": "The Indicator from Planet Money",
+      "author": "NPR",
+      "itunes_id": "1320118593",
+      "url": "https://podcasts.apple.com/us/podcast/the-indicator-from-planet-money/id1320118593?uo=2"
+    },
+    {
+      "rank": 42,
+      "chart": "News",
+      "name": "The Last Word with Lawrence O’Donnell",
+      "author": "Lawrence O'Donnell, MS NOW",
+      "itunes_id": "1316084734",
+      "url": "https://podcasts.apple.com/us/podcast/the-last-word-with-lawrence-odonnell/id1316084734?uo=2"
+    },
+    {
+      "rank": 42,
+      "chart": "Business/Investing",
+      "name": "Networth and Chill with Your Rich BFF",
+      "author": "Vivian Tu",
+      "itunes_id": "1676999261",
+      "url": "https://podcasts.apple.com/us/podcast/networth-and-chill-with-your-rich-bff/id1676999261?uo=2"
+    },
+    {
+      "rank": 43,
+      "chart": "Top Shows (overall)",
+      "name": "Giggly Squad",
+      "author": "Hannah Berner & Paige DeSorbo",
+      "itunes_id": "1536352412",
+      "url": "https://podcasts.apple.com/us/podcast/giggly-squad/id1536352412"
+    },
+    {
+      "rank": 43,
+      "chart": "Technology",
+      "name": "Life, Automated",
+      "author": "Ryan Institute on Complexity at Northwestern University’s Kellogg School of Management",
+      "itunes_id": "6783436225",
+      "url": "https://podcasts.apple.com/us/podcast/life-automated/id6783436225?uo=2"
+    },
+    {
+      "rank": 43,
+      "chart": "News",
+      "name": "The Clay Travis and Buck Sexton Show",
+      "author": "iHeartPodcasts",
+      "itunes_id": "1498106610",
+      "url": "https://podcasts.apple.com/us/podcast/the-clay-travis-and-buck-sexton-show/id1498106610?uo=2"
+    },
+    {
+      "rank": 43,
+      "chart": "Business/Investing",
+      "name": "The CJ Moneyway Show",
+      "author": "CJ Moneyway, Bleav",
+      "itunes_id": "1707761906",
+      "url": "https://podcasts.apple.com/us/podcast/the-cj-moneyway-show/id1707761906?uo=2"
+    },
+    {
+      "rank": 44,
+      "chart": "Top Shows (overall)",
+      "name": "The Team House",
+      "author": "dee takos",
+      "itunes_id": "1492797340",
+      "url": "https://podcasts.apple.com/us/podcast/the-team-house/id1492797340"
+    },
+    {
+      "rank": 44,
+      "chart": "Technology",
+      "name": "Accidental Tech Podcast",
+      "author": "Marco Arment, Casey Liss, John Siracusa",
+      "itunes_id": "617416468",
+      "url": "https://podcasts.apple.com/us/podcast/accidental-tech-podcast/id617416468?uo=2"
+    },
+    {
+      "rank": 44,
+      "chart": "News",
+      "name": "Sidebar with Katie Phang",
+      "author": "Katie Phang",
+      "itunes_id": "1886801652",
+      "url": "https://podcasts.apple.com/us/podcast/sidebar-with-katie-phang/id1886801652?uo=2"
+    },
+    {
+      "rank": 44,
+      "chart": "Business/Investing",
+      "name": "Team Lead Talks",
+      "author": "Andrew Becker",
+      "itunes_id": "1867510015",
+      "url": "https://podcasts.apple.com/us/podcast/team-lead-talks/id1867510015?uo=2"
+    },
+    {
+      "rank": 45,
+      "chart": "Business",
+      "name": "We Fixed It, You're Welcome",
+      "author": "We Fixed It, You're Welcome",
+      "itunes_id": "1765605600",
+      "url": "https://podcasts.apple.com/us/podcast/we-fixed-it-youre-welcome/id1765605600?uo=2"
+    },
+    {
+      "rank": 45,
+      "chart": "Technology",
+      "name": "Tech Brew Ride Home",
+      "author": "Morning Brew",
+      "itunes_id": "1355212895",
+      "url": "https://podcasts.apple.com/us/podcast/tech-brew-ride-home/id1355212895?uo=2"
+    },
+    {
+      "rank": 45,
+      "chart": "News",
+      "name": "Louder with Crowder",
+      "author": "Louder with Crowder",
+      "itunes_id": "929121341",
+      "url": "https://podcasts.apple.com/us/podcast/louder-with-crowder/id929121341?uo=2"
+    },
+    {
+      "rank": 45,
+      "chart": "Business/Investing",
+      "name": "The Business Blueprint",
+      "author": "Alex Carter",
+      "itunes_id": "1896806716",
+      "url": "https://podcasts.apple.com/us/podcast/the-business-blueprint/id1896806716?uo=2"
+    },
+    {
+      "rank": 46,
+      "chart": "Technology",
+      "name": "The AI XR Podcast.",
+      "author": "Charlie Fink Productions",
+      "itunes_id": "1526505913",
+      "url": "https://podcasts.apple.com/us/podcast/the-ai-xr-podcast/id1526505913?uo=2"
+    },
+    {
+      "rank": 46,
+      "chart": "News",
+      "name": "Pod Save the World",
+      "author": "Pod Save the World",
+      "itunes_id": "1200016351",
+      "url": "https://podcasts.apple.com/us/podcast/pod-save-the-world/id1200016351?uo=2"
+    },
+    {
+      "rank": 46,
+      "chart": "Business/Investing",
+      "name": "The Undeniable Podcast",
+      "author": "JOHN WILLIAMS",
+      "itunes_id": "6796486008",
+      "url": "https://podcasts.apple.com/us/podcast/the-undeniable-podcast/id6796486008?uo=2"
+    },
+    {
+      "rank": 47,
+      "chart": "Business",
+      "name": "How I Invest with David Weisburd",
+      "author": "David Weisburd",
+      "itunes_id": "1697772657",
+      "url": "https://podcasts.apple.com/us/podcast/how-i-invest-with-david-weisburd/id1697772657?uo=2"
+    },
+    {
+      "rank": 47,
+      "chart": "Technology",
+      "name": "Everyday AI Podcast – An AI and ChatGPT Podcast",
+      "author": "Everyday AI",
+      "itunes_id": "1683401861",
+      "url": "https://podcasts.apple.com/us/podcast/everyday-ai-podcast-an-ai-and-chatgpt-podcast/id1683401861?uo=2"
+    },
+    {
+      "rank": 47,
+      "chart": "News",
+      "name": "The Rush Lindell Show",
+      "author": "The Rush Lindell Show",
+      "itunes_id": "1896868870",
+      "url": "https://podcasts.apple.com/us/podcast/the-rush-lindell-show/id1896868870?uo=2"
+    },
+    {
+      "rank": 47,
+      "chart": "Business/Investing",
+      "name": "The Koerner Office - Business Ideas and Deep Dives with Chris Koerner",
+      "author": "Chris Koerner",
+      "itunes_id": "1705154662",
+      "url": "https://podcasts.apple.com/us/podcast/the-koerner-office-business-ideas-and-deep-dives/id1705154662?uo=2"
+    },
+    {
+      "rank": 48,
+      "chart": "Top Shows (overall)",
+      "name": "The Bible in a Year (with Fr. Mike Schmitz)",
+      "author": "Ascension",
+      "itunes_id": "1539568321",
+      "url": "https://podcasts.apple.com/us/podcast/the-bible-in-a-year-with-fr-mike-schmitz/id1539568321"
+    },
+    {
+      "rank": 48,
+      "chart": "Business",
+      "name": "Omni Talk Retail",
+      "author": "Omni Talk Retail",
+      "itunes_id": "1354437454",
+      "url": "https://podcasts.apple.com/us/podcast/omni-talk-retail/id1354437454?uo=2"
+    },
+    {
+      "rank": 48,
+      "chart": "Technology",
+      "name": "Clean Power Hour",
+      "author": "Tim Montague, John Weaver",
+      "itunes_id": "1582667621",
+      "url": "https://podcasts.apple.com/us/podcast/clean-power-hour/id1582667621?uo=2"
+    },
+    {
+      "rank": 48,
+      "chart": "News",
+      "name": "Political Gabfest",
+      "author": "Slate Podcasts",
+      "itunes_id": "158004641",
+      "url": "https://podcasts.apple.com/us/podcast/political-gabfest/id158004641?uo=2"
+    },
+    {
+      "rank": 48,
+      "chart": "Business/Investing",
+      "name": "Diary of a CFO | Financial Strategies for Smart Business Growth",
+      "author": "Ademola Isimeme Odewade, MBA, ACA, BSc. (Economics)",
+      "itunes_id": "1820947348",
+      "url": "https://podcasts.apple.com/us/podcast/diary-of-a-cfo-financial-strategies-for-smart/id1820947348?uo=2"
+    },
+    {
+      "rank": 49,
+      "chart": "Top Shows (overall)",
+      "name": "Passion Struck with John R. Miles",
+      "author": "Passion Struck with John R. Miles",
+      "itunes_id": "1553279283",
+      "url": "https://podcasts.apple.com/us/podcast/passion-struck-with-john-r-miles/id1553279283"
+    },
+    {
+      "rank": 49,
+      "chart": "Business",
+      "name": "Wake Up to Wealth",
+      "author": "Brandon Brittingham",
+      "itunes_id": "1707217868",
+      "url": "https://podcasts.apple.com/us/podcast/wake-up-to-wealth/id1707217868?uo=2"
+    },
+    {
+      "rank": 49,
+      "chart": "Technology",
+      "name": "罗永浩的十字路口",
+      "author": "罗永浩的十字路口",
+      "itunes_id": "1834069371",
+      "url": "https://podcasts.apple.com/us/podcast/%E7%BD%97%E6%B0%B8%E6%B5%A9%E7%9A%84%E5%8D%81%E5%AD%97%E8%B7%AF%E5%8F%A3/id1834069371?uo=2"
+    },
+    {
+      "rank": 49,
+      "chart": "News",
+      "name": "On the Media",
+      "author": "WNYC Studios",
+      "itunes_id": "73330715",
+      "url": "https://podcasts.apple.com/us/podcast/on-the-media/id73330715?uo=2"
+    },
+    {
+      "rank": 49,
+      "chart": "Business/Investing",
+      "name": "Beyond The Skills Podcast",
+      "author": "Chris Rood",
+      "itunes_id": "1634876019",
+      "url": "https://podcasts.apple.com/us/podcast/beyond-the-skills-podcast/id1634876019?uo=2"
+    },
+    {
+      "rank": 50,
+      "chart": "Top Shows (overall)",
+      "name": "Sword and Scale",
+      "author": "Sword and Scale",
+      "itunes_id": "790487079",
+      "url": "https://podcasts.apple.com/us/podcast/sword-and-scale/id790487079"
+    },
+    {
+      "rank": 50,
+      "chart": "Technology",
+      "name": "MacBreak Weekly (Audio)",
+      "author": "TWiT",
+      "itunes_id": "179237749",
+      "url": "https://podcasts.apple.com/us/podcast/macbreak-weekly-audio/id179237749?uo=2"
+    },
+    {
+      "rank": 50,
+      "chart": "News",
+      "name": "The Commentary Magazine Podcast",
+      "author": "Commentary Magazine",
+      "itunes_id": "1081967784",
+      "url": "https://podcasts.apple.com/us/podcast/the-commentary-magazine-podcast/id1081967784?uo=2"
+    },
+    {
+      "rank": 50,
+      "chart": "Business/Investing",
+      "name": "King Dems Podcast | Growth Mindset, Leadership, AI and Business Insights",
+      "author": "Ademola Isimeme Odewade, MBA, ACA, BSc. (Economics)",
+      "itunes_id": "1717328584",
+      "url": "https://podcasts.apple.com/us/podcast/king-dems-podcast-growth-mindset-leadership-ai-and/id1717328584?uo=2"
+    }
+  ],
+  "already_covered": [
+    {
+      "rank": 2,
+      "chart": "Technology",
+      "name": "All-In with Chamath, Jason, Sacks & Friedberg",
+      "author": "All-In Podcast, LLC",
+      "itunes_id": "1502871393",
+      "url": "https://podcasts.apple.com/us/podcast/all-in-with-chamath-jason-sacks-friedberg/id1502871393?uo=2"
+    },
+    {
+      "rank": 3,
+      "chart": "Top Shows (overall)",
+      "name": "The Joe Rogan Experience",
+      "author": "Joe Rogan",
+      "itunes_id": "360084272",
+      "url": "https://podcasts.apple.com/us/podcast/the-joe-rogan-experience/id360084272"
+    },
+    {
+      "rank": 3,
+      "chart": "Technology",
+      "name": "Acquired",
+      "author": "Ben Gilbert and David Rosenthal",
+      "itunes_id": "1050462261",
+      "url": "https://podcasts.apple.com/us/podcast/acquired/id1050462261?uo=2"
+    },
+    {
+      "rank": 4,
+      "chart": "Technology",
+      "name": "Hard Fork",
+      "author": "The New York Times",
+      "itunes_id": "1528594034",
+      "url": "https://podcasts.apple.com/us/podcast/hard-fork/id1528594034?uo=2"
+    },
+    {
+      "rank": 15,
+      "chart": "Technology",
+      "name": "Lex Fridman Podcast",
+      "author": "Lex Fridman",
+      "itunes_id": "1434243584",
+      "url": "https://podcasts.apple.com/us/podcast/lex-fridman-podcast/id1434243584?uo=2"
+    },
+    {
+      "rank": 16,
+      "chart": "Business/Investing",
+      "name": "Founders",
+      "author": "David Senra",
+      "itunes_id": "1141877104",
+      "url": "https://podcasts.apple.com/us/podcast/founders/id1141877104?uo=2"
+    },
+    {
+      "rank": 18,
+      "chart": "News",
+      "name": "The Journal.",
+      "author": "The Wall Street Journal & Spotify Studios",
+      "itunes_id": "1469394914",
+      "url": "https://podcasts.apple.com/us/podcast/the-journal/id1469394914?uo=2"
+    },
+    {
+      "rank": 19,
+      "chart": "Technology",
+      "name": "Dwarkesh Podcast",
+      "author": "Dwarkesh Patel",
+      "itunes_id": "1516093381",
+      "url": "https://podcasts.apple.com/us/podcast/dwarkesh-podcast/id1516093381?uo=2"
+    },
+    {
+      "rank": 23,
+      "chart": "Business",
+      "name": "Prof G Markets",
+      "author": "Vox Media Podcast Network",
+      "itunes_id": "1744631325",
+      "url": "https://podcasts.apple.com/us/podcast/prof-g-markets/id1744631325?uo=2"
+    },
+    {
+      "rank": 27,
+      "chart": "Technology",
+      "name": "The a16z Show",
+      "author": "Andreessen Horowitz",
+      "itunes_id": "842818711",
+      "url": "https://podcasts.apple.com/us/podcast/the-a16z-show/id842818711?uo=2"
+    },
+    {
+      "rank": 28,
+      "chart": "Technology",
+      "name": "Lenny's Podcast: Product | Career | Growth",
+      "author": "Lenny Rachitsky",
+      "itunes_id": "1627920305",
+      "url": "https://podcasts.apple.com/us/podcast/lennys-podcast-product-career-growth/id1627920305?uo=2"
+    },
+    {
+      "rank": 32,
+      "chart": "Technology",
+      "name": "Y Combinator Startup Podcast",
+      "author": "Y Combinator",
+      "itunes_id": "1236907421",
+      "url": "https://podcasts.apple.com/us/podcast/y-combinator-startup-podcast/id1236907421?uo=2"
+    },
+    {
+      "rank": 42,
+      "chart": "Technology",
+      "name": "Latent Space: The AI Engineer Podcast",
+      "author": "Latent.Space",
+      "itunes_id": "1674008350",
+      "url": "https://podcasts.apple.com/us/podcast/latent-space-the-ai-engineer-podcast/id1674008350?uo=2"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+# CJ 订阅列表（截图 OCR，格式：显示名 | 作者/发布方 | 搜索关键词覆盖）
+# 一行一档。第三列为空则用「显示名 作者」去 iTunes 搜。
+Odds on Open|Ethan Kho|
+Capital Allocators|Ted Seides|Capital Allocators Inside the Institutional Investment Industry
+UBS Global Research Pod Hub|UBS Global Research|
+Short Briefings on Long Term Thinking|Baillie Gifford|
+Grit|Kleiner Perkins|Grit Kleiner Perkins Joubin Mirzadeh
+Generating Alpha|Amir Fischer|
+Chat With Traders|Kevin Avery|
+Lenny's Podcast|Lenny Rachitsky|Lenny's Podcast Product Growth Career
+AI Ascent|Sequoia Capital|
+In Good Company|Norges Bank Investment Management|In Good Company with Nicolai Tangen
+Talks at GS|Goldman Sachs|
+Stratechery|Ben Thompson|Stratechery Ben Thompson
+Global Research Unlocked|BofA Global Research|
+David Senra|Scicomm Media|Founders David Senra
+Latent Space|Latent.Space|Latent Space AI Engineer Podcast
+Lex Fridman Podcast|Lex Fridman|
+The Cognitive Revolution|Erik Torenberg Nathan Labenz|Cognitive Revolution AI Builders
+The Long-Short|AIMA|The Long-Short AIMA
+Basis Points|Equity Mates Media|Basis Points Equity Mates
+Longriver Podcast|Graham Rhodes|
+Y Combinator Startup Podcast|Y Combinator|Y Combinator Startup Podcast
+Investing In Integrity|Scholars of Finance|
+FP&A Today|Glenn Hopper|FP&A Today Datarails
+In the Know|Bernstein Research|In the Know Bernstein
+ACQ2 by Acquired|Ben Gilbert and David Rosenthal|ACQ2 Acquired
+Masters of Scale|WaitWhat|
+The Turnaround Podcast|Stephen Phillips|The Turnaround Podcast FreiLibertas

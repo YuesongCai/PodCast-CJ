@@ -1,0 +1,34 @@
+# ② 盲区 watchlist：CJ 没订阅、但不想 miss 的高流量节目
+#
+# 为什么不直接用 Apple 榜单：Business 榜前列是 REAL AF / Habits and Hustle
+# 这类励志带货内容，对 allocator 是纯噪音。榜单优化大众流行度，
+# 不是「不听会后悔」。所以主力用策展列表，榜单只当雷达（见 discover.py --charts）。
+#
+# 格式同 shows_seed.txt：显示名 | 作者 | 搜索关键词覆盖
+# CJ 可以随时增删这个文件，不用改代码。
+
+# --- 他明确点名「不想听但想知道讲了什么」的 ---
+All-In|Chamath Jason Sacks Friedberg|All-In with Chamath Jason Sacks & Friedberg
+The Joe Rogan Experience|Joe Rogan|
+
+# --- 一级市场 / 科技投资，信号密度高 ---
+Acquired|Ben Gilbert and David Rosenthal|Acquired Ben Gilbert David Rosenthal
+Invest Like the Best|Patrick O'Shaughnessy|Invest Like the Best with Patrick O'Shaughnessy
+BG2Pod|Brad Gerstner Bill Gurley|BG2Pod with Brad Gerstner and Bill Gurley
+Dwarkesh Podcast|Dwarkesh Patel|
+No Priors|Sarah Guo Elad Gil|No Priors Artificial Intelligence Technology Startups
+a16z Podcast|Andreessen Horowitz|
+
+# --- 宏观 / 市场，覆盖他 sell-side 之外的视角 ---
+Odd Lots|Bloomberg|Odd Lots Joe Weisenthal Tracy Alloway
+The Journal|The Wall Street Journal|The Journal Wall Street Journal Gimlet
+Prof G Markets|Scott Galloway|Prof G Markets Ed Elson
+Bloomberg Surveillance|Bloomberg|
+
+# --- 补 Stratechery 缺口：Ben Thompson 的公开节目 ---
+Sharp Tech with Ben Thompson|Andrew Sharp and Ben Thompson|
+Exponent|Ben Thompson James Allworth|
+
+# --- AI 前沿，他列表里 AI 侧偏应用，这几档补研究/基建视角 ---
+Hard Fork|The New York Times|Hard Fork Kevin Roose Casey Newton
+Training Data|Sequoia Capital|

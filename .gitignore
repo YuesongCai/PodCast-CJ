@@ -1,0 +1,26 @@
+# 凭据
+.env
+
+# 虚拟环境（508MB，用 README 里的命令重建）
+.venv/
+
+# transcript 正文缓存：体积大、且是第三方内容，不进仓库
+cache/
+
+# 运行时状态与中间产物
+logs/
+data/*.log
+data/seen_episodes.json
+data/_bitable_payload.json
+data/bitable.json
+
+# 每日产出的正文与判断——内容来自第三方播客，只保留一份示例
+data/episodes.json
+data/watchlist_episodes.json
+data/transcripts_index*.json
+data/digest_pack.json
+
+# Python
+__pycache__/
+*.pyc
+.DS_Store
