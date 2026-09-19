@@ -74,10 +74,6 @@ def make_judgments(pack):
         "pm_summary": ("Today's flow establishes the power constraint as a financeable "
                        "line item: 1) orbital DC breakeven at US$500/kg, 2) construction "
                        "payrolls +22k attributed to datacentre build."),
-        "debates": [{"question": "Q#1: Is the power constraint priced?",
-                     "conclusion": "Not in semis (-ve), partly in IPPs (+ve).",
-                     "detail": "Two shows diverge on the re-contracting timeline.",
-                     "shows": ["Show 0"]}],
         "items": items,
         "gaps": ["AI Ascent: Spotify-exclusive, no public RSS."],
     }
@@ -162,7 +158,6 @@ class TestJudgeValidation(Base):
         """旧字段名仍是合法别名：sync_bitable 和历史文件还在用。"""
         j = copy.deepcopy(self.j)
         j["today_in_one_line"] = j.pop("pm_summary")
-        j["cross_cutting"] = j.pop("debates")
         for x in j["items"]:
             x["for_you"] = x.pop("read_across", "")
         self.assertEqual(J.validate(j, self.pack), [])
@@ -391,6 +386,23 @@ class TestEmail(Base):
                       "SCREENED OUT", "READ-ACROSS"):
             self.assertIn(token, html, f"缺分栏 {token}")
 
+    def test_no_cross_show_essay_section(self):
+        """跨节目 debates 已撤：那是分析不是筛选。历史文件里带着也不该渲染。"""
+        j = copy.deepcopy(self.j)
+        j["debates"] = [{"question": "Q#1: manufactured theme?",
+                         "conclusion": "should not render",
+                         "detail": "should not render", "shows": ["Show 0"]}]
+        for blob in (EM.render_html(j, self.idx, "d"),
+                     EM.render_text(j, self.idx, "d"),
+                     "".join(TG.paginate(TG._blocks(j, self.idx, "d")))):
+            self.assertNotIn("should not render", blob)
+            self.assertNotIn("DEBATE", blob.upper())
+
+    def test_legacy_debates_do_not_break_validation(self):
+        j = copy.deepcopy(self.j)
+        j["cross_cutting"] = [{"theme": "旧字段", "detail": "历史文件里有"}]
+        self.assertEqual(J.validate(j, self.pack), [])
+
     def test_email_safe_fonts_only(self):
         """邮件里 @font-face 基本无效，只能用全平台自带字体。"""
         html = EM.render_html(self.j, self.idx, "d")
@@ -457,6 +469,141 @@ class TestShowsTable(unittest.TestCase):
         rows, _ = ST.build(feeds, [], [])
         md = ST.to_markdown(rows, "t")
         self.assertIn("A\\|B", md)
+
+
+class TestFeedResolution(unittest.TestCase):
+    """节目名 -> RSS 的匹配打分。抓的是张冠李戴，比抓不到更糟。"""
+
+    def setUp(self):
+        import resolve_feeds
+        self.R = resolve_feeds
+
+    def test_cjk_survives_normalisation(self):
+        """原来的 [^a-z0-9] 会把中文抹成空串，于是所有中文节目名彼此「相等」拿满分。
+        实测后果：「科技早知道」被错配成《科幻新闻早知道》。"""
+        self.assertIn("科技早知道", self.R.norm("What's Next｜科技早知道"))
+        self.assertNotEqual(self.R.norm("科技早知道"), "")
+        self.assertNotEqual(self.R.norm("科技早知道"),
+                            self.R.norm("科幻新闻早知道"))
+
+    def test_picks_correct_chinese_show_over_decoy(self):
+        right = {"collectionName": "What's Next｜科技早知道",
+                 "artistName": "声动活泼", "feedUrl": "https://x/1"}
+        decoy = {"collectionName": "《科幻新闻早知道》｜全球科技科幻新闻直通车",
+                 "artistName": "科幻深读小峰", "feedUrl": "https://x/2"}
+        s_right = self.R.score(right, "科技早知道", "声动活泼")
+        s_decoy = self.R.score(decoy, "科技早知道", "声动活泼")
+        self.assertGreater(s_right, s_decoy + 40,
+                           f"正确 {s_right} vs 干扰 {s_decoy}，区分度不够")
+
+    def test_empty_normalisation_is_penalised(self):
+        """两边归一化后都为空不能算匹配。"""
+        blank = {"collectionName": "!!! ???", "artistName": "@@@",
+                 "feedUrl": "https://x/3"}
+        self.assertLess(self.R.score(blank, "###", "$$$"), 0)
+
+    def test_missing_feed_url_is_disqualifying(self):
+        no_feed = {"collectionName": "Odd Lots", "artistName": "Bloomberg"}
+        self.assertLess(self.R.score(no_feed, "Odd Lots", "Bloomberg"), 0)
+
+    def test_chinese_tokenisation_is_per_character(self):
+        self.assertEqual(self.R._tokens("科技早知道"), list("科技早知道"))
+        self.assertEqual(self.R._tokens("odd lots"), ["odd", "lots"])
+        self.assertEqual(self.R._tokens("odd 早知道"), ["odd"] + list("早知道"))
+
+
+class TestTranscriptLanguageGuard(unittest.TestCase):
+    """英文 ASR 模型喂中文音频会输出音译噪音——长度正常、语法通顺、内容全是编的。
+    这比拿不到正文危险得多：拿不到会标 notes_only 并禁止编造 key points，
+    而噪音会让判断环节煞有介事地胡说，读者看不出来。"""
+
+    def setUp(self):
+        import get_transcript
+        self.G = get_transcript
+        self.zh_ep = {"show": "科技早知道",
+                      "title": "Snap 做了十年眼镜，终于等到它的时代了吗？",
+                      "notes": "本期我们聊聊 Snap 的智能眼镜业务"}
+        self.en_ep = {"show": "Odd Lots", "title": "A Goldman M&A Banker",
+                      "notes": "Tracy and Joe talk to Gene Sykes"}
+
+    def test_rejects_transliterated_noise(self):
+        """实测样本：62 分钟中文节目转出 7263 字符、0 个中文字符。"""
+        noise = ("T minus CO, that means Hasabi's Jose and I don't know Jan "
+                 "Hoshua. Well, each away AI should and five Junji Gongji. ") * 40
+        self.assertIsNotNone(self.G.language_mismatch(noise, self.zh_ep))
+
+    def test_accepts_real_chinese_transcript(self):
+        good = "我们今天聊聊 Snap 这家公司的智能眼镜业务，过去十年它做了什么。" * 40
+        self.assertIsNone(self.G.language_mismatch(good, self.zh_ep))
+
+    def test_ignores_english_shows(self):
+        en = "Tracy and Joe talk to Gene Sykes about the Olympics bid. " * 40
+        self.assertIsNone(self.G.language_mismatch(en, self.en_ep))
+
+    def test_routes_chinese_audio_to_whisper(self):
+        engine, model, lang = self.G.asr_engine_for(self.zh_ep)
+        self.assertEqual(engine, "whisper")
+        self.assertEqual(lang, "zh")
+        self.assertIn("whisper", model)
+
+    def test_routes_english_audio_to_parakeet(self):
+        engine, _, lang = self.G.asr_engine_for(self.en_ep)
+        self.assertEqual(engine, "parakeet")
+        self.assertIsNone(lang)
+
+    def test_mixed_title_with_mostly_english_stays_parakeet(self):
+        """偶尔一个中文词不该把整档切到慢引擎。"""
+        ep = {"show": "Acquired", "title": "TSMC: the 台积电 story",
+              "notes": "Ben and David on the semiconductor giant's history " * 5}
+        self.assertEqual(self.G.asr_engine_for(ep)[0], "parakeet")
+
+
+class TestFetchWindows(unittest.TestCase):
+    """回看窗口按节目自己的更新节奏推导。窗口管覆盖率，tier 管判断，两件事。"""
+
+    def setUp(self):
+        import fetch_episodes
+        self.F = fetch_episodes
+        from datetime import datetime, timedelta, timezone
+        self.now = datetime(2026, 9, 19, tzinfo=timezone.utc)
+        self.td = timedelta
+
+    def dates(self, *day_offsets):
+        return [self.now - self.td(days=d) for d in day_offsets]
+
+    def test_same_day_pairs_do_not_collapse_the_median(self):
+        """Capital Cycle 每次同一天连发两集，间隔序列里一半是 0。
+        不按发布日去重的话中位数被压成 0，月更节目窗口算成 2 天、永远抓不到。"""
+        pub = []
+        for d in (22, 50, 81, 113):
+            pub += self.dates(d, d)          # 每个日期两集
+        win, basis = self.F.effective_window("fresh", pub, 2.0)
+        self.assertGreater(win, 25, f"窗口 {win} 天接不住月更节目（{basis}）")
+
+    def test_infrequent_but_time_sensitive_show_is_still_reachable(self):
+        """TCW 90 天只发 2 集却是高时效。tier 不该把它的窗口压到抓不到。"""
+        win, _ = self.F.effective_window("fresh", self.dates(10, 42, 75), 2.0)
+        self.assertGreaterEqual(win, 12)
+
+    def test_evergreen_floor_applies_to_frequent_shows(self):
+        """长青档就算天天更新也该多看几天。"""
+        win, basis = self.F.effective_window(
+            "evergreen", self.dates(0, 1, 2, 3, 4, 5), 2.0)
+        self.assertGreaterEqual(win, 14)
+        self.assertIn("下限", basis)
+
+    def test_window_is_capped(self):
+        win, _ = self.F.effective_window("evergreen", self.dates(1, 200, 400), 2.0)
+        self.assertLessEqual(win, self.F.MAX_WINDOW_DAYS)
+
+    def test_no_cadence_data_falls_back_to_tier_floor(self):
+        win, basis = self.F.effective_window("semi", [], 2.0)
+        self.assertEqual(win, 5.0)
+        self.assertIn("无节奏", basis)
+
+    def test_unknown_tier_defaults_conservatively(self):
+        win, _ = self.F.effective_window("nonsense", self.dates(0, 1, 2), 2.0)
+        self.assertLessEqual(win, 10)
 
 
 class TestCommon(unittest.TestCase):

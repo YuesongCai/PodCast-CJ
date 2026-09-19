@@ -203,6 +203,10 @@ def build(episodes, section, budget):
             "show": ep["show"],
             "title": ep["title"],
             "published": ep.get("published_date"),
+            # 时效性分层 + 距今天数：判断环节靠这两个字段决定「旧」要不要扣分。
+            # 高时效节目过了几天就该降级，长青节目不该。
+            "tier": ep.get("tier"),
+            "age_days": ep.get("age_days"),
             "duration_min": round(ep["duration_sec"] / 60) if ep.get("duration_sec") else None,
             "link": ep.get("link"),
             "youtube": yt,

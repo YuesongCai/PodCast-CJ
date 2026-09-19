@@ -104,13 +104,6 @@ def headline(j):
     return ""
 
 
-def debates(j):
-    for k in ("debates", "cross_cutting"):
-        if isinstance(j.get(k), list):
-            return j[k]
-    return []
-
-
 # ---------------------------------------------------------------- HTML
 
 def _rule(weight=1, color=None, space="18px 0"):
@@ -224,25 +217,6 @@ def render_html(j, idx, day):
         B.append(f'<div style="font:15px/1.68 {SERIF};color:{INK};">'
                  f'{esc(headline(j))}</div>')
 
-    dbs = debates(j)
-    if dbs:
-        B.append(_section_head("KEY DEBATES",
-                               "what a single-episode summary cannot give"))
-        for d in dbs:
-            q = d.get("question") or d.get("theme") or ""
-            B.append(f'<div style="margin:0 0 18px;">'
-                     f'<div style="font:600 14px/1.5 {SANS};color:{INK};margin:0 0 4px;">'
-                     f'{esc(q)}</div>'
-                     + (f'<div style="font:14px/1.6 {SERIF};color:{ACCENT["must_listen"]};'
-                        f'margin:0 0 5px;"><b>Conclusion:</b> '
-                        f'{esc(d["conclusion"])}</div>' if d.get("conclusion") else "")
-                     + (f'<div style="font:14px/1.62 {SERIF};color:{BODY};">'
-                        f'{esc(d.get("detail"))}</div>' if d.get("detail") else "")
-                     + (f'<div style="font:11px/1.5 {SANS};color:{MUTED};margin:5px 0 0;">'
-                        f'{esc(" · ".join(d["shows"]))}</div>'
-                        if d.get("shows") else "")
-                     + "</div>")
-
     for verdict, group, detailed in (("must_listen", must, True),
                                      ("worth_skim", skim, False)):
         if not group:
@@ -310,14 +284,6 @@ def render_text(j, idx, day):
          f"{hhmm(sum(dur(x) for x in skipped))} screened out"]
     if headline(j):
         L += ["", "PM SUMMARY", "-" * 62, headline(j)]
-
-    for d in debates(j):
-        L += ["", "", "KEY DEBATE", "-" * 62,
-              d.get("question") or d.get("theme") or ""]
-        if d.get("conclusion"):
-            L.append(f"Conclusion: {d['conclusion']}")
-        if d.get("detail"):
-            L.append(d["detail"])
 
     for verdict, group, detailed in (("must_listen", must, True),
                                      ("worth_skim", skim, False),

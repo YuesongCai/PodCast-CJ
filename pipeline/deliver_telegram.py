@@ -74,13 +74,6 @@ def _headline(j):
     return ""
 
 
-def _debates(j):
-    for k in ("debates", "cross_cutting"):
-        if isinstance(j.get(k), list):
-            return j[k]
-    return []
-
-
 def _read_across(x):
     for k in ("read_across", "for_you"):
         if (x.get(k) or "").strip():
@@ -138,17 +131,6 @@ def _blocks(j, idx, day):
         if tail:
             L.append(tail)
         return "\n".join(L)
-
-    for d in _debates(j):
-        cc = [f"<b>KEY DEBATE</b>",
-              f"<b>{esc(d.get('question') or d.get('theme'))}</b>"]
-        if d.get("conclusion"):
-            cc.append(f"<b>Conclusion:</b> {esc(d['conclusion'])}")
-        if d.get("detail"):
-            cc.append(esc(d["detail"]))
-        if d.get("shows"):
-            cc.append(f"<i>{esc(' · '.join(d['shows']))}</i>")
-        out.append("\n\n".join(cc))
 
     for label, group, detailed in (("<b>LISTEN</b>", must, True),
                                    ("<b>SKIM</b>", skim, False)):

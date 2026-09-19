@@ -24,6 +24,13 @@ import urllib.request
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/126 Safari/537.36")
 MODEL = os.environ.get("ASR_MODEL", "mlx-community/parakeet-tdt-0.6b-v3")
+# 引擎二选一：
+#   parakeet — 默认，英文/欧语，M3 上 12-25x 实时，最快
+#   whisper  — 中文等非欧语必须走这条。parakeet 喂中文不会报错，
+#              它会把中文**音译**成英文单词，产出一份读起来正常、内容全是编的转录
+#              （实测：科技早知道 62 分钟 -> 7263 字符、0 个中文字符）。
+ENGINE = os.environ.get("ASR_ENGINE", "parakeet").lower()
+LANGUAGE = os.environ.get("ASR_LANGUAGE") or None   # whisper 用；留空则自动检测
 
 _CTX = ssl.create_default_context()
 _CTX.check_hostname = False
@@ -64,7 +71,24 @@ def audio_seconds(path):
         return None
 
 
+def transcribe_whisper(wav):
+    """mlx-whisper。比 parakeet 慢，但中文/日文这些非欧语只能走它。"""
+    import mlx_whisper
+    kw = {"path_or_hf_repo": MODEL}
+    if LANGUAGE:
+        kw["language"] = LANGUAGE
+    res = mlx_whisper.transcribe(wav, **kw)
+    text = (res.get("text") or "").strip()
+    segs = [{"start": round(s.get("start") or 0, 2),
+             "end": round(s.get("end") or 0, 2),
+             "text": (s.get("text") or "").strip()}
+            for s in (res.get("segments") or [])]
+    return text, segs
+
+
 def transcribe(wav, chunk_min=2.0):
+    if ENGINE == "whisper":
+        return transcribe_whisper(wav)
     from parakeet_mlx import from_pretrained
     model = from_pretrained(MODEL)
     # 长音频分块：chunk_duration 秒，overlap 保证跨块句子不断
@@ -87,7 +111,7 @@ def main():
     args = ap.parse_args()
 
     t0 = time.time()
-    stats = {"model": MODEL}
+    stats = {"model": MODEL, "engine": ENGINE}
     tmp = tempfile.mkdtemp(prefix="asr_")
     try:
         if args.wav:

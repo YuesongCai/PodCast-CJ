@@ -70,13 +70,6 @@ def headline(j):
     return ""
 
 
-def debates(j):
-    for k in ("debates", "cross_cutting"):
-        if isinstance(j.get(k), list):
-            return j[k]
-    return []
-
-
 def read_across(x):
     for k in ("read_across", "for_you"):
         if (x.get(k) or "").strip():
@@ -111,18 +104,6 @@ def render(j, pack_index):
 
     if headline(j):
         L += ["## PM Summary", "", headline(j), ""]
-
-    if debates(j):
-        L += ["## Key Debates", ""]
-        for d in debates(j):
-            L.append(f"### {d.get('question') or d.get('theme')}")
-            L.append("")
-            if d.get("conclusion"):
-                L += [f"**Conclusion:** {d['conclusion']}", ""]
-            if d.get("detail"):
-                L += [d["detail"], ""]
-            if d.get("shows"):
-                L += [f"<sub>{' · '.join(d['shows'])}</sub>", ""]
 
     def block(x, detailed):
         meta = pack_index.get(x["episode_id"], {})
@@ -235,12 +216,6 @@ def send_webhook(j, idx, day, md_path):
                  for x in skipped]
         el.append({"tag": "div", "text": {"tag": "lark_md",
                    "content": "**⏭️ 今天替你跳过的**\n" + "\n".join(lines)}})
-
-    if j.get("cross_cutting"):
-        cc = "\n\n".join(f"**{c.get('theme')}**\n{c.get('detail')}"
-                         for c in j["cross_cutting"])
-        el.append({"tag": "hr"})
-        el.append({"tag": "div", "text": {"tag": "lark_md", "content": "🔀 **交叉主题**\n\n" + cc}})
 
     if j.get("gaps"):
         el.append({"tag": "hr"})

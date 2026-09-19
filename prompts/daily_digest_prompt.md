@@ -81,6 +81,15 @@ Each item in `data/digest_pack.json`:
     - Say explicitly in `why` that the call is made on the description only
 - `evidence_source` — `youtube` / `asr` / `rss_inline` / `rss_transcript` / `notes_only`
 - `compression.original_words` — original transcript length; a proxy for information density
+- `tier` + `age_days` — **how fast this show's content decays, and how old this episode is.**
+  These are set per show by the reader, not inferred. Use them together:
+  - `fresh` — time-sensitive. A call, a level or a positioning view goes stale quickly.
+    At `age_days` above roughly a week, say so in `why` and mark the call down: the
+    reader needs to know whether the view has already been overtaken.
+  - `semi` — mildly time-sensitive. Tolerate a couple of weeks before flagging age.
+  - `evergreen` — the idea does not expire. **Do not mark an episode down for being old.**
+    A three-week-old Founders or Knowledge Project episode is exactly as useful as today's.
+  Never treat `age_days` as a quality signal on its own — only in combination with `tier`.
 
 ## Scoring the call
 
@@ -100,16 +109,7 @@ Write to `data/judgments.json`:
 
 ```json
 {
-  "pm_summary": "One dense paragraph, 60-110 words, conclusion-first, in the voice of a PM note. State what today's flow actually establishes, then the numbered support. Example shape: 'Today's flow is about the power constraint on AI becoming a financeable line item rather than a talking point: 1) Star Cloud puts orbital DC breakeven at US$500/kg launch cost, 2) the July payroll miss had construction +22k explicitly attributed to datacentre build, and 3) the only sector bid on the week was IPPs (CEG, TLN, VST). Read-across is to power and cooling supply chains rather than to semis.'",
-
-  "debates": [
-    {
-      "question": "Q#1: The question multiple shows are implicitly arguing about, phrased as a question",
-      "conclusion": "Conclusion-first answer in one line, with (+ve)/(-ve) where it cuts",
-      "detail": "Where they agree, where they diverge, and which side has the better evidence. This cross-show synthesis is the part a single-episode summary cannot give.",
-      "shows": ["Show A", "Show B"]
-    }
-  ],
+  "pm_summary": "2-4 sentences, max 70 words. What today's batch is worth to him, and where to start. This is a routing line, not an analysis: say what came in and which one to open first. Example: 'Thin day on the subscribed list. The one to open is BofA on the negative July payroll — decomposition recorded 90 minutes after the print, and the unemployment-rate point cuts against cut urgency. AIMA on the MAS submission is the other one worth the time if you look at domicile. Everything else is duplication or off-mandate.'",
 
   "items": [
     {
@@ -164,10 +164,13 @@ you are asked for the tags directly. Leave the array empty rather than forcing a
    argument cannot be assessed" is a perfectly good output.
 5. **`skip` needs a specific reason.** "Overlaps last week's episode on the same thesis"
    is useful; "not very interesting" is not.
-6. **`debates` only when a real cross-show argument exists.** A manufactured theme is worse
-   than no theme. Zero or one entry is a normal day.
+6. **Call out duplication in the screen itself.** When two episodes cover the same ground,
+   say so in the `why` of the weaker one and name the stronger one — "overlaps the BofA
+   episode entirely and is shallower" is a screening decision, and it belongs on the
+   episode being screened out. Do not write a separate cross-show essay: synthesis is
+   analysis, and the reader explicitly said analysis is not what he wants from this.
 7. **English throughout.** Including `pm_summary`, `title`, `why`, `key_points`,
-   `read_across`, `gaps`, and the `debates` fields.
+   `read_across`, and `gaps`.
 
 ## Running it
 

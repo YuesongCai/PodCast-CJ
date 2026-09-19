@@ -1,0 +1,284 @@
+[
+  {
+    "display": "Macro Voices",
+    "author": "Erik Townsend",
+    "tier": "fresh",
+    "itunes_id": 1079172742,
+    "itunes_name": "Macro Voices",
+    "itunes_author": "Hedge Fund Manager Erik Townsend",
+    "feed": "https://feed.podbean.com/macrovoices/feed.xml",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/12/44/15/124415aa-c521-dba7-1f7c-c6aff7e3b0a5/mza_7790510939942107558.png/600x600bb.jpg",
+    "genres": [
+      "Investing",
+      "Podcasts",
+      "Business"
+    ],
+    "episode_count": 304,
+    "last_release": "2026-09-17T17:20:00Z",
+    "match_score": 125,
+    "alternatives": [
+      {
+        "name": "Macro Voices Video",
+        "author": "Hedge Fund Manager Erik Townsend",
+        "feed": "https://www.macrovoices.com/component/podcastmanager/?format=raw&feedname=8",
+        "score": 85
+      }
+    ]
+  },
+  {
+    "display": "TCW Investment Perspectives",
+    "author": "TCW",
+    "tier": "fresh",
+    "itunes_id": 1687354323,
+    "itunes_name": "TCW Investment Perspectives",
+    "itunes_author": "TCW",
+    "feed": "https://feeds.transistor.fm/the-tcw-group-podcast",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/f9/6f/a6/f96fa6e0-e8e4-8b1d-cd8a-18aa0f9e6b05/mza_827528342572414459.jpg/600x600bb.jpg",
+    "genres": [
+      "Investing",
+      "Podcasts",
+      "Business"
+    ],
+    "episode_count": 62,
+    "last_release": "2026-09-08T17:22:00Z",
+    "match_score": 140,
+    "alternatives": []
+  },
+  {
+    "display": "Odd Lots",
+    "author": "Bloomberg",
+    "tier": "semi",
+    "itunes_id": 1056200096,
+    "itunes_name": "Odd Lots",
+    "itunes_author": "Bloomberg",
+    "feed": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/8a94442e-5a74-4fa2-8b8d-ae27003a8d6b/982f5071-765c-403d-969d-ae27003a8d83/podcast.rss",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/f3/99/6a/f3996a52-e4a4-bf0d-b7d6-e376c4058568/mza_15550359494736224565.jpg/600x600bb.jpg",
+    "genres": [
+      "Investing",
+      "Podcasts",
+      "Business",
+      "News",
+      "News Commentary"
+    ],
+    "episode_count": 1281,
+    "last_release": "2026-09-19T08:00:00Z",
+    "match_score": 140,
+    "alternatives": [
+      {
+        "name": "Stock Movers",
+        "author": "iHeartPodcasts",
+        "feed": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/deb345cd-6d73-4a24-a6e3-b2a50138dd86/a55c6f22-aa32-4a58-aebd-b2a50138e2b2/podcast.rss",
+        "score": 0.0
+      }
+    ]
+  },
+  {
+    "display": "The Capital Cycle Podcast",
+    "author": "Marathon Asset Management",
+    "tier": "fresh",
+    "itunes_id": 1760792349,
+    "itunes_name": "The Capital Cycle Podcast",
+    "itunes_author": "Marathon Asset Management",
+    "feed": "https://feeds.acast.com/public/shows/66acfe26e65b9fd5b02a0fcd",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/1f/1c/9d/1f1c9d85-ff5d-616f-d781-db4fdb44435d/mza_11478585618793443295.jpeg/600x600bb.jpg",
+    "genres": [
+      "Investing",
+      "Podcasts",
+      "Business"
+    ],
+    "episode_count": 41,
+    "last_release": "2026-08-28T13:31:00Z",
+    "match_score": 140,
+    "alternatives": [
+      {
+        "name": "Tascha Labs Podcast | Crypto Investment through Macro Lens | Web3 | Blockchain",
+        "author": "Tascha Labs",
+        "feed": "https://app.mysoundwise.com/rss/1640287079644s",
+        "score": 7.5
+      }
+    ]
+  },
+  {
+    "display": "Capital Ideas",
+    "author": "Capital Group",
+    "tier": "fresh",
+    "itunes_id": 1206119204,
+    "itunes_name": "Capital Ideas podcast",
+    "itunes_author": "Capital Group",
+    "feed": "https://rss.libsyn.com/shows/93626/destinations/473267.xml",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/f8/88/49/f88849de-4dc4-354d-36c1-26bab532e12a/mza_8400165837788906995.jpg/600x600bb.jpg",
+    "genres": [
+      "Investing",
+      "Podcasts",
+      "Business"
+    ],
+    "episode_count": 319,
+    "last_release": "2026-09-17T12:00:00Z",
+    "match_score": 100,
+    "alternatives": [
+      {
+        "name": "Capital Ideas Australia Podcast",
+        "author": "Capital Group",
+        "feed": "https://rss.libsyn.com/shows/441450/destinations/3691413.xml",
+        "score": 100
+      },
+      {
+        "name": "Capital Ideas",
+        "author": "ICAN",
+        "feed": "https://anchor.fm/s/103852308/podcast/rss",
+        "score": 100.0
+      },
+      {
+        "name": "GEPL Capital - Investment Talks - All About Investment, Nifty and Stock Ideas",
+        "author": "GEPL Capital Pvt. Ltd | SEBI Regd.: INZ000168137",
+        "feed": "https://anchor.fm/s/6aa0b0bc/podcast/rss",
+        "score": 37.5
+      }
+    ]
+  },
+  {
+    "display": "The Memo by Howard Marks",
+    "author": "Oaktree Capital Management",
+    "tier": "evergreen",
+    "itunes_id": 1521551570,
+    "itunes_name": "The Memo by Howard Marks",
+    "itunes_author": "Oaktree Capital Management",
+    "feed": "https://rss.art19.com/the-memo-by-howard-marks",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts115/v4/38/23/01/3823013e-741d-805e-e8a7-3a3db3fa8003/mza_11361826782349490218.jpeg/600x600bb.jpg",
+    "genres": [
+      "Investing",
+      "Podcasts",
+      "Business",
+      "Management"
+    ],
+    "episode_count": 77,
+    "last_release": "2026-03-24T04:00:00Z",
+    "match_score": 140,
+    "alternatives": []
+  },
+  {
+    "display": "Founders",
+    "author": "David Senra",
+    "tier": "evergreen",
+    "itunes_id": 1141877104,
+    "itunes_name": "Founders",
+    "itunes_author": "David Senra",
+    "feed": "https://feeds.megaphone.fm/DSLLC6297708582",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/ed/71/4f/ed714f67-f095-a4ef-f38e-d8c02300666a/mza_11432355988627368701.jpg/600x600bb.jpg",
+    "genres": [
+      "Entrepreneurship",
+      "Podcasts",
+      "Business",
+      "History"
+    ],
+    "episode_count": 458,
+    "last_release": "2026-09-14T18:26:00Z",
+    "match_score": 140,
+    "alternatives": []
+  },
+  {
+    "display": "Capital Allocators",
+    "author": "Ted Seides",
+    "tier": "evergreen",
+    "itunes_id": 1223764016,
+    "itunes_name": "Capital Allocators – Inside the Institutional Investment Industry",
+    "itunes_author": "Ted Seides – Allocator and Asset Management Expert",
+    "feed": "https://rss.libsyn.com/shows/94820/destinations/482814.xml",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/b7/2c/85/b72c8514-3554-1fa8-5931-361010dfd84b/mza_6665040082077933863.jpg/600x600bb.jpg",
+    "genres": [
+      "Investing",
+      "Podcasts",
+      "Business"
+    ],
+    "episode_count": 823,
+    "last_release": "2026-09-07T08:00:00Z",
+    "match_score": 85,
+    "alternatives": [
+      {
+        "name": "The Institutional Edge: Real allocators. Real alpha.",
+        "author": "Angelo Calvello",
+        "feed": "https://feeds.castos.com/r3xro",
+        "score": 15.0
+      },
+      {
+        "name": "Market Makers",
+        "author": "Market Makers",
+        "feed": "https://anchor.fm/s/1079b34c8/podcast/rss",
+        "score": 0.0
+      },
+      {
+        "name": "Global Investment Institute",
+        "author": "Australia’s leading provider of conferences for capital allocators.",
+        "feed": "https://anchor.fm/s/1057419f8/podcast/rss",
+        "score": 0.0
+      }
+    ]
+  },
+  {
+    "display": "The Knowledge Project",
+    "author": "Shane Parrish",
+    "tier": "evergreen",
+    "itunes_id": 990149481,
+    "itunes_name": "The Knowledge Project",
+    "itunes_author": "Shane Parrish",
+    "feed": "https://feeds.megaphone.fm/FSMI7575968096",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/4a/9c/e2/4a9ce2fd-ddf6-0d00-8760-4e7167378ecf/mza_16600443422050351456.jpeg/600x600bb.jpg",
+    "genres": [
+      "Investing",
+      "Podcasts",
+      "Business",
+      "Technology"
+    ],
+    "episode_count": 288,
+    "last_release": "2026-09-15T10:00:00Z",
+    "match_score": 140,
+    "alternatives": []
+  },
+  {
+    "display": "All-In",
+    "author": "Chamath Jason Sacks Friedberg",
+    "tier": "evergreen",
+    "itunes_id": 1502871393,
+    "itunes_name": "All-In with Chamath, Jason, Sacks & Friedberg",
+    "itunes_author": "All-In Podcast, LLC",
+    "feed": "https://rss.libsyn.com/shows/254861/destinations/1928300.xml",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts124/v4/c7/d2/92/c7d292ea-44b3-47ff-2f5e-74fa5b23db6c/mza_7005270671777648882.png/600x600bb.jpg",
+    "genres": [
+      "Technology",
+      "Podcasts",
+      "Business",
+      "Entrepreneurship"
+    ],
+    "episode_count": 424,
+    "last_release": "2026-09-18T15:59:00Z",
+    "match_score": 60.0,
+    "alternatives": []
+  },
+  {
+    "display": "科技早知道",
+    "author": "声动活泼",
+    "tier": "evergreen",
+    "itunes_id": 1494812579,
+    "itunes_name": "What's Next｜科技早知道",
+    "itunes_author": "声动活泼",
+    "feed": "https://feeds.fireside.fm/guiguzaozhidao/rss",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/f8/99/2a/f8992af8-b391-a6e9-72a2-dda4c223ace8/mza_3325716517235553759.jpg/600x600bb.jpg",
+    "genres": [
+      "Technology",
+      "Podcasts",
+      "Business",
+      "Entrepreneurship"
+    ],
+    "episode_count": 432,
+    "last_release": "2026-09-18T09:30:00Z",
+    "match_score": 100,
+    "alternatives": [
+      {
+        "name": "《科幻新闻早知道》｜全球科技科幻新闻直通车",
+        "author": "科幻深读小峰",
+        "feed": "https://www.ximalaya.com/album/108770848.xml",
+        "score": 30.0
+      }
+    ]
+  }
+]

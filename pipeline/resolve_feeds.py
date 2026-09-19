@@ -20,12 +20,33 @@ def http_json(url):
         return json.loads(r.read().decode("utf-8", "replace"))
 
 
+# CJK 统一表意文字 + 日文假名。必须保留：原来的 [^a-z0-9] 会把中文字符
+# 全部抹成空格，于是所有中文节目名都归一化成空字符串、彼此「完全相等」拿 100 分。
+# 实测后果：「科技早知道」被错配成《科幻新闻早知道》——两个毫不相干的节目。
+_KEEP = r"a-z0-9\u4e00-\u9fff\u3040-\u30ff"
+
+
 def norm(s):
-    """归一化用于匹配：小写、去标点、压空格。"""
+    """归一化用于匹配：小写、去标点、压空格。中日文字符原样保留。"""
     s = s.lower()
     s = s.replace("&", " and ")
-    s = re.sub(r"[^a-z0-9]+", " ", s)
+    s = re.sub(rf"[^{_KEEP}]+", " ", s)
     return " ".join(s.split())
+
+
+def _tokens(s):
+    """切词。中文没有空格，所以按字切；英文按空格切。
+
+    中文按字切是刻意的：节目名短，按字算重叠比按词稳，
+    也不需要引入分词依赖。
+    """
+    out = []
+    for w in s.split():
+        if re.search(r"[\u4e00-\u9fff\u3040-\u30ff]", w):
+            out.extend(w)          # 中文/日文逐字
+        else:
+            out.append(w)
+    return out
 
 
 def score(cand, want_title, want_author):
@@ -33,15 +54,19 @@ def score(cand, want_title, want_author):
     ct, ca = norm(cand.get("collectionName", "")), norm(cand.get("artistName", ""))
     wt, wa = norm(want_title), norm(want_author)
     s = 0
-    if ct == wt:
+    if not wt or not ct:
+        # 归一化后一边没剩下任何可比内容。不能走下面的相等分支——
+        # 两个空串「相等」会直接拿 100 分，中文错配就是这么来的。
+        s -= 50
+    elif ct == wt:
         s += 100
     elif wt and (wt in ct or ct.startswith(wt)):
         s += 60
     elif wt and ct and ct in wt:
         s += 40
     else:
-        # 逐词重叠
-        tw, cw = set(wt.split()), set(ct.split())
+        # 逐词（中文逐字）重叠
+        tw, cw = set(_tokens(wt)), set(_tokens(ct))
         if tw:
             s += 30 * len(tw & cw) / len(tw)
     if wa and ca:
@@ -50,7 +75,7 @@ def score(cand, want_title, want_author):
         elif wa in ca or ca in wa:
             s += 25
         else:
-            aw, caw = set(wa.split()), set(ca.split())
+            aw, caw = set(_tokens(wa)), set(_tokens(ca))
             if aw:
                 s += 15 * len(aw & caw) / len(aw)
     if not cand.get("feedUrl"):
@@ -101,14 +126,21 @@ def main():
             if not line or line.startswith("#"):
                 continue
             parts = [p.strip() for p in line.split("|")]
-            while len(parts) < 3:
+            while len(parts) < 4:
                 parts.append("")
-            shows.append({"display": parts[0], "author": parts[1], "query": parts[2]})
+            # 第 4 列是时效性分层，缺省按 fresh（更保守：宁可漏旧集也不塞过期内容）
+            tier = (parts[3] or "fresh").lower()
+            if tier not in ("fresh", "semi", "evergreen"):
+                print(f"  ! {parts[0]}: 未知时效性 `{tier}`，按 fresh 处理")
+                tier = "fresh"
+            shows.append({"display": parts[0], "author": parts[1],
+                          "query": parts[2], "tier": tier})
 
     out = []
     for i, sh in enumerate(shows, 1):
         res, err, alts = resolve(sh["display"], sh["author"], sh["query"])
-        rec = {"display": sh["display"], "author": sh["author"]}
+        rec = {"display": sh["display"], "author": sh["author"],
+               "tier": sh["tier"]}
         if res:
             rec.update(res)
             rec["alternatives"] = alts

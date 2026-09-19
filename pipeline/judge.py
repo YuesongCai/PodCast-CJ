@@ -178,12 +178,17 @@ def extract_json(text):
     raise ValueError(f"回复里找不到 JSON 对象。开头 200 字符：{text[:200]}")
 
 
-# 字段改过名（今日一句话 -> PM summary，交叉主题 -> debates，对你的意义 -> read-across）。
+# 字段改过名（今日一句话 -> PM summary，对你的意义 -> read-across）。
 # 旧名保留为别名：sync_bitable 和历史 judgments.json 还在用，
 # 而且模型偶尔会按记忆里的旧字段名输出，没必要为此整轮重试。
 HEADLINE_KEYS = ("pm_summary", "today_in_one_line")
-DEBATE_KEYS = ("debates", "cross_cutting")
 READ_ACROSS_KEYS = ("read_across", "for_you")
+
+# 跨节目的 debates/cross_cutting 已经撤掉了：那是分析，不是筛选，
+# 而需求方明确说过价值在「筛选 + 覆盖盲区」。重复覆盖的信号改为
+# 直接写进被筛掉那一集的 why 里（见 prompts 里的硬性要求 6）。
+# 这两个键出现时不报错，只是不再渲染。
+DROPPED_KEYS = ("debates", "cross_cutting")
 
 # 产出要交给一个二级买方读，通篇必须是英文。
 # 中文能混进来的两条路：模型按旧规格的记忆写，或者直接照抄了证据里的中文。
@@ -199,13 +204,6 @@ def headline(j):
         if v:
             return v
     return ""
-
-
-def debates(j):
-    for k in DEBATE_KEYS:
-        if isinstance(j.get(k), list):
-            return j[k]
-    return []
 
 
 def read_across(x):
@@ -227,10 +225,6 @@ def _language_errors(j):
                         f"（片段：{''.join(cjk[:12])}…）")
 
     check(headline(j), "pm_summary")
-    for n, d in enumerate(debates(j)):
-        if isinstance(d, dict):
-            for k in ("question", "conclusion", "detail"):
-                check(d.get(k), f"debates[{n}].{k}")
     for n, g in enumerate(j.get("gaps") or []):
         check(g, f"gaps[{n}]")
     for n, x in enumerate(j.get("items") or []):
@@ -336,9 +330,8 @@ def validate(j, pack):
     if not headline(j):
         errs.append("缺 pm_summary（当日 PM summary 段落）")
 
-    for key in ("debates", "cross_cutting", "gaps"):
-        if key in j and not isinstance(j[key], list):
-            errs.append(f"`{key}` 必须是数组")
+    if "gaps" in j and not isinstance(j["gaps"], list):
+        errs.append("`gaps` 必须是数组")
 
     errs.extend(_language_errors(j))
     return errs

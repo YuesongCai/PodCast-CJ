@@ -1,50 +1,12 @@
 {
-  "generated_at": "2026-08-08T09:59:37.603637+00:00",
+  "generated_at": "2026-09-19T15:10:58.202027+00:00",
   "rows": [
-    {
-      "show": "Masters of Scale",
-      "eps_30d": 10,
-      "free_paths": [
-        "YT字幕(弱)"
-      ],
-      "gap": null,
-      "measured_sources": [
-        "notes_only"
-      ],
-      "status": "缺口"
-    },
-    {
-      "show": "Talks at GS",
-      "eps_30d": 4,
-      "free_paths": [
-        "YT字幕✓校验"
-      ],
-      "gap": null,
-      "measured_sources": [
-        "notes_only"
-      ],
-      "status": "缺口"
-    },
-    {
-      "show": "The Long-Short",
-      "eps_30d": 3,
-      "free_paths": [
-        "YT字幕(弱)"
-      ],
-      "gap": null,
-      "measured_sources": [
-        "notes_only"
-      ],
-      "status": "缺口"
-    },
     {
       "show": "UBS Global Research Pod Hub",
       "eps_30d": 2,
       "free_paths": [],
       "gap": "无官方transcript、无内嵌全文、YouTube 上找不到对应频道",
-      "measured_sources": [
-        "notes_only"
-      ],
+      "measured_sources": [],
       "status": "缺口"
     },
     {
@@ -64,10 +26,18 @@
       "status": "缺口"
     },
     {
-      "show": "Stratechery",
+      "show": "Exponent",
       "eps_30d": null,
       "free_paths": [],
-      "gap": "订阅者私有 RSS",
+      "gap": "无官方transcript、无内嵌全文、YouTube 上找不到对应频道",
+      "measured_sources": [],
+      "status": "缺口"
+    },
+    {
+      "show": "Sharp Tech with Ben Thompson",
+      "eps_30d": null,
+      "free_paths": [],
+      "gap": "无官方transcript、无内嵌全文、YouTube 上找不到对应频道",
       "measured_sources": [],
       "status": "缺口"
     },
@@ -80,6 +50,16 @@
       "status": "缺口"
     },
     {
+      "show": "Masters of Scale",
+      "eps_30d": 10,
+      "free_paths": [
+        "YT字幕(弱)"
+      ],
+      "gap": null,
+      "measured_sources": [],
+      "status": "预期可行"
+    },
+    {
       "show": "Capital Allocators",
       "eps_30d": 9,
       "free_paths": [
@@ -90,10 +70,20 @@
       "status": "预期可行"
     },
     {
-      "show": "In Good Company",
-      "eps_30d": 9,
+      "show": "The Cognitive Revolution",
+      "eps_30d": 6,
       "free_paths": [
-        "YT字幕(弱)"
+        "YT字幕✓校验"
+      ],
+      "gap": null,
+      "measured_sources": [],
+      "status": "预期可行"
+    },
+    {
+      "show": "Odds on Open",
+      "eps_30d": 5,
+      "free_paths": [
+        "YT字幕✓校验"
       ],
       "gap": null,
       "measured_sources": [],
@@ -121,6 +111,16 @@
       "status": "预期可行"
     },
     {
+      "show": "Talks at GS",
+      "eps_30d": 4,
+      "free_paths": [
+        "YT字幕✓校验"
+      ],
+      "gap": null,
+      "measured_sources": [],
+      "status": "预期可行"
+    },
+    {
       "show": "David Senra",
       "eps_30d": 4,
       "free_paths": [
@@ -141,7 +141,27 @@
       "status": "预期可行"
     },
     {
+      "show": "The Long-Short",
+      "eps_30d": 3,
+      "free_paths": [
+        "YT字幕(弱)"
+      ],
+      "gap": null,
+      "measured_sources": [],
+      "status": "预期可行"
+    },
+    {
       "show": "Grit",
+      "eps_30d": 2,
+      "free_paths": [
+        "YT字幕✓校验"
+      ],
+      "gap": null,
+      "measured_sources": [],
+      "status": "预期可行"
+    },
+    {
+      "show": "Chat With Traders",
       "eps_30d": 2,
       "free_paths": [
         "YT字幕✓校验"
@@ -229,6 +249,7 @@
       ],
       "gap": null,
       "measured_sources": [
+        "youtube",
         "youtube"
       ],
       "status": "已实测OK"
@@ -241,54 +262,28 @@
       ],
       "gap": null,
       "measured_sources": [
-        "youtube",
-        "youtube",
-        "youtube"
+        "asr"
       ],
       "status": "已实测OK"
     },
     {
-      "show": "The Cognitive Revolution",
-      "eps_30d": 6,
+      "show": "In Good Company",
+      "eps_30d": 9,
       "free_paths": [
-        "YT字幕✓校验"
+        "YT字幕(弱)"
       ],
       "gap": null,
       "measured_sources": [
-        "youtube"
-      ],
-      "status": "已实测OK"
-    },
-    {
-      "show": "Odds on Open",
-      "eps_30d": 5,
-      "free_paths": [
-        "YT字幕✓校验"
-      ],
-      "gap": null,
-      "measured_sources": [
-        "youtube"
-      ],
-      "status": "已实测OK"
-    },
-    {
-      "show": "Chat With Traders",
-      "eps_30d": 2,
-      "free_paths": [
-        "YT字幕✓校验"
-      ],
-      "gap": null,
-      "measured_sources": [
-        "youtube"
+        "asr"
       ],
       "status": "已实测OK"
     }
   ],
   "summary": {
-    "shows_total": 27,
-    "shows_free_ok": 19,
-    "shows_gap": 8,
-    "gap_eps_30d": 20,
+    "shows_total": 28,
+    "shows_free_ok": 22,
+    "shows_gap": 6,
+    "gap_eps_30d": 3,
     "all_eps_30d": 106
   }
 }

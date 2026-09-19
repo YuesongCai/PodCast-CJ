@@ -1,0 +1,30 @@
+# Alan 朋友的列表（独立于 CJ 的 shows_seed.txt，不要混）
+#
+# 格式：显示名 | 作者/发布方 | 搜索关键词 | 时效性
+#
+# 第四列 tier 决定回看窗口和判断标准，不是标签而已：
+#   fresh     — 高时效。过了窗口就没用，只抓最近 N 天，过期不补
+#   semi      — 小型时效。几天内还有用，窗口放宽到 N x2.5
+#   evergreen — 长青。好想法不过期，窗口 N x7；判断时不因为「旧」而降级
+#
+# Alan 的划分：fresh = capital cycle / capital ideas / macro voices / TCW；
+#              semi  = odd lots；其余长青。
+
+# --- 宏观 / 利率 ---
+Macro Voices|Erik Townsend|MacroVoices|fresh
+TCW Investment Perspectives|TCW|TCW Investment Perspectives|fresh
+Odd Lots|Bloomberg|Odd Lots Joe Weisenthal Tracy Alloway|semi
+
+# --- 资本周期 / 配置 ---
+The Capital Cycle Podcast|Marathon Asset Management|Capital Cycle Podcast investing|fresh
+Capital Ideas|Capital Group|Capital Ideas Investment Podcast Capital Group|fresh
+
+# --- 长青（好想法不过期，旧集照样值得看） ---
+The Memo by Howard Marks|Oaktree Capital Management|The Memo by Howard Marks Oaktree|evergreen
+Founders|David Senra|Founders David Senra podcast|evergreen
+Capital Allocators|Ted Seides|Capital Allocators Inside the Institutional Investment Industry|evergreen
+The Knowledge Project|Shane Parrish|The Knowledge Project Shane Parrish|evergreen
+
+# --- 科技 / 综合（中文也归这里） ---
+All-In|Chamath Jason Sacks Friedberg|All-In with Chamath Jason Sacks & Friedberg|evergreen
+科技早知道|声动活泼|科技早知道|evergreen

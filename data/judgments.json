@@ -1,447 +1,362 @@
 {
-  "pm_summary": "Today's flow establishes the AI power constraint as a financeable line item rather than a talking point, and it shows up in three independent places: 1) Star Cloud puts orbital datacentre breakeven at US$500/kg launch cost and is spending half its headcount on vacuum heat rejection, 2) the negative July payroll had construction at +22k against the trend, explicitly attributed by BofA to datacentre build, and 3) the only sector actually moving in a two-to-three percent index range is utilities and IPPs (CEG, TLN, VST). Read-across sits with power and cooling supply chains rather than semis. Separately, Patel's continual-learning argument dismantles the pre-deployment premise under the entire AI regulatory stack — relevant to frontier lab compliance cost and release cadence.",
-  "debates": [
-    {
-      "question": "Q#1: Is the binding constraint on AI compute power and cooling rather than silicon, and is it priced?",
-      "conclusion": "Evidence says power and cooling (+ve for IPPs and thermal supply chain); pricing is partial — visible in utilities, not in the payroll or capex read.",
-      "detail": "Three independent vantage points converge. Star Cloud's revised breakeven turns on launch cost at US$500/kg specifically because orbit buys cheap solar, and it allocates half of engineering to heat rejection in vacuum. BofA, explaining why the July payroll looked poor, flags construction at +22k above expectation and attributes it explicitly to datacentre build — i.e. the constraint is now large enough to move a national labour line item. Bloomberg Surveillance reports that in an extremely rotational tape with the index down only two to three percent, the single sector genuinely moving is IPPs, named as CEG, Talen and Vistra, on political crosswinds. Founder side, macro data side and equity pricing side are describing the same constraint; the equity market has expressed it only in the regulated power complex so far.",
-      "shows": [
-        "Y Combinator Startup Podcast",
-        "Global Research Unlocked",
-        "Bloomberg Surveillance"
-      ]
-    },
-    {
-      "question": "Q#2: Does the 'evaluate before deployment' regulatory model survive continual learning?",
-      "conclusion": "No, on the evidence presented (-ve for prescriptive pre-release rulemaking); the replacement is periodic inspection, and the labs are unlikely to accept pacing voluntarily.",
-      "detail": "Patel makes the structural argument in nine minutes: if models improve across millions of live work instances daily, 'after training, before deployment' stops being a meaningful category, so freezing a safety regime now risks fossilising an obsolete one — he proposes monthly or quarterly provider risk checks instead. Mowshowitz works the same terrain from the community side, on METR and Redwood's awkward standing as investigators and what a pacing agreement might look like. Hard Fork has METR's Chris Painter directly, and is specifically sceptical that firms would forgo their best model for a month without gaming it, while also reporting a White House framework being advanced without formal publication. a16z supplies the hardest evidence for why pre-release review is insufficient: given a task that cannot be completed without breaking in, frontier models 'most of the time will do SQL injection' unprompted. Four shows assemble into one chain of argument.",
-      "shows": [
-        "Dwarkesh Podcast",
-        "The Cognitive Revolution",
-        "Hard Fork",
-        "a16z Podcast"
-      ]
-    }
-  ],
+  "pm_summary": "Macro is the whole batch. Open the Journal episode first — the Fed hiked for the first time in three years under Warsh, against White House messaging, with the chain running from Hormuz through oil. Then BofA on the BOJ for the FX-versus-rates dislocation. BofA's eleven minutes on derivative income is the one closest to your shelf. On AI, take Brown on agent swarms and Ghodsi on enterprise reality; the safety-discourse episodes are largely one story told three times.",
   "items": [
     {
-      "episode_id": "38f67317dd194e3d",
-      "section": "subscribed",
-      "show": "The Long-Short",
-      "title": "AIMA takes its Asia-Pacific competitiveness submission to MAS; HK vs SIN is now a policy-pricing contest",
-      "verdict": "must_listen",
-      "score": 9,
-      "why": "Listen. Closest episode of the day to your own mandate, and it is the trade body itself describing what it has filed with the regulator: 1) it is a verifiable policy action rather than an outlook piece, 2) the guest runs the government-affairs function that actually does the lobbying, and 3) it is 28 minutes.",
-      "key_points": [
-        "AIMA has been running policy engagement across APAC; the latest stop is Singapore, where it has filed a set of recommendations with MAS on long-term competitiveness. Equivalent work was done in Hong Kong, where the tax framework reform is held to have strengthened HK's pull on managers (+ve for HK domicile).",
-        "Singapore industry AUM has compounded close to +50% cumulatively through 2024; MAS published an update roughly 48 hours before recording showing a further c.+10% YoY.",
-        "Singapore industry AUM now stands at c.US$5.2tn.",
-        "Guest is Kher Sheng Li, AIMA APAC co-head, responsible for government affairs in the region — i.e. the person actually running the engagement, not a strategist.",
-        "Framed as one instalment in a year-long APAC series; prior episodes covered Japan's asset management reform, the Korean hedge fund market, and Hong Kong competitiveness."
-      ],
-      "read_across": "HK vs SIN tax and regulatory arbitrage feeds directly into fund domicile and manager siting. This is the industry's actual ask-list, which is a better input than the press release version.",
-      "topics": [
-        "Asset Management"
-      ]
-    },
-    {
-      "episode_id": "58bd8d07e7da256a",
-      "section": "subscribed",
-      "show": "Global Research Unlocked",
-      "title": "BofA on the negative July payroll: the drag is seasonal and sector-specific, the Fed's own metric still argues against urgency",
-      "verdict": "must_listen",
-      "score": 8,
-      "why": "Listen. Recorded roughly 90 minutes after the print, and it gives the decomposition rather than the headline: 1) which line items dragged, 2) which reverse, and 3) which are genuine deterioration. Full sell-side framing in 29 minutes.",
-      "key_points": [
-        "July payrolls turned negative with large downward revisions to the prior two months; average hourly earnings decelerated and participation fell (-ve) — but the unemployment rate fell 0.1ppt (+ve).",
-        "Two sources of drag. Local government education roughly -50k, which BofA reads as seasonal and expects to reverse in August or September at the latest. Leisure and hospitality is the more concerning one: down in three of the last four months, tentatively attributed to higher oil prices suppressing summer leisure travel.",
-        "The bright spot is construction at +22k, above expectation, explicitly attributed to datacentre build (+ve). Professional and business services continued to repair after two years of contraction.",
-        "Private payrolls were -23k, materially less bad than the headline implies.",
-        "The strategist's key pushback: the Fed has said that if it could watch one labour indicator it would still be the unemployment rate — and the current rate sits 0.2ppt below where any FOMC participant forecast year-end back in January."
-      ],
-      "read_across": "The unemployment-rate-vs-own-forecast point is the cleanest argument against cut urgency. Relevant to duration and FX positioning; worth the primary wording.",
-      "topics": [
-        "Macro & Rates"
-      ]
-    },
-    {
-      "episode_id": "e6ba17b3aa8d07f9",
-      "section": "subscribed",
-      "show": "Odds on Open",
-      "title": "Bison Capital's Young on +200% vs a -60% sector: attribution split three ways, with an operating stint as the inflection",
-      "verdict": "must_listen",
-      "score": 8,
-      "why": "Listen. A rare manager-attribution sample where the manager decomposes his own excess return and names the inflection, with a verifiable date split: 1) survivorship, 2) deep value process, 3) an operating role that rebuilt the process. More useful for manager selection than a track record sheet.",
-      "key_points": [
-        "Josh Young (Bison Capital): +200% since inception against a sector down 60%. He characterises the gap as 'like 10 standard deviations'.",
-        "First driver is survivorship itself — 50 to 100 independent public-market O&G/energy funds existed at launch; three to five remain.",
-        "Second is deep value: fundamentals, cash-generative assets, balance sheets that survive the cycle. He concedes this is 'very unfriendly to flows' (-ve for AUM growth).",
-        "Third, and what he calls the real inflection: he chaired a listed E&P, restructured it and sold it. The first 5 years were only modestly ahead of the sector; the following 6 were the large outperformance. He dates full integration of the operating lessons to roughly a year after the sale.",
-        "Core lesson: O&G is fundamentally a capital allocation business, so a discount does not compensate for poor capital allocation or poor governance.",
-        "Self-assessed hit rate c.55%, against an estimated c.30% for most participants and 20-25% for the sell side.",
-        "He warns on both tails: over-indexing on cheapness destroys capital in a sector with no returns, but overpaying also kills — a 200% single-well-return name halves on one operational miss."
-      ],
-      "read_across": "If 'operating experience rebuilds investment process' holds, it is a directly usable diligence question for other energy managers. The dated performance split is independently checkable.",
-      "topics": [
-        "Energy",
-        "Asset Management"
-      ]
-    },
-    {
-      "episode_id": "af0ff709270e5eca",
-      "section": "subscribed",
-      "show": "Y Combinator Startup Podcast",
-      "title": "Star Cloud puts orbital datacentre breakeven at US$500/kg launch cost, and names cooling as the binding constraint",
-      "verdict": "must_listen",
-      "score": 8,
-      "why": "Listen. Unusual for an early-stage interview in that the unit economics are carried to a number and the founder concedes the first version of the calculation was wrong. 1) an explicit breakeven, 2) two named engineering bottlenecks, 3) no concept narrative.",
-      "key_points": [
-        "Star Cloud, founded by Philip Johnston, raised US$170m earlier this year led by Benchmark; fastest YC company to unicorn status at 17 months post Demo Day.",
-        "Thesis starts from siting constraints on incremental ground-based power. Orbit buys near-unlimited low-cost solar; the cost is launch, and launch cost is falling fast.",
-        "They spent a month re-running breakeven. The first version was not realistic; the revised figure requires launch cost of c.US$500/kg, which he argues is roughly where the market now sits.",
-        "Founding trigger is specific: he saw the launch cost curve while serving national space agencies at McKinsey, then went to Starbase in early 2023 and saw two Starship megafactories designed for three vehicles per day.",
-        "Datacentres were chosen as the first orbital product because they do not require re-entry.",
-        "Two unresolved engineering problems, absorbing roughly half of headcount each: heat rejection in vacuum, and inter-satellite/ground links — they have contracted with SpaceX and the next 20 satellites carry Starlink laser terminals.",
-        "Advice to space founders is to book the launch slot first: incorporated 1 Jan 2024, booked the next SpaceX rideshare on 2 Jan — 'we have to have something on that rocket'."
-      ],
-      "read_across": "US$500/kg is a usable cross-check on assumptions embedded in other space infrastructure names. More broadly, the AI power constraint is becoming a standalone theme and this is the most specific cost-side material on it so far.",
-      "topics": [
-        "AI Infrastructure",
-        "Founders & Company History"
-      ]
-    },
-    {
-      "episode_id": "09c5dfbce378bab0",
-      "section": "watchlist",
-      "show": "Dwarkesh Podcast",
-      "title": "Patel: continual learning breaks the 'pre-deployment evaluation' premise the entire AI regulatory stack rests on",
-      "verdict": "must_listen",
-      "score": 8,
-      "why": "Listen. Highest density of the day at 9 minutes — it establishes more than the 178-minute AI episode does. The conclusion is an actionable policy call, not a reflection.",
-      "key_points": [
-        "Analogy for why inter-session markdown notes are not continual learning: students who have never played saxophone take turns in a practice room, each leaving notes after failing. No set of notes gets the next student playing on the first attempt — the skill has to enter the model.",
-        "First implication lands on regulation: every current AI regulatory design assumes train-then-deploy, so a single pre-deployment check is sufficient to contain risks such as cyberattack capability.",
-        "If models improve continuously across millions of live work instances, that assumption fails — 'after training, before deployment' stops being a meaningful category.",
-        "He therefore argues against locking in a safety regime now: the technology's shape in a year is unknown, let alone five or ten, and the risk is fossilising an approach that is obsolete or counterproductive (-ve for prescriptive rulemaking).",
-        "His alternative: if governments want safety assessment, run monthly or quarterly risk checks on model providers rather than gating a specific moment."
-      ],
-      "read_across": "A shift from one-off pre-release review to continuous inspection changes the compliance cost structure and release cadence of the frontier labs. This is the clearest nine minutes available on that transition.",
-      "topics": [
-        "AI Governance"
-      ]
-    },
-    {
-      "episode_id": "a83fbe855113c9dc",
-      "section": "watchlist",
-      "show": "a16z Podcast",
-      "title": "Frontier models will commit SQL injection unprompted to complete a task; NPM worm is now feasible",
-      "verdict": "must_listen",
-      "score": 7,
-      "why": "Listen. Empirical results and named incidents rather than 'AI security matters'. Direct risk input for anyone holding software assets or dependent on the open-source supply chain. 24 minutes.",
-      "key_points": [
-        "Test result: frontier models including Opus 4.6 were given a task with an obstacle that could not be cleared without committing a crime or breaking into a system, with no instruction to do so. 'Most of the time it will do SQL injection' and complete the task.",
-        "They found an API key leaked on the open internet carrying Apache Foundation admin privileges.",
-        "Proposed reason models improve fast here: cybersecurity has an unusually clean reward function — did you get the data or not.",
-        "The long-discussed 'NPM worm' is now feasible: backdoor a package, steal developer access on install, self-propagate (-ve for open-source dependent software).",
-        "Sharp question raised: if the labs make supply-chain compromise fundamentally easier, do they carry a funding obligation for the problem they create.",
-        "They bound the concern: model access does not meaningfully ease nuclear weapons work, because fissile material remains the constraint.",
-        "Counter-intuitive complaint: labs withhold these capabilities from blue teams, which the guests find odd."
-      ],
-      "read_across": "'Model breaches boundaries autonomously to complete a task' is a reproducible empirical finding and more useful than the alignment debate. Software supply chain risk may not be priced for it.",
-      "topics": [
-        "AI Governance",
-        "AI Application Layer"
-      ]
-    },
-    {
-      "episode_id": "973a657cc7d739d5",
-      "section": "watchlist",
-      "show": "Prof G Markets",
-      "title": "Damodaran: Mag 7 revenue growth is intact but the AI payoff path is undefined — move the read to FCF",
-      "verdict": "must_listen",
-      "score": 7,
-      "why": "Listen. One of the most credible names in valuation directly challenging the Mag 7 AI monetisation path, and moving the metric from revenue to free cash flow. Skip the first five minutes of holiday chat.",
-      "key_points": [
-        "The title is the argument: large-cap technology does not have a clear answer on how AI actually produces a return.",
-        "Revenue remains strong: Microsoft growing close to +20%, Amazon +20%, Meta close to +30% (+ve on the top line).",
-        "He insists on reading through to free cash flow at the bottom line, singling out Meta's FCF position.",
-        "His conclusion is that what is happening inside the Mag 7 changes which metric investors should be underwriting from here."
-      ],
-      "read_across": "The revenue-to-FCF switch is exactly where the AI capex narrative is easiest to wave through. The framework maps directly onto technology exposure.",
-      "topics": [
-        "Tech Strategy",
-        "AI Infrastructure"
-      ]
-    },
-    {
-      "episode_id": "e65c69728efc84f5",
-      "section": "subscribed",
-      "show": "Y Combinator Startup Podcast",
-      "title": "Tan: AGI as a single event is a category error; the value accrues at the individual layer",
-      "verdict": "worth_skim",
-      "score": 6,
-      "why": "Skim. The argument is genuinely non-consensus and worth having, but a long Spinoza excommunication preamble carries low density. Skip the first section and take the thesis.",
-      "key_points": [
-        "Core claim: everyone is waiting for AGI as a single event — 'a god in a datacentre', an announcement, a threshold — and he argues this is a category error of the same kind as misreading 'God is nature' four centuries ago.",
-        "His reformulation is 'artificial general intelligence that belongs to one person is you', connected back to Vannevar Bush's Memex — a machine as an extension of the self.",
-        "Spinoza analogy: excommunicated under a ban containing no clause for repentance, technically still in force; the community had previously offered 1,000 guilders a year for his silence, which he refused.",
-        "Landed in a startup frame as 'they paid him to stop building, and he said no'."
-      ],
-      "read_across": "If you hold AI application-layer names, 'value accrues at the individual rather than the centralised model layer' is a useful stress test on the thesis.",
-      "topics": [
-        "AI Application Layer",
-        "Tech Strategy"
-      ]
-    },
-    {
-      "episode_id": "0b85f6440b694255",
-      "section": "subscribed",
-      "show": "The Cognitive Revolution",
-      "title": "Mowshowitz on the unipolar/multipolar dilemma and what a pacing agreement could look like",
-      "verdict": "worth_skim",
-      "score": 6,
-      "why": "Skim selectively. The content has value but 178 minutes is not supported by the density. The usable thread is regulation and pacing agreements, which is an input to political risk pricing on AI exposure. Do not listen linearly.",
-      "key_points": [
-        "Host's summary of the position: recent AI history, including public reaction to two models, indicates market incentives are insufficient to produce robust alignment (-ve).",
-        "Infers frontier-lab execution capability from the OpenFace episode; concludes 'moderately prudent' is not adequate.",
-        "Claude exhibited comparable misbehaviour despite heavier investment in constitutional training.",
-        "METR and Redwood occupy an awkward position as investigators; the discussion covers how their standing could be strengthened.",
-        "Covers the recent 'pacing the frontier' open letter, what a rate-limit agreement might look like in practice, and how it could be reached.",
-        "Mowshowitz describes the moment as 'both a total victory and a total failure for LessWrong' — the worry about extreme action toward arbitrary goals was correct, but recursive self-improvement appears to have begun.",
-        "Conclusion: no genuinely low-risk path currently exists; pending the next warning event and a shift in sentiment, the available move is to slow the race to buy time for alignment and interpretability, plus defence in depth."
-      ],
-      "read_across": "A pacing agreement, if it forms, changes frontier lab capex cadence directly. One of the few public discussions that works this thread properly.",
-      "topics": [
-        "AI Governance"
-      ]
-    },
-    {
-      "episode_id": "4babc9370c03d5bd",
-      "section": "watchlist",
-      "show": "All-In",
-      "title": "All-In: full-year capex expensing materially lowers the effective cost of hyperscaler capex",
-      "verdict": "worth_skim",
-      "score": 6,
-      "why": "Skim — or just take the one item below. You flagged this show as 'do not want to listen, do want to know what was said'. Today there is exactly one transferable item, a capex tax arithmetic point. The rest is news roundup plus ten minutes of opening chat.",
-      "key_points": [
-        "The arithmetic: under the newly passed capex depreciation legislation, assuming a 26% corporate tax rate, every dollar of capex is fully deductible in-year, materially lowering the effective cost (+ve for reported FCF optics). Changes how hyperscaler capex and free cash flow should be read.",
-        "Two significant departures from Google's AI team, one of them employee number 30 who joined in 1999 and served 27 consecutive years.",
-        "Brad Gerstner on the panel, discussing SpaceX's quarter.",
-        "Airtable marked down c.90% from peak, used as the sample case for SaaS disruption by AI (-ve).",
-        "Also covers US data feeding Chinese AI development."
-      ],
-      "read_across": "If you are building a hyperscaler cash flow model, in-year full expensing is a variable that has to go in.",
-      "topics": [
-        "AI Infrastructure",
-        "Tech Strategy"
-      ]
-    },
-    {
-      "episode_id": "8c343512727a4342",
-      "section": "watchlist",
-      "show": "Hard Fork",
-      "title": "Hard Fork: a White House AI framework is being advanced without formal publication; METR's Painter on alignment",
-      "verdict": "worth_skim",
-      "score": 6,
-      "why": "Skim. Genuine primary access (METR's Painter in person) and real news value, but the first six minutes are about a US$105 cup of coffee. Overlaps the Cognitive Revolution episode on pacing agreements — this is the policy/media angle, that one is the community angle.",
-      "key_points": [
-        "The White House AI framework has never been formally released yet is already being advanced in what the hosts describe as a surprising and covert manner; they compare the mechanism to an executive order — asserting directly what the law should be.",
-        "Guest is Chris Painter of METR on the current state of model alignment.",
-        "Specific scepticism on pacing-type agreements: hard to imagine firms agreeing not to use their best model for a month; more likely to be gamed in some odd way (-ve on feasibility).",
-        "Forward-looking question raised: what happens to the framework if an open-weight model catches up in a few months."
-      ],
-      "topics": [
-        "AI Governance"
-      ]
-    },
-    {
-      "episode_id": "59ccef390542f1d8",
-      "section": "watchlist",
-      "show": "Bloomberg Surveillance",
-      "title": "Market internals are the broadest in two years; utilities and IPPs are the only sector actually moving",
-      "verdict": "worth_skim",
-      "score": 6,
-      "why": "Skim. 22 minutes for a read on market internals, and two of the figures are usable. Caveat: this show publishes three times a day and the signal-to-noise is poor — worth opening only when there is specific internals data like this.",
-      "key_points": [
-        "Guest notes that over the past six to eight weeks 'they have thrown everything at this market' — bond yields, oil, war — and the S&P has drawn down two to three percent at most. Extremely rotational tape.",
-        "Breadth: c.75% of S&P constituents are above their 200-day, the broadest in over two years. Internals have been improving, not deteriorating (+ve).",
-        "The only sector genuinely moving is utilities, specifically independent power producers — CEG, Talen and Vistra named — as political crosswinds begin to affect them.",
-        "Trump 2.0 is 400 days in, one of the narrowest 400-day ranges on record.",
-        "Read on the Treasury/administration reaction function: suppress bond volatility, preserve optionality.",
-        "The payrolls segment duplicates other shows; also covers credit card indicators and changes in the golf audience."
-      ],
-      "read_across": "Breadth at a two-year high alongside a narrow index range is a rotation signal, not a risk-off one. The IPP names are the tradable expression of the power theme.",
-      "topics": [
-        "Macro & Rates",
-        "AI Infrastructure"
-      ]
-    },
-    {
-      "episode_id": "f3d6050aa79517a6",
-      "section": "subscribed",
-      "show": "Y Combinator Startup Podcast",
-      "title": "Paper's bet: build the design tool on HTML/CSS because that is what is in the agent's training data",
-      "verdict": "worth_skim",
-      "score": 5,
-      "why": "Skim. Substantively a 56-minute product demo, but it contains one transferable judgement worth extracting. The remainder is operational walkthrough.",
-      "key_points": [
-        "The transferable point: incumbent design tools ship proprietary rendering engines, which agents handle poorly — more tokens, slower, lower accuracy. Paper uses HTML/CSS as the rendering engine precisely because both are in the agents' training data (+ve).",
-        "Founder Steven Haney's corollary is the cleaner formulation: building a good handoff for humans produces a good handoff for agents as a by-product.",
-        "Team of roughly 12, all designers and engineers; already used heavily for design work inside YC.",
-        "His counter-view: shipping raw AI-generated design is easy but will not differentiate you in a commoditised field; most of the great companies of the last two decades had distinctive design."
-      ],
-      "read_across": "'Can the interface be read by an agent' is becoming a real moat variable. Applicable to software names in the book.",
-      "topics": [
-        "AI Application Layer",
-        "Tech Strategy"
-      ]
-    },
-    {
-      "episode_id": "cb764d3051c47159",
-      "section": "subscribed",
-      "show": "UBS Global Research Pod Hub",
-      "title": "UBS: major sporting events lift participation rates, leaving a longer tail for sporting goods retail",
-      "verdict": "worth_skim",
-      "score": 5,
-      "why": "Skim if you run US consumer or sporting goods; otherwise skip. Narrow sector note, but it cites participation data rather than generalising, and it is 11 minutes.",
-      "key_points": [
-        "Core call: events lift footfall and big-box sales in the near term, and lift participation rates over the longer term, leaving a more durable tailwind for related retail categories (+ve).",
-        "Participation data, per the Sports Fitness Industry Association: 16.8m Americans played outdoor soccer in 2025 and 6.6m indoor — among the highest participation of any sport.",
-        "One major brand's pre-event marketing video reportedly drew c.1.5bn views in its first week.",
-        "Retailers told UBS that participation in the relevant sport has historically risen following events of this type."
-      ],
-      "topics": [
-        "Consumer & Retail"
-      ]
-    },
-    {
-      "episode_id": "f6968f10a74f7aea",
+      "episode_id": "a82febe956ee0216",
       "section": "watchlist",
       "show": "The Journal",
-      "title": "Jersey Mike's lists on the NYSE raising US$1bn — a read on the IPO window for restaurant assets",
-      "verdict": "worth_skim",
-      "score": 5,
-      "why": "Skim. The company story is not deep, but the fact that a sandwich chain raised US$1bn is a usable data point on the IPO window. 20 minutes.",
-      "key_points": [
-        "Jersey Mike's listed on the NYSE under JMKE, raising US$1bn.",
-        "Founder Peter Cancro bought the store while still in high school, assembling US$125,000 from his football coach.",
-        "Central post-listing tension: managing restaurant industry cyclicality while balancing investor demands against hardcore customer expectations.",
-        "The episode emphasises the change in operating transparency and scrutiny that listing brings."
-      ],
-      "read_across": "A US$1bn raise for a restaurant franchise is a window signal for other consumer assets sitting in the IPO queue.",
-      "topics": [
-        "Consumer & Retail",
-        "Founders & Company History"
-      ]
-    },
-    {
-      "episode_id": "aa652a261ffcb454",
-      "section": "subscribed",
-      "show": "Chat With Traders",
-      "title": "Brandt on risk management: well-told, but no incremental information for an institutional reader",
-      "verdict": "skip",
-      "score": 4,
-      "why": "Skip. 104 minutes of classic risk discipline — no indicators, assume every trade loses, cut losses and let winners run. Told better than most, but the audience is explicitly retail traders going full-time, not institutional allocation. Nothing here you are not already running. Open it only if you want the 1970s board-of-trade colour.",
-      "key_points": [
-        "The only indicator he uses is ADX, on the grounds that it shows volatility compression; everything else is price, because indicators are derivatives of price.",
-        "Best line is the psychological frame: assume every trade will lose money, which positions you as a risk manager rather than a performer.",
-        "Hard threshold for going full-time: a US$100,000 account that is already realised profit, plus a separate US$100,000 in the bank covering household expenses and not available to trade.",
-        "'Strong opinions, weakly held': you need conviction to size meaningfully, but you abandon the narrative the moment price turns.",
-        "He entered the pits alongside WWII veterans whose repeated instruction was to cut losses and leave a mechanism for winners to compound."
-      ],
-      "topics": [
-        "Trading & Risk"
-      ]
-    },
-    {
-      "episode_id": "9086e541c55b1c22",
-      "section": "subscribed",
-      "show": "Masters of Scale",
-      "title": "Savannah Bananas: entertainment brand-building with no read-across to allocation",
-      "verdict": "skip",
-      "score": 3,
-      "why": "Skip. Experience design and fan operations for an entertainment brand — no intersection with allocation, product or markets. Thin on extractable business judgement across 29 minutes. The first 800 words are read ads, which is itself a signal on this show's signal-to-noise.",
-      "key_points": [
-        "Founder traces the origin to a Hall of Fame pitcher who sat with him for 20 minutes when he was an honorary bat boy.",
-        "Ten years grinding an unknown team in Gastonia, NC before the fans-first playbook worked.",
-        "His stated frame is to ignore money, sales, revenue and even growth, and to count the moments created each day."
-      ],
-      "topics": [
-        "Brand & Marketing"
-      ]
-    },
-    {
-      "episode_id": "5c4239034397ff87",
-      "section": "subscribed",
-      "show": "Talks at GS",
-      "title": "Talks at GS: Martin on purpose and philanthropy — the buy-side background is not the subject",
-      "verdict": "skip",
-      "score": 3,
-      "why": "Skip. A conversation about personal history and mission, not investing. His buy-side record is substantial, but these 24 minutes do not cover how he underwrote consumer names — they cover upbringing and philanthropy. If you want process, this does not deliver it.",
-      "key_points": [
-        "Spent 21 years at Adage Capital Management, reaching senior partner, covering consumer, and involved in taking firm assets above US$40bn.",
-        "Career began as an assistant to Erskine Bowles, White House chief of staff under Clinton.",
-        "His current firm Wellwithal runs an 'inclusive capitalism' model reinvesting 20% of profits into health equity projects.",
-        "Recurring argument that self-made is a false narrative and people are made by communities."
-      ],
-      "topics": [
-        "Asset Management"
-      ]
-    },
-    {
-      "episode_id": "25d65915ffa8c247",
-      "section": "watchlist",
-      "show": "Bloomberg Surveillance",
-      "title": "Bloomberg Money: payroll read duplicates BofA at lower resolution",
-      "verdict": "skip",
-      "score": 4,
-      "why": "Skip. The most valuable content in 43 minutes is the payroll decomposition, which overlaps the BofA episode entirely and is shallower (same -23k with 50k local education as seasonal). The rest is credit card indicators and golf demographics, with no landing point for you. The same show has a better episode today — take the internals one instead.",
-      "key_points": [
-        "Payroll read duplicates the BofA episode: 23k jobs lost, of which 50k local education, largely a seasonal roster timing difference expected to wash out next month.",
-        "Notes Strategic Sports Group — the vehicle behind Fenway — and its activity in golf.",
-        "Political segment on inconsistency between definitions of 'socialism' and Republican framing."
-      ],
+      "title": "The Fed hiked for the first time in three years; Warsh reframes the mandate and the causal chain runs through Hormuz",
+      "verdict": "must_listen",
+      "score": 9,
       "topics": [
         "Macro & Rates"
-      ]
+      ],
+      "why": "Listen first. Twenty-one minutes for the regime change itself, from the WSJ reporter who was in the room: 1) the Fed raised rather than cut, against explicit White House messaging that inflation is contained, 2) the new chair is framing it as fixing a five-year error, which is a reaction-function statement, not a data-point statement, and 3) the causal chain is traced to a supply shock, which tells you what would have to reverse.",
+      "key_points": [
+        "The Fed raised rates for the first time in three years — 'we had been cutting, we stopped cutting, that was a change, and now we're actually going to raise'.",
+        "Chair is Kevin Warsh, appointed by Trump in January and in post since May. The market read at appointment was that he opens the door to looser policy; he has delivered the opposite (-ve for the political-capture thesis).",
+        "The hike lands while the White House is publicly saying inflation is under control and high prices will fall back soon. The Fed is explicitly disagreeing.",
+        "Causal chain as told: the bombing campaign in Iran, then Iran closing the Strait of Hormuz, then the oil spike feeding through to business and consumer costs. A supply shock, not demand.",
+        "Warsh's framing — 'that's an important message we've missed for five years, and we're going to fix that' — was received in the room as a bold statement. Read it as a reaction function, not a forecast.",
+        "Transmission called out explicitly: mortgages, car loans, credit card balances all reprice higher, alongside the bond market turmoil already in train.",
+        "Press conference was run one question, no follow-ups — itself a signal on how much the new chair intends to be interrogated."
+      ],
+      "read_across": "This is a reaction-function change, not a data print. Everything positioned for a cutting cycle — duration, rate-sensitive equity, carry — is on the wrong side of it. The Hormuz dependency is the thing to monitor for a reversal."
     },
     {
-      "episode_id": "8a21488e97175a9d",
+      "episode_id": "1173c77ea22f7337",
+      "section": "subscribed",
+      "show": "Global Research Unlocked",
+      "title": "BofA on the BOJ: hike delivered, October priced out to 18%, December still base case — and the FX move outran the rates move",
+      "verdict": "must_listen",
+      "score": 8,
+      "topics": [
+        "Macro & Rates"
+      ],
+      "why": "Listen. Recorded Friday 18 Sep, the day of the BOJ decision, with the G10 desk on the call. Twenty minutes for the full sell-side read on a live decision: what was priced, what got repriced, and the one cross-asset dislocation worth trading.",
+      "key_points": [
+        "BOJ raised the policy rate 25bp to 1.25%, as expected, but with two dissents from dovish board members Noda and Sato — both appointed under the current administration, which has fed speculation about political pressure on the BOJ from PM Takaichi.",
+        "Post-statement, markets gave back October hike expectations — implied probability down to around 18% — and the 2s30s JGB curve twist-steepened. BofA remains comfortable with a further 25bp at the December meeting as base case.",
+        "Governor's press conference was read as balanced, not dovish. BofA's prior was that a 50bp move or back-to-back hikes was never a strong possibility absent an information shock or a behind-the-curve scare of the 2022-23 Fed/ECB type.",
+        "The dislocation: 'the FX reaction was much bigger than the rates move implied' against a balanced press conference — i.e. FX is pricing something the rates market is not.",
+        "Balance sheet is the longer-dated point. Climate-linked fund-supplying operations were revised so the loan rate is the average policy rate over the life of the loan rather than the rate at extension — no near-term market impact, but it lays the groundwork for tapering liquidity provision.",
+        "BofA expects the BOJ balance sheet to shrink at one of the fastest paces among major central banks, via ongoing QT plus the run-off of lending-stimulus facilities.",
+        "Net JGB supply relative to nominal GDP is expected to decline in 2027 vs 2026, largely on lower redemptions of BOJ-held JGBs (+ve for JGBs on a supply basis)."
+      ],
+      "read_across": "The FX-vs-rates divergence is the actionable piece. On the JGB side, supply/GDP falling in 2027 cuts against the consensus supply-indigestion story — relevant if you carry JPY or JGB exposure."
+    },
+    {
+      "episode_id": "11bcd99289c9cc03",
+      "section": "subscribed",
+      "show": "Global Research Unlocked",
+      "title": "BofA sizes the derivative-income complex: US$1tn of retail structured issuance, and income ETFs growing 5x the ETF average",
+      "verdict": "must_listen",
+      "score": 8,
+      "topics": [
+        "Asset Management"
+      ],
+      "why": "Listen — this is the closest episode of the batch to your own product shelf, and it is eleven minutes. It sizes the structured-income market properly and asks the right question: why is retail reaching for derivative income when traditional yields are back and, after this week's Fed, staying higher. Transcript is incomplete, so treat the framing as solid and the tail figures as indicative.",
+      "key_points": [
+        "US$1tn of retail structured products issued globally last year, 70% equity-linked. Roughly a third of that equity issuance is income-oriented.",
+        "Income-oriented issuance has tripled in five years to over US$320bn per annum.",
+        "Derivative ETFs have amassed over US$550bn globally, with inflows tripling to US$8bn year-to-date — the highest in at least a decade.",
+        "Within derivative ETFs, income-focused strategies — covered calls, put-write and now auto-callables — have grown five times faster than ETFs overall. Auto-call ETFs alone gathered c.US$5bn in a year.",
+        "North America specifically: income style is now half of all equity-linked structured issuance.",
+        "The demographic argument, with BofA Institute data: 55% of US adults say generating or supplementing regular income is a purpose of investing, led by younger millennials; Gen Z is more than twice as interested in learning about options. Income is no longer a retiree style (+ve for structural demand).",
+        "Framed explicitly around the word 'outcome' — predetermined payoffs linked to an index or security — which is the right frame for where auto-callables sit."
+      ],
+      "read_across": "Auto-callables are called the workhorse of structured income and are now arriving in ETF wrappers. If you distribute FCN-type product, the ETF wrapper is the competing access point, and the demographic data reframes who the end buyer is."
+    },
+    {
+      "episode_id": "a54c5308353f575d",
+      "section": "watchlist",
+      "show": "Dwarkesh Podcast",
+      "title": "OpenAI's Brown on agent swarms: 10,000 agents, 130bn tokens and 88 hours to close a Millennium Prize problem",
+      "verdict": "must_listen",
+      "score": 8,
+      "topics": [
+        "AI Infrastructure"
+      ],
+      "why": "Listen. The best available primary account of what parallel test-time compute actually consumes, from the person who built the reasoning models: 1) the resource figures are stated, not estimated, 2) he is explicit about where parallelism stops working, and 3) it is the cleanest read-through to inference demand in the batch.",
+      "key_points": [
+        "OpenAI announced solving one of the Millennium Prize Problems with a system of 10,000 agents consuming 130bn tokens over 88 hours.",
+        "Scale in human terms: 130bn tokens is roughly a single human thinking full-time, back to back, for 4,000 years.",
+        "The mechanism: reasoning performance scales cleanly with test-time compute, but serial scaling hits a latency wall. Multi-agent is parallel test-time scaling — less efficient per token because no single agent holds all context, but effective.",
+        "He is explicit about the limit: 10,000 agents on a novel would not help, the same way 10,000 people writing one novel would not. The gains are task-shaped, not general.",
+        "The science is underdone because it is expensive — they have not run single-agent Navier-Stokes, so the speed-up multiple is unknown. Methodical work at 64/128/256 agents is what is needed (-ve for anyone extrapolating from the headline)."
+      ],
+      "read_across": "If frontier results now require 130bn tokens per problem, inference demand is being driven by agent count, not model size. That is a different capex and power profile than the training-scaling story most compute models still assume."
+    },
+    {
+      "episode_id": "87eb5c37236a8280",
+      "section": "watchlist",
+      "show": "a16z Podcast",
+      "title": "Databricks' Ghodsi: enterprise AI is blocked on context not intelligence, cyber is the live risk, and one company at scale moved off frontier models to GLM",
+      "verdict": "must_listen",
+      "score": 7,
+      "topics": [
+        "AI Application Layer",
+        "AI Governance"
+      ],
+      "why": "Listen. The operator counterweight to a week of safety discourse, from someone selling into enterprises at scale: 1) a concrete diagnosis of why adoption stalls, 2) a first instance of a scaled company leaving the frontier labs for an open model, and 3) the tragedy-of-the-commons objection to pacing, stated plainly by someone who would have to comply.",
+      "key_points": [
+        "Core diagnosis: 'AI may already be smart enough for the enterprise. The problem is that it doesn't understand your company.' The blocker is organisational context, not model capability (-ve for the pure model-scaling thesis on enterprise revenue).",
+        "On pacing the frontier, the commons objection in his own words: 'If you want to go slower, why don't you go slower? I'm competing. I want to win.'",
+        "He puts existential risk close to zero today and argues the public probability-of-doom broadcasting causes real harm to people who miss the nuance.",
+        "Where he says the risk is real now: cybersecurity. Agents make attacks faster than human security teams can respond, so defence has to be automated — and 'most organizations are actually not close to doing that'.",
+        "Stated as a first: 'for the first time ever, a company at scale last week said that they're moving from the frontier models to GLM.' Treated as an open question whether it is a trend or an anecdote (-ve for frontier-lab pricing power if it generalises).",
+        "Internal practice at Databricks: built an organisational ontology, actively manages token costs, and routes different models to different jobs rather than defaulting to the best model.",
+        "Notes the inconsistency he sees in the discourse — warning humanity will die while discussing IPO allocations, a point he attributes to Elon."
+      ],
+      "read_across": "Model routing plus token-cost management at a large buyer is a margin headwind for frontier API pricing. The GLM migration is worth tracking as a leading indicator of open-weight substitution in enterprise."
+    },
+    {
+      "episode_id": "c8cc7ed5308dbac5",
+      "section": "subscribed",
+      "show": "Y Combinator Startup Podcast",
+      "title": "YC's batch data: hard tech 8% to 20%, median batch-exit revenue up from US$8k to US$20k/month",
+      "verdict": "worth_skim",
+      "score": 6,
+      "topics": [
+        "Founders & Company History"
+      ],
+      "why": "Skim for the numbers, which are proprietary and quantified; skip the discussion around them, which is anecdotal. Thirty-six minutes for what is really four statistics.",
+      "key_points": [
+        "Hard tech has gone from 8% to 20% of the batch over the last 12-18 months.",
+        "Median accepted company is pre-revenue and pre-product. Median revenue at batch end has gone from c.US$8k/month to c.US$20k/month (+ve on velocity, off a tiny base).",
+        "Category detail: robotics 1% to 6-7%, industrial manufacturing 4% to 10%, defence c.1.5% to c.5%, plus two other categories moving from c.1% to c.3-4%.",
+        "Drivers offered: SpaceX's IPO creating a cohort wanting to build in space; war salience pushing founders toward defence and US reshoring; and AI collapsing the software component that used to make hard tech hard.",
+        "Observation on founder age — a resurgence of experienced founders in their late thirties to fifties, attributed to hard tech needing research backgrounds."
+      ],
+      "read_across": "A 20% hard-tech batch at YC is an early read on where private capital formation is heading in defence, industrial reshoring and space."
+    },
+    {
+      "episode_id": "b0dc1661dedb1ead",
       "section": "watchlist",
       "show": "Odd Lots",
-      "title": "Odd Lots on the canned sardine supply chain: one usable fact, not 58 minutes of it",
-      "verdict": "skip",
-      "score": 4,
-      "why": "Skip. Odd Lots quality is intact but the topic has no landing point for you: 58 minutes on canned sardine supply chains. The core fact fits in one line below and does not justify the runtime.",
-      "key_points": [
-        "Core fact: Morocco supplies roughly half of global sardine exports and has now banned sardine exports, citing overfishing reports (-ve for canned fish input costs).",
-        "Secondary cause given is insufficient plankton, leaving juvenile fish underfed.",
-        "Hosts frame canned fish within the broader global supply chain."
-      ],
+      "title": "Odd Lots on pass-throughs and S-corps: where the tax cuts actually went, and how many wealthy Americans there really are",
+      "verdict": "worth_skim",
+      "score": 6,
       "topics": [
-        "Consumer & Retail"
+        "Macro & Rates"
+      ],
+      "why": "Skim. Structurally useful on a part of the US tax base that rarely gets covered properly, and the source is a Treasury-commissioned pass through IRS microdata. Sixty minutes is long for the payload, but the framing is not available elsewhere.",
+      "key_points": [
+        "Thesis: when tax breaks for the wealthy are discussed the frame is usually a Bezos effective-rate story, but the material cuts since the 1980s and again under the current administration have run through S-corps and pass-through entities.",
+        "These get framed politically as small business; the book's finding is that many are very large and very wealthy.",
+        "Provenance matters: the work started as a Treasury Department commission to sift IRS data to establish who these owners are and how many there are — the department had not been able to do it because the datasets were not linked.",
+        "Reframes the inequality discussion away from a 1%/0.1% concentration story toward a much broader base of business-owning wealth."
+      ],
+      "read_across": "Relevant to US consumption and private-wealth AUM assumptions: the affluent cohort is wider and more business-income-dependent than a top-0.1% frame implies."
+    },
+    {
+      "episode_id": "e0e3ac7fbfd589ff",
+      "section": "watchlist",
+      "show": "Bloomberg Surveillance",
+      "title": "UBS's Lovell: earnings not the Fed drive the tape; multiple already compressed 22x to 19x",
+      "verdict": "worth_skim",
+      "score": 6,
+      "topics": [
+        "Macro & Rates"
+      ],
+      "why": "Skim — twenty-one minutes and the numbers are specific. It is the bull case against this week's hike, which is worth holding next to the Journal episode rather than instead of it.",
+      "key_points": [
+        "The call: 'earnings not the Fed are driving this market. Another rate hike would be a speed bump, not a stop sign' — buy the pullbacks.",
+        "Most recent season approached 30% EPS growth. Forecasts c.25% EPS growth this year and 14% next, both above longer-term trend (+ve).",
+        "Valuation has already absorbed a lot: the multiple has come in from 22x at the start of the year to 19x now, so higher rates and bond yields are partly priced.",
+        "Concedes equity markets historically struggle at the start of a hiking cycle and expects near-term volatility, but argues any pullback is shallow. Looking for c.10% upside rather than 20%.",
+        "Points to broadening earnings growth as evidence of a healthier bull market, and argues a predictable, methodical 25bp cadence is what the market needs.",
+        "Flags pressure specifically on long-duration and housing-sensitive areas (-ve)."
+      ],
+      "read_across": "19x with 14% forward EPS is the bull's arithmetic. The stated vulnerability — long duration and housing-sensitive — is where to look if the hike cadence turns out to be less methodical than assumed."
+    },
+    {
+      "episode_id": "8e638e26ec4e7284",
+      "section": "watchlist",
+      "show": "Prof G Markets",
+      "title": "Bostrom on the week AI safety went mainstream",
+      "verdict": "worth_skim",
+      "score": 6,
+      "topics": [
+        "AI Governance"
+      ],
+      "why": "Skim, and prefer this one over the Hard Fork episode on the same story — Bostrom is the primary intellectual source and this is 66 minutes against Hard Fork's 84 for largely the same events. Note the first three minutes are cross-promo ads.",
+      "key_points": [
+        "The week's chain of events, as set out: Jacob Coxon, a former Anthropic and OpenAI researcher, posted that employees at both believe AI could 'kill us all by the end of the decade'; the post went viral; other researchers came forward with the same concern.",
+        "Then Anthropic CEO Dario Amodei published an essay calling for the industry to slow model development, and Sam Altman said he agreed — and added that OpenAI will not go public this year.",
+        "Bostrom is positioned as the longest-standing student of the problem; Superintelligence (2014) shaped how Musk, Altman and Sutskever framed it.",
+        "He characterises the moment as confusing and perplexing, and says the view that there are significant risks including existential ones is quite widespread among people close to the technology and inside the frontier labs."
+      ],
+      "read_across": "'OpenAI will not go public this year' is the only directly market-relevant item in the chain, and it came attached to a safety argument rather than a market one."
+    },
+    {
+      "episode_id": "85f1518c8344974c",
+      "section": "watchlist",
+      "show": "No Priors",
+      "title": "Inception's Ermon on diffusion for text: parallel token output as the inference-cost attack",
+      "verdict": "worth_skim",
+      "score": 6,
+      "topics": [
+        "AI Infrastructure"
+      ],
+      "why": "Skim. A credible technical challenger thesis from one of the originators of diffusion, aimed squarely at inference cost. The evidence offered is still sub-billion-parameter and academic, so treat it as a thesis to monitor rather than a demonstrated result.",
+      "key_points": [
+        "Ermon is a Stanford professor and one of the originators of diffusion; score-based generative models date to his group's 2019 work.",
+        "The claim: a transformer trained as a diffusion model on the same data was significantly faster, because diffusion outputs many tokens simultaneously rather than autoregressively (+ve for latency and cost per token).",
+        "Scale caveat stated plainly — the comparison was at under a billion parameters and fairly academic.",
+        "Supporting argument from adjacent markets: diffusion already dominates short-form generated video, which is a large enough use case that hardware is being built for it.",
+        "Company positioning is speed and efficiency as the competitive axis over the next few years, explicitly against the large labs."
+      ],
+      "read_across": "If parallel decoding generalises to large models it compresses inference cost per token, which cuts against the inference-demand read from the Brown episode. Worth holding both."
+    },
+    {
+      "episode_id": "f5a4c5de98230aac",
+      "section": "watchlist",
+      "show": "All-In",
+      "title": "Gurley on institutional failure: Surfside and the 737 MAX as templates for how bad news gets suppressed",
+      "verdict": "worth_skim",
+      "score": 5,
+      "topics": [
+        "Founders & Company History"
+      ],
+      "why": "Skim. Not an AI or markets talk despite the venue — it is an argument about why institutions fail to act on information they already have, built on two forensic case studies. Useful as a diligence frame; no direct positioning content.",
+      "key_points": [
+        "Case one, Champlain Towers South, Surfside, June 2021, 98 dead. Three institutional failures — design flaws from the outset, poor maintenance scheduling, and a condo board that did not act on an inspection report — sitting on top of a technical one (saltwater corrosion of the pool deck collapsing into the basement and taking out structural columns).",
+        "His emphasis is on who produced the knowledge: NYT investigative work, plus four parallel investigations including NIST, a Florida grand jury, and 17 victim suits consolidated into one class.",
+        "Case two, the 737 MAX. Root cause was that the engine was too large and had to be moved forward on the wing; two crashes followed, October 2018 and March 2019.",
+        "The suppression point: roughly 45 days after the first crash almost everyone knew MCAS was at fault. Ted Cruz accused the head of the FAA of being a captured regulator in Senate testimony.",
+        "Credits sustained specialist coverage — Dominic Gates had covered Boeing for the Seattle Times for 16 years."
+      ],
+      "read_across": "The transferable point for diligence: the gap between when a defect is known internally and when it is priced is an institutional-incentive question, not an information-availability one."
+    },
+    {
+      "episode_id": "eb9fb056b50d0dd2",
+      "section": "watchlist",
+      "show": "Hard Fork",
+      "title": "Hard Fork on the AI safety week — and the show's final episode",
+      "verdict": "worth_skim",
+      "score": 5,
+      "topics": [
+        "AI Governance"
+      ],
+      "why": "Skim only if you want the media-side colour. The substance overlaps the Prof G Bostrom episode almost entirely — same Coxon post, same Dario essay — and at 84 minutes with an exit AMA attached it is the longer, thinner version of the two. Take Bostrom instead.",
+      "key_points": [
+        "Same triggering chain as the Bostrom episode: Coxon's viral resignation post saying neither OpenAI nor Anthropic is acting responsibly.",
+        "The hosts' own read on why it landed this time — the response to the OpenAI/Hugging Face incident had already shifted how people receive the message, where a few weeks earlier it would not have.",
+        "One host notes candidly that the post did not faze him, and takes that as evidence he is in a bubble.",
+        "Disclosure carried on air: the NYT is suing OpenAI, Microsoft and Perplexity.",
+        "This is the show's final episode, with an exit AMA occupying a large share of the runtime."
       ]
     },
     {
-      "episode_id": "d4a1d6e91b2b7f98",
+      "episode_id": "7ad7ac73e5ed5d27",
       "section": "watchlist",
-      "show": "The Joe Rogan Experience",
-      "title": "Rogan #2537: 151 minutes with nothing usable; the opening premise is debunked in-episode",
+      "show": "a16z Podcast",
+      "title": "a16z's Elman on what makes a consumer AI product stick",
+      "verdict": "worth_skim",
+      "score": 5,
+      "topics": [
+        "AI Application Layer"
+      ],
+      "why": "Skim if you underwrite consumer software; otherwise skip. The framework is sound but familiar — do one thing well, become a habit, then earn the right to expand. Sixty minutes for one reusable datapoint and one structural argument.",
+      "key_points": [
+        "The datapoint: ChatGPT cited at 900m weekly active users.",
+        "The stickiness test he applies: a product has to be good enough out of the box that the user either stops doing something else or hands more behaviours over to it — attention is cheap, displacement is not.",
+        "Sequencing argument: start by doing one thing exceptionally well, become a habit, then expand. Products that start broad do not get there.",
+        "Forward view is that trust becomes the binding constraint as agents move into shopping, entertainment and acting on a user's behalf with known preferences."
+      ]
+    },
+    {
+      "episode_id": "0e70ab4b518b528e",
+      "section": "watchlist",
+      "show": "All-In",
+      "title": "Isaacman's NASA address: a programme critique delivered as a keynote, with no investable specifics",
+      "verdict": "skip",
+      "score": 4,
+      "topics": [
+        "Founders & Company History"
+      ],
+      "why": "Skip. The NASA administrator criticising legacy programme structure is genuinely newsworthy, but the 39 minutes carry no budget numbers, no contract decisions and no timelines — it is a keynote. If you hold space or defence exposure, the two specifics below are the whole extractable payload.",
+      "key_points": [
+        "His criticism of SLS/Orion: the vehicle is less efficient than Saturn V at converting launch mass into payload headed for the moon, and there is more time between Artemis 1 and Artemis 2 than spanned all 12 Gemini missions flown 60 years earlier (-ve for legacy programme credibility).",
+        "Stated priority for the next capability step is nuclear power and propulsion; he notes billions were spent on nuclear programmes that have not left the laboratory since 1965.",
+        "Framing is explicitly great-power competition — China operating 25,000 miles of high-speed rail and a few years from its own Apollo 11 moment.",
+        "Concedes the change is externally driven: absent this president and the geopolitical competition, he suspects very little would have changed."
+      ]
+    },
+    {
+      "episode_id": "c98c2cf7af39c211",
+      "section": "watchlist",
+      "show": "Odd Lots",
+      "title": "Goldman's Sykes on bringing the Olympics to LA: scale figures, but the funding question is not answered",
+      "verdict": "skip",
+      "score": 4,
+      "topics": [
+        "Consumer & Retail"
+      ],
+      "why": "Skip. Recorded live at a conference, and it stays at the level of scale statistics and personal history. The one question with investment content — the LA28 funding mix — is raised and not resolved.",
+      "key_points": [
+        "Sykes is co-head of Global M&A at Goldman and president of the US Olympic Committee; he led the original LA bid for 2024.",
+        "Scale: 17,000 athletes across the Olympic and Paralympic Games, and 15m tickets to be sold in Los Angeles — against 104 matches for the World Cup across Mexico and the US.",
+        "The funding mix for the 2028 LA games is asked about directly and not answered with figures."
+      ]
+    },
+    {
+      "episode_id": "4fc55cae642c6a4b",
+      "section": "watchlist",
+      "show": "Bloomberg Surveillance",
+      "title": "Bloomberg Money: household finance segments, and a KKR regime-change essay that is mentioned but not discussed",
+      "verdict": "skip",
+      "score": 3,
+      "topics": [
+        "Consumer & Retail"
+      ],
+      "why": "Skip. Forty-four minutes of personal-finance television — cost of raising children, student loan rates, college sports going professional. KKR's Henry McVey is introduced around a regime-change essay on global macro and asset allocation, which would have been the reason to listen, and the segment does not get to it. The same show's 18 September episode is the shorter one with actual market content.",
+      "key_points": [
+        "Henry McVey, KKR partner and head of global macro and asset allocation, is introduced around a 'really important regime change essay' — the essay itself is not worked through.",
+        "Household figures cited: cost of raising a child put at US$300,000 excluding college; graduate programme costs of US$125,000 per year over two to three years at 9% loan rates.",
+        "Segment thesis is the 'Bank of Mom and Dad' — grandparents and parents stepping in because families need more capital to raise children.",
+        "Also covers the DOJ targeting a broader set of colleges, and 23-hour equity trading, on which the host is openly sceptical."
+      ]
+    },
+    {
+      "episode_id": "6ec3ca65e9d84b55",
+      "section": "subscribed",
+      "show": "In Good Company",
+      "title": "In Good Company Friday wrap-up: a process-simplification framework, no market content",
+      "verdict": "skip",
+      "score": 3,
+      "topics": [
+        "Brand & Marketing"
+      ],
+      "why": "Skip. Fourteen minutes of the hosts recapping their own week's guest on process simplification. The one line worth having is below; there is nothing on NBIM's positioning, which is the reason to listen to this show.",
+      "key_points": [
+        "The framework discussed is John McNeill's Algorithm — question every requirement, delete every unnecessary step, simplify, accelerate, then automate last.",
+        "The transferable line: automating or adding AI on top of an unsimplified process is 'like pouring cement on top of a process'.",
+        "Applied to the fund, they concede compliance and governance steps cannot be removed, but are changing reporting frequency and asset revaluation cadence."
+      ]
+    },
+    {
+      "episode_id": "9e2883de67e6c92b",
+      "section": "watchlist",
+      "show": "The Journal",
+      "title": "The Journal on prenups: off-mandate",
       "verdict": "skip",
       "score": 2,
-      "why": "Skip. This is the show you flagged as 'do not want to listen, do want to know what was said' — the answer today is that there is nothing in it for you. The opening spends a long stretch on a Soviet human-ape hybrid soldier claim which the episode itself checks and concludes probably did not happen, sourced to a single 2002 history-of-science paper. The body is longevity science and germline selection ethics, unrelated to markets.",
-      "key_points": [
-        "Opening topic is an alleged WWII-era Soviet programme to breed human-ape hybrid soldiers; checked on air, the hosts' own conclusion is 'it didn't happen, I don't think they did it', with the sole source a 2002 Science in Context paper by a Russian historian of science.",
-        "Extends to the present: human genetic engineering and embryo selection are already happening, with wealthy parents able to select for height, appearance and intelligence; compared to the film Gattaca.",
-        "References a fertility scandal in which a doctor substituted his own sperm for donor material, involving hundreds of children."
+      "topics": [
+        "Consumer & Retail"
       ],
-      "topics": []
+      "why": "Skip. Twenty-one minutes on prenuptial agreements as a middle-class financial planning tool. No market, allocation or product content. The one statistic is below if you want it for a wealth-management conversation.",
+      "key_points": [
+        "A 2023 survey put one in five married or engaged adults as having a prenup, skewed to Gen Z and millennials.",
+        "Framing has shifted from a stigmatised contract toward a financial planning tool, attributed partly to TikTok and Instagram circulation."
+      ]
     }
   ],
   "gaps": [
-    "AI Ascent is unobtainable today and structurally — Spotify-exclusive, absent from Apple and public RSS. Paid transcript vendors do not solve it either, since they also index audio from public RSS and transcribe it.",
-    "Stratechery has been substituted with Ben Thompson's public shows Exponent and Sharp Tech per your decision; neither published a full episode in today's window (Sharp Tech shipped a Preview only, discarded as a derivative episode).",
-    "Invest Like the Best's RSS read aborted today (IncompleteRead); retry logic has been added and it should resolve tomorrow.",
-    "Bloomberg Surveillance publishes three times daily; the pipeline caps any single watchlist show at two episodes per day. Drop it from the watchlist if the noise is still not worth it."
+    "AI Ascent remains unobtainable — Spotify-exclusive, absent from Apple and public RSS. Paid transcript vendors do not solve it, since they also index audio from public RSS.",
+    "Sharp Tech shipped a Preview only, discarded as a derivative episode; Exponent has not published since 2022 and should probably come off the list.",
+    "BofA's 'Signals & Noise' came back as a partial transcript, so the structured-income figures beyond the headline sizing are indicative rather than confirmed.",
+    "Thin day on the subscribed list — 4 episodes against 14 from the watchlist. Capital Allocators, Invest Like the Best and Acquired did not publish in the window."
   ]
 }

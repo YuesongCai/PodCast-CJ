@@ -28,3 +28,10 @@ __pycache__/
 # 每日渲染产物：正文是第三方播客内容，而且内嵌的多维表格链接
 # 本身带 Base token（URL 即凭据）。README 里有排版示例，不需要提交真实产出。
 newsletters/
+
+# Alan 那份列表的运行时产物（第三方内容，同 CJ 那份处理）
+data/alan_episodes.json
+data/alan_transcripts.json
+data/_zh_*.json
+data/judgments_*.json
+data/digest_pack_*.json

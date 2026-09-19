@@ -407,6 +407,51 @@ VENV_PY = os.path.join(ROOT_DIR, ".venv", "bin", "python")
 ASR_SCRIPT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "asr_local.py")
 
 
+def _cjk_ratio(text):
+    if not text:
+        return 0.0
+    cjk = sum(1 for c in text if "\u4e00" <= c <= "\u9fff")
+    return cjk / len(text)
+
+
+def language_mismatch(text, ep):
+    """转录结果的语言和节目对不上吗？对不上就必须拒用。
+
+    英文 ASR 模型喂中文音频不会报错，它会把中文**音译**成英文单词，
+    产出一份长度正常、语法通顺、内容全是编的「转录」。
+
+    实测（科技早知道，62 分钟）：转出 7263 字符、**0 个中文字符**，正文是
+    「T minus CO, that means Hasabi's Jose and I don't know Jan Hoshua...」。
+    这比拿不到正文危险得多——拿不到会标成 notes_only 并禁止编造 key points，
+    而这种噪音会让判断环节煞有介事地胡说一通，且读者看不出来。
+
+    判据：节目标题/简介明显是中文，而转录里几乎没有中文字符。
+    只查这一个方向，因为这是实际会发生的那个方向（本地只有英文模型）。
+    """
+    meta = f"{ep.get('show', '')} {ep.get('title', '')} {(ep.get('notes') or '')[:800]}"
+    if _cjk_ratio(meta) < 0.10:
+        return None                      # 节目本身不是中文，不适用
+    got = _cjk_ratio(text)
+    if got >= 0.05:
+        return None                      # 转录里有中文，正常
+    return (f"语言不匹配：节目是中文（元数据 {_cjk_ratio(meta):.0%} 中文字符），"
+            f"但转录里只有 {got:.1%} 中文字符——英文模型把中文音译成了英文噪音，"
+            f"这种输出看起来正常但内容全是编的，拒用")
+
+
+# 中文（以及任何非欧语）必须换引擎。parakeet 快，但喂中文只会产出音译噪音。
+WHISPER_MODEL = os.environ.get(
+    "ASR_WHISPER_MODEL", "mlx-community/whisper-large-v3-turbo")
+
+
+def asr_engine_for(ep):
+    """这一集该用哪个 ASR 引擎。返回 (engine, model, language)。"""
+    meta = f"{ep.get('show', '')} {ep.get('title', '')} {(ep.get('notes') or '')[:800]}"
+    if _cjk_ratio(meta) >= 0.10:
+        return "whisper", WHISPER_MODEL, "zh"
+    return "parakeet", None, None
+
+
 def from_asr(ep, model=None):
     """本地转录 RSS 音频。这是覆盖率的兜底——RSS 都带 audio enclosure，
     所以只要节目在 RSS 上，这条路就一定能出全文。
@@ -426,14 +471,20 @@ def from_asr(ep, model=None):
     env = dict(os.environ)
     env.setdefault("HF_HUB_DISABLE_XET", "1")   # xet 传输实测会报 CAS 错误
     env["PATH"] = "/opt/homebrew/bin:" + env.get("PATH", "")
-    if model:
-        env["ASR_MODEL"] = model
+    engine, auto_model, lang = asr_engine_for(ep)
+    env["ASR_ENGINE"] = engine
+    if lang:
+        env["ASR_LANGUAGE"] = lang
+    if model or auto_model:
+        env["ASR_MODEL"] = model or auto_model
 
     with tempfile.TemporaryDirectory() as td:
         out_path = os.path.join(td, "asr.json")
         # 超时按时长给：12x 实时 + 下载余量，最少 10 分钟
         dur = ep.get("duration_sec") or 3600
-        timeout = max(600, int(dur / 6) + 600)
+        # whisper 比 parakeet 慢一个量级，超时按引擎给
+        divisor = 1.5 if engine == "whisper" else 6
+        timeout = max(900, int(dur / divisor) + 600)
         try:
             p = subprocess.run([VENV_PY, ASR_SCRIPT, "--audio-url", audio, "--out", out_path],
                                capture_output=True, text=True, timeout=timeout, env=env)
@@ -451,6 +502,9 @@ def from_asr(ep, model=None):
         text = clean_transcript(d.get("text") or "")
         if words(text) < 200:
             return None, {"error": f"转录过短 {words(text)} 词", **(d.get("stats") or {})}
+        bad = language_mismatch(text, ep)
+        if bad:
+            return None, {"error": bad, **(d.get("stats") or {})}
         return text, d.get("stats") or {}
 
 
