@@ -24,3 +24,7 @@ data/digest_pack.json
 __pycache__/
 *.pyc
 .DS_Store
+
+# 每日渲染产物：正文是第三方播客内容，而且内嵌的多维表格链接
+# 本身带 Base token（URL 即凭据）。README 里有排版示例，不需要提交真实产出。
+newsletters/

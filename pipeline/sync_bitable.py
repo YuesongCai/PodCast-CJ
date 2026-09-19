@@ -231,37 +231,91 @@ def fetch_existing(bt, tid):
     return existing, dupes
 
 
+def read_across(item):
+    """字段改过名（for_you -> read_across），旧名保留为别名。"""
+    for k in ("read_across", "for_you"):
+        v = (item.get(k) or "").strip()
+        if v:
+            return v
+    return ""
+
+
+# 模型给的英文标签 -> 表里的中文字段值。表头保持中文，因为多维表格是给
+# 中文使用者筛历史用的；newsletter 正文才是给二级买方读的英文。
+TOPIC_MAP = {
+    "macro & rates": "宏观与利率",
+    "asset management": "资管行业",
+    "energy": "能源",
+    "ai infrastructure": "AI 基建与算力",
+    "ai governance": "AI 治理与监管",
+    "ai application layer": "AI 应用层",
+    "trading & risk": "交易与风控",
+    "founders & company history": "创业与公司史",
+    "consumer & retail": "消费与零售",
+    "brand & marketing": "品牌与营销",
+    "tech strategy": "科技战略",
+}
+
+
 def topics_for(item, meta):
-    """按内容给主题标签。规则式打标，不够精细的地方由 judgments 里的文本兜底。"""
+    """主题标签。**优先用模型在判断时直接给的 `topics`**，规则只在缺失时兜底。
+
+    为什么不信规则：实测规则式打标会把「trade body lobbying a **regulator**」
+    和「poor corporate **governance**」都打成「AI 治理与监管」——
+    词出现了不等于这集是讲那个的。模型看得到上下文，规则看不到。
+
+    兜底规则以英文为主（产出已切英文），中文词保留是为了兼容
+    2026-09 之前落库的历史行，重跑历史时标签不会丢。
+    """
+    given = item.get("topics")
+    if isinstance(given, list) and given:
+        mapped = [TOPIC_MAP.get(str(g).strip().lower()) for g in given]
+        mapped = [m for m in mapped if m]
+        if mapped:
+            return sorted(set(mapped))
+
     show = (meta.get("show") or "").lower()
     blob = " ".join([item.get("title") or "", item.get("why") or "",
                      " ".join(item.get("key_points") or []),
-                     item.get("for_you") or ""]).lower()
+                     read_across(item)]).lower()
     t = set()
+
     def has(*ws):
         return any(w in blob for w in ws)
 
-    if has("非农", "联储", "失业率", "降息", "利率", "国债", "refunding", "汇率", "久期"):
+    if has("payroll", "unemployment", "fomc", "the fed", "rate cut", "yields",
+           "treasury", "refunding", "duration", "cpi", "inflation",
+           "非农", "联储", "失业率", "降息", "利率", "国债", "汇率", "久期"):
         t.add("宏观与利率")
-    if has("aum", "资管", "管理人", "配置", "基金", "monetary authority", "mas", "aima", "税制"):
+    if has("aum", "allocator", "asset management", "mandate", "domicile", "lp ",
+           "monetary authority", "mas", "aima", "manager selection", "fund",
+           "资管", "管理人", "配置", "基金", "税制"):
         t.add("资管行业")
-    if has("油", "能源", "e&p", "天然气", "oil"):
+    if has("oil", "e&p", "natural gas", "opec", "crude", "energy fund",
+           "油", "能源", "天然气"):
         t.add("能源")
-    if has("数据中心", "算力", "发射成本", "散热", "太空", "gpu", "能源瓶颈"):
+    if has("datacentre", "data center", "launch cost", "heat rejection",
+           "power constraint", "ipp", "gpu", "compute", "utilities",
+           "数据中心", "算力", "发射成本", "散热", "太空"):
         t.add("AI 基建与算力")
-    if has("对齐", "监管", "治理", "安全", "限速", "pacing", "agi"):
+    if has("alignment", "regulat", "pacing", "agi", "safety", "governance",
+           "metr", "对齐", "监管", "限速"):
         t.add("AI 治理与监管")
-    if has("agent", "设计工具", "应用层", "html", "护城河"):
+    if has("agent", "application layer", "html/css", "moat", "design tool",
+           "应用层", "护城河"):
         t.add("AI 应用层")
-    if has("风控", "仓位", "交易", "指标", "止损"):
+    if has("risk management", "position siz", "stop loss", "drawdown",
+           "trading", "风控", "仓位", "止损"):
         t.add("交易与风控")
-    if has("创始人", "创业", "融资", "独角兽", "demo day", "公司史", "founder"):
+    if has("founder", "raised", "unicorn", "demo day", "ipo", "listing",
+           "创始人", "创业", "融资", "独角兽"):
         t.add("创业与公司史")
-    if has("零售", "消费", "参与率", "品类", "客流"):
+    if has("retail", "consumer", "participation rate", "footfall", "same-store",
+           "零售", "消费", "参与率", "客流"):
         t.add("消费与零售")
-    if has("品牌", "粉丝", "营销", "体验"):
+    if has("brand", "fan", "marketing", "品牌", "粉丝", "营销"):
         t.add("品牌与营销")
-    if "stratechery" in show or has("科技战略", "平台"):
+    if "stratechery" in show or has("platform strategy", "aggregation", "科技战略"):
         t.add("科技战略")
     return sorted(t)
 
@@ -299,7 +353,7 @@ def do_sync():
             "判定": VERDICT_MAP.get(it.get("verdict"), "扫一眼就够"),
             "判断理由": it.get("why") or "",
             "要点": "\n".join(f"• {k}" for k in (it.get("key_points") or [])),
-            "对你的意义": it.get("for_you") or "",
+            "对你的意义": read_across(it),
             "原标题": m.get("title") or "",
             "正文来源": SOURCE_MAP.get(m.get("evidence_source"), "仅 show notes"),
             "正文可信度": FIDELITY_MAP.get(m.get("fidelity"), "仅简介"),

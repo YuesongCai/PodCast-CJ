@@ -1,106 +1,177 @@
-# 每日播客判断 — Claude 的任务说明
+# Daily Podcast Screen — Output Spec
 
-读 `data/digest_pack.json`，输出 `data/judgments.json`。
+You read `data/digest_pack.json` and write `data/judgments.json`.
 
-## 这件事的定位（最重要，先读这段）
+## What this product is
 
-需求方明确说过：**「明确不是单纯的新闻/内容总结——那有更好的现成方案，价值全在筛选 + 覆盖盲区。」**
+**This is a screen, not a summary.** The reader explicitly rejected summarisation:
+*"有更好的现成方案，价值全在筛选 + 覆盖盲区."* Your job on every episode is to answer
+**"should he spend the 74 minutes?"** — not "what was said."
 
-所以你的产出不是摘要，是**判断**。每一集你要回答的是「他该不该花这 74 分钟」，
-而不是「这集讲了什么」。如果你写出来的东西读起来像节目简介的改写，就是失败了。
+If your output reads like a rewritten show description, you have failed.
 
-具体差别：
-
-| ❌ 总结（没价值） | ✅ 判断（有价值） |
+| ❌ Summary (no value) | ✅ Screen (the product) |
 |---|---|
-| 「本集讨论了能源行业的投资机会」 | 「值得听。他把 2022 年油气股暴涨归因于产能纪律而非需求，这个归因和主流卖方叙事相反，而且他给了可验证的持仓数据。你做能源配置的话这 20 分钟值得。」 |
-| 「嘉宾分享了风险管理经验」 | 「扫一眼就够。50 年老交易员的风控原则，核心就是仓位上限和不加死码——你已经知道的东西，没有新增信息。除非你想听具体的爆仓案例。」 |
+| "The episode discusses energy investment opportunities." | "**Listen.** Young attributes the 2022 O&G run to supply discipline, not demand — directly against the sell-side narrative — and backs it with position-level data. 20 mins if you run energy exposure." |
+| "The guest shared risk management experience." | "**Skip.** 50-year trader's risk rules: position caps, don't average down. Nothing you don't already run. Unless you want the blow-up war stories." |
 
-## 输入字段说明
+## Reader profile — write for this person
 
-`data/digest_pack.json` 的每个 item：
+A **secondary-market buy-side professional in Hong Kong**. Fundamental, multi-asset
+with an equity core, covers Asia and global. He reads sell-side research all day and
+writes his own PM notes. Assume he knows the vocabulary — do not explain what EV/EBITDA,
+a bps, or a consensus revision is.
 
-- `section`：`subscribed`（他订阅的）或 `watchlist`（盲区，他没订阅）
-- `evidence`：**压缩后**的正文。格式是「开头原文 + 中段按信息密度抽取 + 结尾原文」，
-  `[…]` 表示跳过了内容。**中段是不连续的**，不要把跳跃当成逻辑断裂或自相矛盾。
-- `fidelity`：证据可信度，**直接决定你能说多细**
-  - `full` — 有完整正文，可以给具体的 key points、数字、观点归属
-  - `partial` — 正文不完整，判断要保守，别给精确数字
-  - `notes_only` — **只有 show notes，没有正文**。这种情况下：
-    - 只能基于简介判断「值不值得听」
-    - **绝对不要编造 key points**，`key_points` 留空数组
-    - 在 `why` 里写清楚是基于简介判断的
-- `evidence_source`：`youtube`(字幕) / `asr`(本地转录) / `rss_inline` / `rss_transcript` / `notes_only`
-- `compression.original_words`：原始正文长度，帮你判断这集信息量
+What he is actually looking for, in priority order:
 
-## 听众画像（可改）
+1. **Variant perception** — a view that differs from consensus, with the reasoning shown.
+   "X is structurally advantaged" is worthless; "X is advantaged *because* the incumbent's
+   cost base is 40% fixed and re-contracting in 2027" is the product.
+2. **Read-across** — does this change how a sector, a name, or a factor should be positioned?
+3. **Second-order / supply-chain detail** he cannot get from a screen or a sell-side note —
+   channel checks, unit economics, capex commitments, pricing behaviour.
+4. **Capital-flow and allocator behaviour** — what LPs, sovereigns, and large allocators
+   are actually doing, not what they say at conferences.
+5. **Decision patterns** from operators and founders where they generalise to other names.
 
-一个香港的投资机构从业者，看资产配置和产品。关注：
+Explicitly **not** interested in: motivational content, personal development, generic
+industry outlooks, and news that has already been widely reported. Reporting *that*
+something happened is not the value; **how a serious person interprets it** is.
 
-1. **一级/二级市场配置逻辑**、机构投资者行为、基金策略
-2. **AI 的产业落地和基建**——不是 AI 新闻，是「谁在赚钱、成本结构怎么变」
-3. **科技战略分析**（Ben Thompson 那类的框架思维）
-4. 交易/风控的**可操作**方法论
-5. 创始人和公司史里的**决策模式**
+## Language and voice — this matters as much as the content
 
-明确不感兴趣：励志、个人成长、泛泛的行业展望、已被广泛报道的新闻本身。
+**Write everything in English.** The reader wants this to read like a buy-side research
+note, because that is what he reads and writes all day.
 
-判断「值不值得听」的标准，按重要性排序：
+House style, modelled on institutional buy-side notes:
 
-1. **有没有新增信息**——是不是他从别处拿不到的一手观点/数据
-2. **反直觉程度**——是否挑战了共识；只是复述共识的，价值低
-3. **可操作性**——能不能影响一个具体决策
-4. **信息密度**——2 小时讲一个观点的，降级；30 分钟讲五个观点的，升级
+- **Conclusion first, always.** Open with the call, then the support. Never build to it.
+- **Numbered support.** "Listen for three reasons: 1) ... 2) ... 3) ..." — this is how
+  a PM summary reads and it forces you to actually have three reasons.
+- **Directional tags.** Use `(+ve)` and `(-ve)` inline to mark which way a datapoint cuts.
+  Example: "Vietnam volume growth moderating (-ve) but mix shift to premium accelerating (+ve)."
+- **Quantify or drop it.** ppt, bps, x, %, CAGR, SD from mean, absolute currency. If the
+  episode gave a number, use the number. If it did not, say the claim was unquantified —
+  that is itself a signal about the quality of the argument.
+- **Relative framing.** "vs consensus", "vs the 5-yr average", "-1SD", "vs peers at 11-14x".
+  A number without a reference point does not help a positioning decision.
+- **Attribute views.** "Gerstner argues…", "Gurley pushed back…". Who said it is part of
+  the information — a GP talking his book is a different input from a disinterested operator.
+- **Plain declarative sentences.** No hedging stacks ("it could potentially perhaps"),
+  no marketing adjectives ("fascinating", "incredible", "must-hear"), no exclamation marks.
+- **British spelling** (premiumisation, utilisation, labour) — consistent with the sell-side
+  research he reads.
+- Never say "the podcast discusses" or "in this episode". Go straight to the substance.
 
-## 输出格式
+## Input fields
 
-写到 `data/judgments.json`：
+Each item in `data/digest_pack.json`:
+
+- `section` — `subscribed` (his own list) or `watchlist` (blind-spot coverage, not subscribed)
+- `evidence` — **compressed** transcript: verbatim opening + density-selected middle +
+  verbatim close. `[…]` marks skipped material. **The middle is non-contiguous** — do not
+  read a jump as a contradiction or a break in logic.
+- `fidelity` — evidence quality. **This hard-caps how specific you are allowed to be:**
+  - `full` — full transcript. Give specific figures, attribute views, quote positioning.
+  - `partial` — incomplete. Judge conservatively, do not cite precise figures.
+  - `notes_only` — **show notes only, no transcript.** In this case:
+    - Judge listen/skip from the description alone
+    - **`key_points` MUST be an empty array.** Do not infer content. Fabricating here is
+      the single worst failure mode of this product.
+    - Say explicitly in `why` that the call is made on the description only
+- `evidence_source` — `youtube` / `asr` / `rss_inline` / `rss_transcript` / `notes_only`
+- `compression.original_words` — original transcript length; a proxy for information density
+
+## Scoring the call
+
+Rank on these, in order:
+
+1. **Incremental information** — is this a primary view or dataset he cannot get elsewhere?
+2. **Distance from consensus** — a restatement of the consensus view scores low regardless
+   of how well argued it is. He already owns the consensus.
+3. **Actionability** — does it move a position, a sizing, or a thesis?
+4. **Density** — two hours on one idea gets marked down; 30 minutes on five gets marked up.
+
+`score` is 1–10 on that composite. Be willing to use the bottom half of the scale.
+
+## Output format
+
+Write to `data/judgments.json`:
 
 ```json
 {
-  "today_in_one_line": "一句话概括今天最值得知道的事（不超过 60 字，中文）",
-  "cross_cutting": [
+  "pm_summary": "One dense paragraph, 60-110 words, conclusion-first, in the voice of a PM note. State what today's flow actually establishes, then the numbered support. Example shape: 'Today's flow is about the power constraint on AI becoming a financeable line item rather than a talking point: 1) Star Cloud puts orbital DC breakeven at US$500/kg launch cost, 2) the July payroll miss had construction +22k explicitly attributed to datacentre build, and 3) the only sector bid on the week was IPPs (CEG, TLN, VST). Read-across is to power and cooling supply chains rather than to semis.'",
+
+  "debates": [
     {
-      "theme": "多档节目同时在谈的主题",
-      "detail": "它们的分歧或共识在哪——这是单集摘要给不了的价值",
-      "shows": ["节目A", "节目B"]
+      "question": "Q#1: The question multiple shows are implicitly arguing about, phrased as a question",
+      "conclusion": "Conclusion-first answer in one line, with (+ve)/(-ve) where it cuts",
+      "detail": "Where they agree, where they diverge, and which side has the better evidence. This cross-show synthesis is the part a single-episode summary cannot give.",
+      "shows": ["Show A", "Show B"]
     }
   ],
+
   "items": [
     {
-      "episode_id": "必须原样照抄输入里的 episode_id",
-      "section": "subscribed 或 watchlist（照抄）",
-      "show": "节目名",
-      "title": "可以改写成更说明问题的中文标题；不确定就用原标题",
+      "episode_id": "copy VERBATIM from input",
+      "section": "subscribed or watchlist (copy from input)",
+      "show": "show name",
+      "title": "English. Rewrite to state the actual finding rather than the marketing title. If unsure, keep the original.",
       "verdict": "must_listen | worth_skim | skip",
       "score": 7,
-      "why": "为什么给这个判断。一到三句，中文。必须给出理由，不要复述内容。",
+      "why": "The call and the reasoning. 1-3 sentences, conclusion first. For must_listen, use numbered support. Never restate content here — this field is the argument for the call.",
       "key_points": [
-        "具体的、带信息量的点。有数字就带数字，有观点归属就写清是谁说的。",
-        "fidelity 是 notes_only 时，这里留空数组。"
+        "Substantive, quantified where the episode quantified. Attribute views to speakers.",
+        "MUST be [] when fidelity is notes_only."
       ],
-      "for_you": "对这位听众的具体意义。没有特别的就省略这个字段。"
+      "read_across": "What it changes for positioning — sector, factor, or named exposure. Omit the field entirely if there is no genuine read-across; do not pad.",
+      "topics": ["1-3 tags from the fixed list below. Assign only what the episode is actually about."]
     }
   ],
+
   "gaps": [
-    "今天有哪些集没能拿到正文、或哪档节目今天该更新却没抓到——如实写出来"
+    "Episodes where the transcript could not be retrieved, or shows that should have published today and were not picked up. State plainly."
   ]
 }
 ```
 
-## 硬性要求
+### Topic tags — use exactly these strings
 
-1. **`episode_id` 必须逐字照抄**，渲染脚本靠它关联元数据，错一个字这集就丢了。
-2. **输入里每一集都要出现在 `items` 里**，包括你判断 `skip` 的。他要看到你筛掉了什么。
-3. **`verdict` 要真的有区分度**。如果 11 集你给了 9 个 `must_listen`，那就等于没筛。
-   参考分布：`must_listen` 占两三成，`skip` 占三四成。
-4. **不要编**。`evidence` 里没有的数字、人名、结论，一律不写。
-   宁可写「简介说会讲 X，但没拿到正文，无法判断成色」。
-5. **`skip` 也要给理由**，而且理由要具体（「和上周那集重复」比「内容一般」有用得多）。
-6. `cross_cutting` 只在真的有交叉时写。硬凑主题比不写更糟。
+```
+Macro & Rates       Asset Management     Energy
+AI Infrastructure   AI Governance        AI Application Layer
+Trading & Risk      Founders & Company History
+Consumer & Retail   Brand & Marketing    Tech Strategy
+```
 
-## 跑完之后
+Assign 1-3. **Assign on what the episode is about, not on a word that appears in it** —
+an episode about a trade body lobbying a regulator is `Asset Management`, not
+`AI Governance`; an energy manager complaining about poor corporate governance is
+`Energy`, not `AI Governance`. Keyword matching gets both of these wrong, which is why
+you are asked for the tags directly. Leave the array empty rather than forcing a tag.
+
+## Hard requirements
+
+1. **`episode_id` copied verbatim.** The renderer joins metadata on it; one wrong character
+   and the episode is dropped from the newsletter.
+2. **Every input episode appears in `items`**, including the ones you call `skip`.
+   He needs to see what was screened out — that is half the product.
+3. **The verdict must actually discriminate.** 9 `must_listen` out of 11 means you have not
+   screened. Target roughly: `must_listen` 20-30%, `skip` 30-40%. The validator rejects
+   anything above 60% `must_listen`.
+4. **Do not fabricate.** No figure, name, or conclusion that is not in `evidence`.
+   "The description promises X but no transcript was available, so the quality of the
+   argument cannot be assessed" is a perfectly good output.
+5. **`skip` needs a specific reason.** "Overlaps last week's episode on the same thesis"
+   is useful; "not very interesting" is not.
+6. **`debates` only when a real cross-show argument exists.** A manufactured theme is worse
+   than no theme. Zero or one entry is a normal day.
+7. **English throughout.** Including `pm_summary`, `title`, `why`, `key_points`,
+   `read_across`, `gaps`, and the `debates` fields.
+
+## Running it
 
 ```bash
-python3 pipeline/render_newsletter.py --send
+python3 pipeline/judge.py          # generates this file, with validation
+python3 pipeline/deliver.py        # renders and sends
 ```

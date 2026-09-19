@@ -30,125 +30,155 @@ LARK_USER = os.environ.get("LARK_USER_ID", "")
 # 所以群里发交互卡片（正文摘要），文件仍走 lark-cli 私聊。
 LARK_WEBHOOK = os.environ.get("LARK_WEBHOOK", "")
 
-VERDICT_ICON = {"must_listen": "🎧", "worth_skim": "👀", "skip": "⏭️"}
-VERDICT_LABEL = {"must_listen": "值得听", "worth_skim": "扫一眼就够", "skip": "可以跳过"}
+VERDICT_ICON = {"must_listen": "▲", "worth_skim": "•", "skip": "×"}
+CALL = {"must_listen": "LISTEN", "worth_skim": "SKIM", "skip": "SKIP"}
+SECTION_TITLE = {"must_listen": "LISTEN", "worth_skim": "SKIM",
+                 "skip": "SCREENED OUT"}
+SOURCE_LABEL = {"youtube": "YouTube captions", "asr": "local ASR",
+                "rss_inline": "RSS full text", "rss_transcript": "official transcript",
+                "website": "show site", "notes_only": "show notes only"}
 FIDELITY_NOTE = {
     "full": "",
-    "partial": "（正文不完整，判断保守）",
-    "notes_only": "（**仅凭 show notes**，无全文，细节可能不准）",
+    "partial": "(partial transcript — call made conservatively)",
+    "notes_only": "(**no transcript** — call made on the description only)",
 }
 
 
+def _minutes(v):
+    """duration_min 来自各家 RSS，可能是 int、字符串、空值。统一成 int。"""
+    try:
+        return max(0, int(float(v)))
+    except (TypeError, ValueError):
+        return 0
+
+
 def hhmm(minutes):
-    if not minutes:
-        return "?"
+    minutes = _minutes(minutes)
+    if minutes <= 0:
+        return "n/a"
     if minutes < 60:
-        return f"{minutes}分钟"
-    return f"{minutes // 60}小时{minutes % 60:02d}分" if minutes % 60 else f"{minutes // 60}小时"
+        return f"{minutes}min"
+    return (f"{minutes // 60}h{minutes % 60:02d}m" if minutes % 60
+            else f"{minutes // 60}h")
+
+
+def headline(j):
+    """字段改过名，旧名保留为别名（见 judge.py）。"""
+    for k in ("pm_summary", "today_in_one_line"):
+        if (j.get(k) or "").strip():
+            return j[k].strip()
+    return ""
+
+
+def debates(j):
+    for k in ("debates", "cross_cutting"):
+        if isinstance(j.get(k), list):
+            return j[k]
+    return []
+
+
+def read_across(x):
+    for k in ("read_across", "for_you"):
+        if (x.get(k) or "").strip():
+            return x[k].strip()
+    return ""
 
 
 def render(j, pack_index):
-    """j: judgments dict; pack_index: episode_id -> pack item（补链接/时长等元信息）"""
+    """j: judgments dict; pack_index: episode_id -> pack item（补链接/时长等元信息）。
+
+    产出是留档用的 markdown 全文，也是飞书/Telegram 的附件。
+    语体和邮件一致：英文、结论先行、研报分栏。
+    """
     tz = timezone(timedelta(hours=8))
     today = now_utc().astimezone(tz)
     L = []
 
     items = j.get("items", [])
-    subs = [x for x in items if x.get("section") == "subscribed"]
-    blind = [x for x in items if x.get("section") == "watchlist"]
+    dur = lambda x: _minutes(pack_index.get(x["episode_id"], {}).get("duration_min"))
+    must = [x for x in items if x.get("verdict") == "must_listen"]
+    skim = [x for x in items if x.get("verdict") == "worth_skim"]
+    skipped = [x for x in items if x.get("verdict") == "skip"]
+    n_sub = sum(1 for x in items if x.get("section") == "subscribed")
+    total, saved = sum(dur(x) for x in items), sum(dur(x) for x in skipped)
+    # 订阅的排前面：他自己订的优先级高于盲区补充
+    keyf = lambda x: (x.get("section") != "subscribed", -(x.get("score") or 0))
 
-    order = {"must_listen": 0, "worth_skim": 1, "skip": 2}
-    keyf = lambda x: (order.get(x.get("verdict"), 3), -(x.get("score") or 0))
-    subs.sort(key=keyf)
-    blind.sort(key=keyf)
+    L += [f"# Podcast Screen — {today:%Y-%m-%d, %A}", "",
+          f"> **{len(items)}** episodes screened ({n_sub} subscribed / "
+          f"{len(items) - n_sub} blind-spot) · **{hhmm(total)}** of audio · "
+          f"**{len(must)} flagged to listen** · {hhmm(saved)} screened out", ""]
 
-    must = sum(1 for x in items if x.get("verdict") == "must_listen")
-    total_min = sum((pack_index.get(x["episode_id"], {}).get("duration_min") or 0)
-                    for x in items)
-    saved_min = sum((pack_index.get(x["episode_id"], {}).get("duration_min") or 0)
-                    for x in items if x.get("verdict") == "skip")
+    if headline(j):
+        L += ["## PM Summary", "", headline(j), ""]
 
-    L.append(f"# 播客早报 · {today:%Y-%m-%d %A}")
-    L.append("")
-    L.append(f"> 今日 **{len(items)}** 集（订阅 {len(subs)} / 盲区 {len(blind)}），"
-             f"共 {hhmm(total_min)} 音频。**{must} 集建议听**，"
-             f"帮你省掉 {hhmm(saved_min)} 不必听的。")
-    if j.get("today_in_one_line"):
-        L.append(">")
-        L.append(f"> **一句话**：{j['today_in_one_line']}")
-    L.append("")
+    if debates(j):
+        L += ["## Key Debates", ""]
+        for d in debates(j):
+            L.append(f"### {d.get('question') or d.get('theme')}")
+            L.append("")
+            if d.get("conclusion"):
+                L += [f"**Conclusion:** {d['conclusion']}", ""]
+            if d.get("detail"):
+                L += [d["detail"], ""]
+            if d.get("shows"):
+                L += [f"<sub>{' · '.join(d['shows'])}</sub>", ""]
 
-    if j.get("cross_cutting"):
-        L.append("## 🔀 今天的交叉主题")
-        L.append("")
-        for c in j["cross_cutting"]:
-            L.append(f"- **{c.get('theme')}** — {c.get('detail')}")
-            if c.get("shows"):
-                L.append(f"  <sub>出现在：{'、'.join(c['shows'])}</sub>")
-        L.append("")
-
-    def block(x):
+    def block(x, detailed):
         meta = pack_index.get(x["episode_id"], {})
         v = x.get("verdict", "worth_skim")
-        icon, lab = VERDICT_ICON.get(v, "•"), VERDICT_LABEL.get(v, v)
-        dur = hhmm(meta.get("duration_min"))
-        fid = FIDELITY_NOTE.get(meta.get("fidelity", "full"), "")
-
-        L.append(f"### {icon} {x.get('title') or meta.get('title')}")
+        L.append(f"### {VERDICT_ICON.get(v, '•')} {x.get('title') or meta.get('title')}")
         L.append("")
-        L.append(f"**{meta.get('show') or x.get('show')}** · {dur} · **{lab}**"
-                 + (f" · 评分 {x['score']}/10" if x.get("score") else ""))
+        L.append(f"**{meta.get('show') or x.get('show')}** · "
+                 f"{hhmm(meta.get('duration_min'))} · **{CALL.get(v, v)}**"
+                 + (f" {x['score']}/10" if x.get("score") else ""))
         L.append("")
         if x.get("why"):
-            L.append(f"> {x['why']}")
-            L.append("")
-        for kp in (x.get("key_points") or []):
-            L.append(f"- {kp}")
-        if x.get("key_points"):
-            L.append("")
-        if x.get("for_you"):
-            L.append(f"**对你的意义**：{x['for_you']}")
-            L.append("")
+            L.extend([x["why"], ""])
+        if detailed:
+            for kp in (x.get("key_points") or []):
+                L.append(f"- {kp}")
+            if x.get("key_points"):
+                L.append("")
+            if read_across(x):
+                L.extend([f"**Read-across:** {read_across(x)}", ""])
         links = []
         if meta.get("link"):
-            links.append(f"[原页面]({meta['link']})")
+            links.append(f"[Episode]({meta['link']})")
         if meta.get("youtube"):
             links.append(f"[YouTube]({meta['youtube']})")
-        src = {"youtube": "YouTube 字幕", "asr": "本地转录", "rss_inline": "RSS 全文",
-               "rss_transcript": "官方 transcript", "website": "官网正文",
-               "notes_only": "仅 show notes"}.get(meta.get("evidence_source"), "—")
-        tail = " · ".join(links + [f"<sub>依据：{src}</sub>"])
-        L.append(tail + (f" {fid}" if fid else ""))
+        src = SOURCE_LABEL.get(meta.get("evidence_source"), "—")
+        fid = FIDELITY_NOTE.get(meta.get("fidelity", "full"), "")
+        L.append(" · ".join(links + [f"<sub>Evidence: {src}</sub>"])
+                 + (f" {fid}" if fid else ""))
         L.append("")
 
-    if subs:
-        L.append("---")
-        L.append("")
-        L.append("## ① 你订阅的")
-        L.append("")
-        for x in subs:
-            block(x)
+    for verdict, group, detailed in (("must_listen", must, True),
+                                     ("worth_skim", skim, False)):
+        if not group:
+            continue
+        L += ["---", "", f"## {SECTION_TITLE[verdict]} ({len(group)} of {len(items)})", ""]
+        for x in sorted(group, key=keyf):
+            block(x, detailed)
 
-    if blind:
-        L.append("---")
+    if skipped:
+        L += ["---", "",
+              f"## Screened out ({len(skipped)} episodes · {hhmm(saved)} saved)", ""]
+        for x in sorted(skipped, key=keyf):
+            m = pack_index.get(x["episode_id"], {})
+            L += [f"- **{m.get('show', '')}** — {x.get('title')} "
+                  f"({hhmm(m.get('duration_min'))}) — {x.get('why', '')}"]
         L.append("")
-        L.append("## ② 你没订阅但值得知道的")
-        L.append("")
-        for x in blind:
-            block(x)
 
     if j.get("gaps"):
-        L.append("---")
-        L.append("")
-        L.append("## ⚠️ 今天没能覆盖的")
-        L.append("")
-        for g in j["gaps"]:
-            L.append(f"- {g}")
+        L += ["---", "", "## Not covered", ""]
+        L += [f"- {g}" for g in j["gaps"]]
         L.append("")
 
-    L.append("---")
-    L.append(f"<sub>生成于 {today:%Y-%m-%d %H:%M} (UTC+8) · "
-             f"transcript 来源：YouTube 字幕 / 本地 ASR / RSS 官方全文</sub>")
+    L += ["---",
+          f"<sub>Generated {today:%Y-%m-%d %H:%M} (UTC+8) · transcripts from YouTube "
+          f"captions, local ASR, and publisher RSS full text · screening is automated; "
+          f"calls are not investment advice.</sub>"]
     return "\n".join(L)
 
 
