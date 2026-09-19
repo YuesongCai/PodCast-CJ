@@ -351,6 +351,23 @@ class TestEmail(Base):
         self.assertIn("&lt;img", html)
         self.assertIn("&amp;", html)
 
+    def test_stats_line_omits_empty_blind_spot_split(self):
+        """单列表时没有盲区，写成「0 blind-spot」很别扭。"""
+        pack = make_pack(6)
+        for it in pack["items"]:
+            it["section"] = "subscribed"
+        j = make_judgments(pack)
+        for x in j["items"]:
+            x["section"] = "subscribed"
+        idx = {i["episode_id"]: i for i in pack["items"]}
+        html = EM.render_html(j, idx, "d")
+        self.assertNotIn("blind-spot", html)
+        self.assertIn("episodes screened", html)
+
+    def test_stats_line_keeps_split_when_both_present(self):
+        html = EM.render_html(self.j, self.idx, "d")
+        self.assertIn("blind-spot", html)
+
     def test_html_avoids_email_hostile_css(self):
         """flex/grid/position 在 Outlook 的 Word 引擎下会把版面打塌。"""
         html = EM.render_html(self.j, self.idx, "d")
@@ -648,6 +665,12 @@ class TestDeliverOrchestration(unittest.TestCase):
             os.environ.pop(k, None)
             if v is not None:
                 os.environ[k] = v
+
+    def test_macmail_preferred_over_smtp(self):
+        """两条邮件路都通时只能发一次，否则收件人收到两封一样的。"""
+        import deliver as D
+        self.assertEqual(D.CHANNELS[0], "macmail",
+                         "macmail 应排在 email 前：它不需要密码")
 
     def test_detects_each_channel(self):
         import deliver as D

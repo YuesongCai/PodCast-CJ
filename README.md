@@ -249,7 +249,8 @@ python3 pipeline/shows_table.py      # ← 核对这一步不要跳过
 
 | 渠道 | 配什么 | 说明 |
 |---|---|---|
-| **邮件**（主） | `./scripts/setup_email.sh` | HTML + 纯文本双份。交互式配置，密码不经过命令历史 |
+| **邮件 · Mail.app**（主） | 只要 `EMAIL_TO` | 走本机已登录的 Mail.app，**不需要任何密码**。macOS 专有 |
+| 邮件 · SMTP（退路） | `./scripts/setup_email.sh` | 没有 Mail.app 时用。Gmail/Outlook 要应用专用密码 |
 | Telegram | `TELEGRAM_BOT_TOKEN` + `TELEGRAM_CHAT_ID` | 自动分页（4096 上限），附 md 全文 |
 | 飞书群 | `LARK_WEBHOOK` | 交互卡片 |
 | 飞书私聊 | `LARK_USER_ID` | 摘要 + md 附件，走 lark-cli |
@@ -265,7 +266,23 @@ python3 pipeline/deliver.py --dry-run      # 检查配置和渲染，不实发
 python3 pipeline/deliver.py --only email   # 只发邮件
 ```
 
-**Gmail / Outlook 必须用应用专用密码，不是登录密码。** Gmail 从 2022 年 5 月起
+**在 macOS 上优先用 Mail.app 这条路**：Mail.app 已经登录了你的账号
+（iCloud / Exchange / Gmail 都行），所以发信不需要应用专用密码、不用把凭据写进
+`.env`，也绕开了 Gmail 那套 SMTP 认证限制。只要在 `.env` 里写 `EMAIL_TO` 就能发：
+
+```bash
+python3 pipeline/deliver_macmail.py --check          # 看 Mail.app 有哪些账号
+python3 pipeline/deliver_macmail.py --to a@b.c       # 发一封
+```
+
+代价是它只能在装了 Mail.app 并配好账号的 Mac 上跑，首次调用要授权一次
+「自动化」权限，而且用户手动退出 Mail 之后发不了。服务器上只能走 SMTP。
+
+`deliver.py` 会自动优先选 Mail.app，两条邮件路都配了也只发一次。
+
+---
+
+**走 SMTP 时：Gmail / Outlook 必须用应用专用密码，不是登录密码。** Gmail 从 2022 年 5 月起
 不再接受账号密码做 SMTP 认证，用登录密码会固定返回
 `535 Username and Password not accepted`。生成入口：
 [两步验证](https://myaccount.google.com/signinoptions/twosv) ->

@@ -206,8 +206,11 @@ def render_html(j, idx, day):
 
     # 统计条：一行说清覆盖和筛掉多少
     B.append(f'<div style="font:12px/1.75 {SANS};color:{MUTED};margin:12px 0 0;">'
-             f'<b style="color:{INK};">{len(items)}</b> episodes screened '
-             f'({n_sub} subscribed / {len(items) - n_sub} blind-spot) &nbsp;·&nbsp; '
+             f'<b style="color:{INK};">{len(items)}</b> episodes screened'
+             # 只有一份列表时不显示「订阅/盲区」分栏，写成 0 blind-spot 很别扭
+             + (f' ({n_sub} subscribed / {len(items) - n_sub} blind-spot)'
+                if n_sub and n_sub != len(items) else '')
+             + f' &nbsp;·&nbsp; '
              f'<b style="color:{INK};">{hhmm(total)}</b> of audio &nbsp;·&nbsp; '
              f'<b style="color:{ACCENT["must_listen"]};">{len(must)} flagged to '
              f'listen</b> &nbsp;·&nbsp; {hhmm(saved)} screened out</div>')

@@ -27,12 +27,23 @@ from datetime import datetime, timedelta, timezone
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import DATA, ROOT, load_json
 
-CHANNELS = ("email", "telegram", "lark_webhook", "lark_dm")
+# macmail 排在 email 前面：它不需要任何密码（Mail.app 已经登录了账号），
+# 所以在这台 Mac 上它是首选，SMTP 是没有 Mail.app 时的退路。
+# 两者都配了的话只发一次——避免收件人收到两封一样的。
+CHANNELS = ("macmail", "email", "telegram", "lark_webhook", "lark_dm")
 
 
 def configured(name):
     """这个渠道配齐了吗。没配的渠道不算失败，只是跳过。"""
     E = os.environ.get
+    if name == "macmail":
+        if not (E("EMAIL_TO") or E("SMTP_USER")):
+            return False
+        try:
+            import deliver_macmail as MM
+            return MM.available()[0]
+        except Exception:
+            return False
     if name == "email":
         return all(E(k) for k in ("SMTP_HOST", "SMTP_USER", "SMTP_PASS")) and \
             bool(E("EMAIL_TO") or E("SMTP_USER"))
@@ -85,9 +96,13 @@ def main():
     print(f"  html {html_path}")
 
     targets = list(args.only) if args.only else [c for c in CHANNELS if configured(c)]
+    # 同一封邮件不发两遍：macmail 能用就不再走 SMTP
+    if not args.only and "macmail" in targets and "email" in targets:
+        targets.remove("email")
     if not targets:
         print("\n没有任何渠道配置好。至少配一个（见 .env.example）：\n"
-              "  email    SMTP_HOST / SMTP_USER / SMTP_PASS / EMAIL_TO\n"
+              "  邮件      EMAIL_TO（配好 Mail.app 即可，不需要密码）\n"
+              "            或 SMTP_HOST / SMTP_USER / SMTP_PASS / EMAIL_TO\n"
               "  telegram TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID\n"
               "  飞书      LARK_WEBHOOK 或 LARK_USER_ID", file=sys.stderr)
         return 2
@@ -100,7 +115,16 @@ def main():
             print(f"  {ch:<14} ✗ 未配置")
             continue
         try:
-            if ch == "email":
+            if ch == "macmail":
+                import deliver_macmail as MM
+                to = os.environ.get("EMAIL_TO") or os.environ.get("SMTP_USER", "")
+                if args.dry_run:
+                    ok, info = True, f"[dry] {EM.subject(j, day)[:50]}… -> {to}"
+                else:
+                    ok, info = MM.send(EM.subject(j, day),
+                                       EM.render_html(j, idx, day), to,
+                                       sender=os.environ.get("MACMAIL_FROM"))
+            elif ch == "email":
                 ok, info = EM.send(j, idx, day, dry=args.dry_run)
             elif ch == "telegram":
                 import deliver_telegram as TG
