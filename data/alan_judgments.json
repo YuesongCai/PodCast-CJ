@@ -1,0 +1,396 @@
+{
+  "pm_summary": "Macro first: open MacroVoices #550 — Bassman recorded hours after Wednesday's hawkish surprise and argues the fight is about Fed credibility, not the increment. Then two that sit closest to a book: TCW on data centre ABS and CMBS, and Marathon on CME/ICE as a long-volatility toll booth that has derated. Capital Allocators on AI in the investment office is the one operational episode. Everything else is background or off-mandate.",
+  "items": [
+    {
+      "episode_id": "7118432c797134b8",
+      "section": "subscribed",
+      "show": "Macro Voices",
+      "title": "Bassman on the hawkish surprise: the Fed's problem is credibility, not the level — he wanted 50 and done",
+      "verdict": "must_listen",
+      "score": 9,
+      "topics": [
+        "Macro & Rates"
+      ],
+      "why": "Listen first. Recorded Wednesday afternoon, hours after the Fed hiked and the dot plot signalled another before Christmas. Three reasons: 1) it is the only episode in the batch that reacts to the actual surprise rather than the expectation, 2) Bassman argues the increment is irrelevant and the real variable is institutional trust, which is a different trade from a rates call, and 3) he is on record wanting 50bp one-and-done, so you get a position, not commentary.",
+      "key_points": [
+        "The surprise was not the hike, which was expected, but the dot plot indicating this is not the last hike of 2026. Markets were shocked (-ve for the done-hiking trade).",
+        "Bassman's standing call across his last two commentaries: hike 50, one and done, get it over with.",
+        "His core argument is that 25 vs 50 vs even 100 does not change the inflation path materially — 'that really is not going to change a whole lot right now'. The binding problem is a lack of trust in government and institutions, the Fed included.",
+        "What follows from that: the Fed needs to regain the market's trust — 'an adult in the room, a hand on the steering wheel'. Framed as a credibility restoration, not a demand-management exercise.",
+        "He argues markets have historically 'gotten over their skis' when the Fed gives too much forward guidance and then changes it — which is the mechanism by which this week's dot plot did damage.",
+        "Bassman invented the MOVE index and is known on the street as the convexity maven, so the vol framing is the part to take seriously."
+      ],
+      "read_across": "If the repricing is about credibility rather than the terminal rate, the expression is rates vol and the term premium, not the front end. Relevant to anything you hold that is short convexity."
+    },
+    {
+      "episode_id": "da86dd90fefb2aa7",
+      "section": "subscribed",
+      "show": "Capital Allocators",
+      "title": "Eight CIOs on what AI actually does in an investment office today — including a red-line review that replaced counsel",
+      "verdict": "must_listen",
+      "score": 8,
+      "topics": [
+        "Asset Management",
+        "AI Application Layer"
+      ],
+      "why": "Listen. The most directly operational episode in the batch: eight CIOs, from a single-professional family office to one of the largest pensions in the world, describing what is deployed and what is not. This is peer practice with named tools and named workflows, not a technology outlook.",
+      "key_points": [
+        "Sample spans the full resource range — Abby Barlow is the sole investment professional at Westwood Management, at the other end is a pension with thousands of staff.",
+        "Barlow's stack is primarily Claude, chosen on the basis that it is not training on their data and is walled off for privacy and security; they also hold a Copilot subscription which she rates as 'not as good at this moment'.",
+        "Coverage is end to end: manager deck arrives, prep materials go in as a project, 'summarize, help me prep, help me ask smart questions'.",
+        "The concrete cost item: a recent legal red-line with 185 tracked changes. Historically skimmed, then sent to counsel at cost, turnaround two to three days. Now summarised in about a minute, and she rates the output as better than her own review (+ve for legal spend and cycle time).",
+        "Ted Seides frames the aggregate as a progression — meeting preparation, then analysis, then decision support — which is the useful way to benchmark your own office."
+      ],
+      "read_across": "If you run an investment office, the red-line workflow is the single clearest cost takeout in the episode and is replicable this week. The privacy framing is also the argument you will need internally."
+    },
+    {
+      "episode_id": "841dc0f0a53d9c1b",
+      "section": "subscribed",
+      "show": "TCW Investment Perspectives",
+      "title": "TCW: the AI build is already US$50bn of data centre ABS and CMBS, and the underwriting question is not the one equity investors are asking",
+      "verdict": "must_listen",
+      "score": 8,
+      "topics": [
+        "Macro & Rates",
+        "AI Infrastructure"
+      ],
+      "why": "Listen. The AI capex debate is almost entirely conducted in semis and hyperscaler equity; this is the same build seen from securitised credit, where the paper is already outstanding and has to be underwritten. Nineteen minutes and specific. Caveat: 23 days old on a show you have tagged time-sensitive, so check whether spreads have moved since.",
+      "key_points": [
+        "Roughly US$50bn outstanding across data centre ABS and CMBS, with heavy ongoing issuance.",
+        "Two distinct vintages: data centre financing in ABS since 2018, in single-asset single-borrower CMBS since 2021. The recent step-up in volume is what makes it portfolio-relevant now rather than a niche.",
+        "The framing they push back on: public conversation sits on semiconductors, software and the largest technology names, while the demand for capital is permeating markets well beyond that.",
+        "Speakers are TCW's own securitised team — Liza Crawford, co-head of global securitised, and Dominic Bea on ABS — i.e. the people underwriting the paper.",
+        "Explicitly connects hyperscaler debt issuance to the securitised channel, which is the transmission most equity-side AI analysis leaves out."
+      ],
+      "read_across": "If you hold securitised credit, data centre concentration is now a real exposure line rather than a theme. It is also the cleanest way to express a negative view on AI capex without shorting the equity."
+    },
+    {
+      "episode_id": "990a97a5634d2420",
+      "section": "subscribed",
+      "show": "The Capital Cycle Podcast",
+      "title": "Marathon on CME and ICE: the toll booth derated on three worries, and volatility is the revenue driver not the risk",
+      "verdict": "must_listen",
+      "score": 8,
+      "topics": [
+        "Asset Management"
+      ],
+      "why": "Listen. Thirteen minutes, one idea, fully argued, and the manager discloses it is a portfolio holding. The structural point — that exchanges are long volatility where banks and insurers are short it — is the part that generalises beyond the two names. Note it is 22 days old on a time-sensitive tag.",
+      "key_points": [
+        "The Munger framing, used deliberately: exchanges take the croupier's cut from both sides of every hand, and unlike a casino the house does not even put up the chips — the clearing house is collateralised by the players.",
+        "The asymmetry that matters: for a bank or insurer, volatility endangers the balance sheet; for an exchange, volatility is what makes people transact (+ve in exactly the regime this week's Fed created).",
+        "Direction does not matter to the exchange — the pension hedging duration, the refiner locking in crack spreads and the macro fund on the other side all pay the same toll on the same day, and at most one of them is right.",
+        "Result is CME Group and ICE running margins above 60% on very little capital, which Chancellor calls two of the most profitable large companies in America. Both are Marathon holdings — disclosed on air.",
+        "Both have derated over the past year on three worries: new competitors, a less strict regulator admitting lighter-weight rivals, and a sense that some growth is speculative froth (-ve). The stated question is whether the market has spotted a genuine inflection or is mispricing the cycle."
+      ],
+      "read_across": "A long-volatility, capital-light toll booth that has derated into a hiking cycle is an unusual combination. The three bear points are specific enough to test against exchange volume and market-share data yourself."
+    },
+    {
+      "episode_id": "3430d157f93c0288",
+      "section": "subscribed",
+      "show": "Macro Voices",
+      "title": "Barrie's subprime comparison: US$1.65tn of AI debt in five years against a build with two real customers",
+      "verdict": "must_listen",
+      "score": 8,
+      "topics": [
+        "AI Infrastructure",
+        "Macro & Rates"
+      ],
+      "why": "Listen for the framing, not the conclusion. The subprime analogy is doing a lot of work and you should stress-test it, but the concentration point — a financing wave this size resting on a very short customer list — is the right question and it is rarely put this directly. Eight days old, and the host deliberately let it run long.",
+      "key_points": [
+        "The headline comparison: US$1.65tn of AI-related debt over five years, against subprime which peaked at US$1.3tn in 2007 — but subprime had 55m mortgages behind it, whereas Barrie characterises the AI build as having two customers, OpenAI and Anthropic (-ve on concentration).",
+        "His update since the last appearance is agentic AI specifically: he describes being 'totally redpilled' in the last month on what agents can now do reliably.",
+        "The operational claim underneath: AI has reached the point where workflows a person performs daily can be automated reliably, at above-human capability in many cases, quickly.",
+        "He is CEO of freelancer.com, so treat the labour-substitution enthusiasm as coming from someone with a position in that thesis.",
+        "The host notes a companion written piece circulated separately, so the audio and the writing are different content rather than a reading of the same argument."
+      ],
+      "read_across": "The concentration point is checkable: work out how much of the committed capex is contracted to counterparties that are not OpenAI or Anthropic. If that number is small, the analogy has more force than it first appears."
+    },
+    {
+      "episode_id": "fdb994109357fe13",
+      "section": "subscribed",
+      "show": "The Capital Cycle Podcast",
+      "title": "Marathon on China autos: 55m units of capacity against 25m domestic sales, and exports are not closing the gap",
+      "verdict": "worth_skim",
+      "score": 7,
+      "topics": [
+        "Consumer & Retail"
+      ],
+      "why": "Skim. Thirteen minutes and the capacity arithmetic is the whole payload — worth having if you carry any China industrial or auto supply chain exposure. Twenty-two days old on a time-sensitive tag, so treat the H1 figures as the last print rather than current.",
+      "key_points": [
+        "The core imbalance: China sells roughly 25m cars domestically against estimated factory capacity of about 55m — more than 2x, and enough to supply two-thirds of global demand on its own (-ve for industry pricing).",
+        "Policy is now a headwind rather than a support: Beijing halved the EV purchase tax exemption and cut trade-in subsidies.",
+        "Result in H1: domestic demand down 20% YoY. Exports up 50%, which was not enough to offset — total EV shipments in China fell 4% this year.",
+        "Marathon's structural frame is that autos are chronically prone to destructive capital cycles for three reasons: they are political footballs so governments block consolidation and layoffs in downturns; they face technology disruption, with the BEV transition having triggered a destructive burst of capex among European and US incumbents; and the industry is permanently open to global disruption — first Europe, then Japan, now China.",
+        "The conclusion worth carrying: Chinese makers are taking global share and still not prospering — they are in a negative capital cycle of their own."
+      ],
+      "read_across": "Share gain without profitability is the signature of a capital cycle that has not cleared. Applies to the suppliers as much as the OEMs."
+    },
+    {
+      "episode_id": "c132246ab454cd6b",
+      "section": "subscribed",
+      "show": "TCW Investment Perspectives",
+      "title": "TCW: framing power demand as the fifth energy transition, and pushing back on what 'energy transition' is assumed to mean",
+      "verdict": "worth_skim",
+      "score": 6,
+      "topics": [
+        "Energy",
+        "AI Infrastructure"
+      ],
+      "why": "Skim. Twenty minutes, and the useful part is the deliberate reframing away from the solar-wind-EV-policy bundle toward reliability and industrial rebuild. Thin on numbers relative to the other TCW episode. Ten days old.",
+      "key_points": [
+        "The thesis is that meeting simultaneous demand for more power, more reliability and more infrastructure requires one of the largest industrial rebuilds in generations.",
+        "Stan Miranda's periodisation, used to argue this is a transition rather than a policy cycle: fire roughly a million years ago; kinetic sources — wind, water, animals — next; coal from 1700 for about 150 years; oil and gas commercially from the late 1800s as the fourth.",
+        "Explicit challenge to the common investor assumption that 'energy transition' means solar panels, wind farms, EVs and climate policy.",
+        "Speakers are TCW's CIO for equities plus a thematic equities PM and the founder of the TrueNorth Institute, so the framing is being used to position a strategy."
+      ],
+      "read_across": "If you run energy or utilities exposure, the reliability-and-rebuild framing points at grid and equipment rather than generation."
+    },
+    {
+      "episode_id": "20f7d064973bcb12",
+      "section": "subscribed",
+      "show": "Capital Ideas",
+      "title": "Capital Group's Queen on the bond sell-off: the post-GFC low-rate regime is over and is not coming back",
+      "verdict": "worth_skim",
+      "score": 6,
+      "topics": [
+        "Macro & Rates"
+      ],
+      "why": "Skim, and read it as background rather than a current call — it is nine days old and predates this week's hawkish surprise, which is the event that matters. The structural argument about the regime break is still the useful part.",
+      "key_points": [
+        "Context set as an unusual moment: the bond market commanding front-page headlines day after day, on elevated inflation, rising debt levels and the Fed's next move, driving a significant sell-off.",
+        "Queen's central claim: the post-GFC period of very low rates and very low inflation is clearly over, and in hindsight ended around the COVID-19 pandemic.",
+        "His causal account of the old regime — pre-GFC concern about China exporting deflation, large excess labour entering the global labour market, and a Fed shifting from surprising markets to using the market as a policy tool and keeping Fed funds stable.",
+        "He is PIO of the Intermediate Bond Fund of America, so the answer is coming from someone positioning core duration."
+      ]
+    },
+    {
+      "episode_id": "0eecc6f601308818",
+      "section": "subscribed",
+      "show": "The Knowledge Project",
+      "title": "Lütke: almost nobody at Shopify writes code directly any more, and the constraint has moved to engineering infrastructure",
+      "verdict": "worth_skim",
+      "score": 6,
+      "topics": [
+        "AI Application Layer",
+        "Founders & Company History"
+      ],
+      "why": "Skim. An operating datapoint from a CEO running the experiment at scale, which is more useful than another capability debate. Evergreen, so the four-day age is irrelevant — the substance does not decay.",
+      "key_points": [
+        "His description of the current state inside Shopify: 'the amount of people I know who really write code is like vanishingly small now'.",
+        "What replaced it — everyone who does write code is deeply assisted by agents, 'very often 10, 20, 30, 40, 50 instances of them', coordinated through sub-agents or separate windows.",
+        "The binding constraint has moved: 'we're pushing all sort of engineering infrastructure to its absolute limits' (+ve read-across to developer tooling and CI infrastructure spend).",
+        "Where humans still hold the work: the limits of complexity, code review, and state management — which he says remains the hardest thing to get right, done by hand with the rest 'vibed' around it.",
+        "His framing device for the episode is pruning — 'you cannot make things better and better by adding stuff… you must create an end for things'."
+      ],
+      "read_across": "If 50 agent instances per engineer is the emerging shape, the spend follows orchestration and infrastructure rather than seats. Worth testing against any per-seat software name you hold."
+    },
+    {
+      "episode_id": "b0dc1661dedb1ead",
+      "section": "subscribed",
+      "show": "Odd Lots",
+      "title": "Odd Lots on pass-throughs and S-corps: where the tax cuts actually went",
+      "verdict": "worth_skim",
+      "score": 6,
+      "topics": [
+        "Macro & Rates"
+      ],
+      "why": "Skim. Genuinely under-covered ground and the provenance is strong — the underlying work began as a Treasury commission to link IRS microdata. Sixty minutes is long for the payload, but the reframing of who the American wealthy actually are is not available elsewhere in this form.",
+      "key_points": [
+        "The argument: discussion of tax breaks for the wealthy defaults to a Bezos effective-rate story, while the material cuts since the 1980s and again under the current administration have run through S-corps and pass-through entities.",
+        "These are framed politically as small business; the finding is that many are phenomenally large and very wealthy.",
+        "Provenance: the book began as a Treasury Department commission to sift IRS data to establish who these owners are and how many exist — work Treasury had been unable to do because the datasets were not linked.",
+        "Shifts the inequality frame away from a 1% / 0.1% concentration story toward a much broader base of business-income wealth."
+      ],
+      "read_across": "Relevant to US consumption resilience and to private-wealth AUM assumptions: the affluent cohort is wider and more business-income-dependent than the top-0.1% frame implies."
+    },
+    {
+      "episode_id": "cd49fd2406bf8d78",
+      "section": "subscribed",
+      "show": "Odd Lots",
+      "title": "Fukuyama at 'The End of History', thirty-odd years on",
+      "verdict": "worth_skim",
+      "score": 5,
+      "topics": [
+        "Macro & Rates"
+      ],
+      "why": "Skim if you want the frame; there is no positioning content. The hosts' own reason for revisiting — that the work read as theory in the early 2000s and now reads as description — is the honest case for spending the 54 minutes.",
+      "key_points": [
+        "Guest is Francis Fukuyama, Stanford, on his new book In the Realm of the Last Man, alongside the original End of History and the Last Man.",
+        "The hosts emphasise that 'and the Last Man' is the load-bearing half of the title and the part usually dropped — which is the reframing the episode turns on.",
+        "Joe Weisenthal's stated reason for rereading: it felt like theory at the time and now appears to explain things currently happening."
+      ]
+    },
+    {
+      "episode_id": "d0a74aeab6dc41c5",
+      "section": "subscribed",
+      "show": "Founders",
+      "title": "Founders on Michael Bloomberg: the decision to build a product business rather than stay in finance",
+      "verdict": "worth_skim",
+      "score": 5,
+      "topics": [
+        "Founders & Company History"
+      ],
+      "why": "Skim. Evergreen, so age does not count against it. The transferable item is Bloomberg's explicit reasoning about where large fortunes actually come from, which he reached by consulting history rather than by instinct.",
+      "key_points": [
+        "Bloomberg's own framing, quoted: Wall Street promised vast riches although few of the great fortunes had been made there — from Rockefeller to Sam Walton to Bill Gates, great financial success came from starting businesses with concrete products, building jobs, creating value.",
+        "His method is the part worth taking: a standing habit of consulting history when facing a decision, applied here to the question of whether to stay in finance at all.",
+        "Timeline context — 1967, a year into Salomon Brothers, well before Bloomberg LP.",
+        "Host notes he is rumoured to be among the wealthiest people in America, attributed to pulling billions in dividends out of the company for more than two decades — i.e. an ownership structure decision, not an exit."
+      ]
+    },
+    {
+      "episode_id": "51e1c3fbbb8bc520",
+      "section": "subscribed",
+      "show": "The Knowledge Project",
+      "title": "The twelve years Steve Jobs spent failing, and how close he came to being written out",
+      "verdict": "worth_skim",
+      "score": 5,
+      "topics": [
+        "Founders & Company History"
+      ],
+      "why": "Skim. Evergreen and well told. The reason it earns a slot over the other biography episodes is that it covers the period that is normally skipped, which is where the decision-pattern content actually is.",
+      "key_points": [
+        "The setup: the Macintosh shipped in 1984 as a cultural success and a commercial failure — it simply was not selling.",
+        "Consequences in 1985 — inventories piling up, debts accumulating, and Apple's first ever layoffs.",
+        "The management failure is stated plainly: Scully was brought in to provide adult supervision; Jobs was impossible to manage, convinced of his own brilliance, storming into meetings.",
+        "The framing the episode argues for: Jobs came very close to being completely forgotten and written out of history, and almost nobody looks at this stretch."
+      ]
+    },
+    {
+      "episode_id": "f5a4c5de98230aac",
+      "section": "subscribed",
+      "show": "All-In",
+      "title": "Gurley on institutional failure: Surfside and the 737 MAX as templates for how known problems stay unpriced",
+      "verdict": "worth_skim",
+      "score": 5,
+      "topics": [
+        "Founders & Company History"
+      ],
+      "why": "Skim. Explicitly not an AI talk despite the venue — it is an argument about why institutions fail to act on information they already hold, built on two forensic cases. Useful as a diligence frame; no positioning content.",
+      "key_points": [
+        "Champlain Towers South, Surfside, June 2021, 98 dead. Three institutional failures — design flaws from the outset, poor maintenance scheduling, a condo board that did not act on an inspection report — on top of a technical one, saltwater corrosion of the pool deck collapsing into the basement and taking out structural columns.",
+        "His emphasis is on who produced the knowledge: NYT investigative work plus four parallel investigations including NIST, a Florida grand jury, and 17 victim suits consolidated into a single class.",
+        "The 737 MAX case: root cause was an engine too large for the wing, forcing it forward; two crashes followed, October 2018 and March 2019.",
+        "The suppression point — roughly 45 days after the first crash almost everyone knew MCAS was at fault, and Senator Cruz accused the FAA head of being captured in Senate testimony."
+      ],
+      "read_across": "The gap between when a defect is known internally and when it is priced is an incentive question, not an information-availability one. That is a diligence prompt you can apply to any name with a long-tail liability."
+    },
+    {
+      "episode_id": "c98c2cf7af39c211",
+      "section": "subscribed",
+      "show": "Odd Lots",
+      "title": "Goldman's Sykes on the LA Olympics: scale statistics, and the funding question goes unanswered",
+      "verdict": "skip",
+      "score": 4,
+      "topics": [
+        "Consumer & Retail"
+      ],
+      "why": "Skip. Recorded live at a conference and it stays at the level of scale figures and career history. The one question with investment content — the LA28 funding mix — is put directly and not answered with numbers.",
+      "key_points": [
+        "Sykes is co-head of Global M&A at Goldman and president of the US Olympic Committee; he led the original LA bid for 2024.",
+        "Scale figures: 17,000 athletes across Olympic and Paralympic Games and 15m tickets to be sold in Los Angeles, against 104 World Cup matches across Mexico and the US.",
+        "The 2028 funding mix is asked about and not answered with figures."
+      ]
+    },
+    {
+      "episode_id": "0e70ab4b518b528e",
+      "section": "subscribed",
+      "show": "All-In",
+      "title": "Isaacman's NASA keynote: a programme critique with no budget, contract or timeline specifics",
+      "verdict": "skip",
+      "score": 4,
+      "topics": [
+        "Founders & Company History"
+      ],
+      "why": "Skip. A sitting NASA administrator criticising legacy programme structure is newsworthy, but 39 minutes produce no budget numbers, contract decisions or dates. The two specifics below are the entire extractable payload if you hold space or defence.",
+      "key_points": [
+        "On SLS/Orion: the vehicle is less efficient than Saturn V at converting launch mass into lunar-bound payload, and there is more time between Artemis 1 and Artemis 2 than spanned all 12 Gemini missions flown 60 years earlier (-ve for legacy programme credibility).",
+        "Stated next capability priority is nuclear power and propulsion, noting billions spent on nuclear programmes that have not left the laboratory since 1965.",
+        "He concedes the change is externally driven — absent this president and the geopolitical competition, he suspects very little would have changed."
+      ]
+    },
+    {
+      "episode_id": "34445996f5e35ffc",
+      "section": "subscribed",
+      "show": "All-In",
+      "title": "California high-speed rail: a well-documented cost overrun, with no investable angle",
+      "verdict": "skip",
+      "score": 3,
+      "topics": [
+        "Macro & Rates"
+      ],
+      "why": "Skip. The figures are striking and the reporting looks solid, but this is advocacy journalism about a state project with no listed exposure and no policy decision pending that you can position around. Take the numbers below and move on.",
+      "key_points": [
+        "Original estimate US$33bn, then US$126bn, now US$236bn. About US$15bn spent over 18 years with, on their account, no town connected.",
+        "Claimed to be the most expensive infrastructure project currently running in the world, and on track to be third most expensive in history behind the 1950s Interstate programme and the ISS.",
+        "One third of total cost is attributed to change-order delays, with contractors owed roughly US$170,000 a day — about US$5m a month — while unable to work.",
+        "Comparison used throughout: China began its high-speed rail in the same year, 2008, and has built over 30,000 miles."
+      ]
+    },
+    {
+      "episode_id": "b28a8f4f3d8aabd2",
+      "section": "subscribed",
+      "show": "Capital Ideas",
+      "title": "Capital Group analyst profile: career path and research philosophy, no sector content",
+      "verdict": "skip",
+      "score": 3,
+      "topics": [
+        "Asset Management"
+      ],
+      "why": "Skip. The title promises luxury and mining; the episode is a career interview. The one line of substance is his stated edge, below. If you want Capital Group's actual view, the bond episode in this same batch has content and this one does not.",
+      "key_points": [
+        "Frank Beaudry, London-based equity analyst, 13 years at Capital Group, previously a New York lawyer and policy adviser to Canada's Finance Minister.",
+        "His stated edge: 'to figure out when everybody is happy' — i.e. a sentiment-extreme discipline rather than a sector method.",
+        "House framing repeated on air: all their analysts manage money, so they own the stocks they rate rather than just rating them."
+      ]
+    },
+    {
+      "episode_id": "7b810a8b9560278b",
+      "section": "subscribed",
+      "show": "Founders",
+      "title": "Founders on Napoleon's collected writing: ambition and temperament, little that transfers",
+      "verdict": "skip",
+      "score": 3,
+      "topics": [
+        "Founders & Company History"
+      ],
+      "why": "Skip, and take the Bloomberg episode from the same show instead — same host, same week, and that one has an actual decision in it. This is 56 minutes of Napoleon on life, destiny and greatness. The host is explicit that the value is having your ambition enlarged, which is not a screen that pays you.",
+      "key_points": [
+        "The host's own framing of the benefit: it will increase the scope of your ambition and have you questioning what you are doing.",
+        "He flags the material is 'unapologetically extreme', citing Napoleon on his wife's hypothetical death not interrupting his plans for a quarter of an hour.",
+        "Source is a compilation of letters and writings assembled roughly 150 years after the fact, not a contemporaneous account."
+      ]
+    },
+    {
+      "episode_id": "0958c974f9a6d8bd",
+      "section": "subscribed",
+      "show": "科技早知道",
+      "title": "科技早知道: ten years of Snap Spectacles, and whether SPECS is a spatial computer",
+      "verdict": "skip",
+      "score": 4,
+      "topics": [
+        "AI Application Layer"
+      ],
+      "why": "Skip for now, and note this is a transcript failure rather than a judgement on the episode. No transcript was obtained — the English speech model produced transliterated noise on Chinese audio and the pipeline correctly rejected it, so this call is made from the published show notes only. On the notes alone it is a hardware product discussion with no investable specifics beyond the spec sheet, but the underlying episode may be better than that.",
+      "key_points": []
+    },
+    {
+      "episode_id": "59ddb30299572463",
+      "section": "subscribed",
+      "show": "科技早知道",
+      "title": "科技早知道: AI for Science funding and the virtual-cell thesis",
+      "verdict": "skip",
+      "score": 4,
+      "topics": [
+        "AI Application Layer"
+      ],
+      "why": "Skip for now, same transcript caveat as the other Chinese episode — the call is made from show notes only, no transcript was obtained. The notes point at a genuinely substantive conversation with GenBio AI's CTO on AI for Science, so if Chinese transcription gets solved this is the one to revisit first. Also ten days old.",
+      "key_points": []
+    }
+  ],
+  "gaps": [
+    "科技早知道 (2 episodes): no transcript. The local speech model is English-only and transliterates Chinese audio into English-looking noise — a 62-minute episode produced 7,263 characters containing zero Chinese characters. The pipeline now detects and rejects this rather than passing it downstream, so both episodes are screened on show notes only. Chinese coverage needs either a Chinese-capable speech model or a cloud ASR service.",
+    "The Memo by Howard Marks: nothing in the window. The podcast feed's last episode is 9 Apr 2026, 163 days ago — Marks still publishes memos in text, but the podcast feed appears dormant. Worth confirming whether he wants the written memos covered instead.",
+    "Tier check: TCW (23 days), The Capital Cycle (22 days) and MacroVoices #549 (8 days) are all tagged time-sensitive but publish infrequently. Their content reads as structural rather than call-driven, so they may be better tagged evergreen — otherwise the age flag will fire on them most weeks."
+  ]
+}
