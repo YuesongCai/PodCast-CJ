@@ -249,7 +249,7 @@ python3 pipeline/shows_table.py      # ← 核对这一步不要跳过
 
 | 渠道 | 配什么 | 说明 |
 |---|---|---|
-| **邮件**（主） | `SMTP_HOST/USER/PASS` + `EMAIL_TO` | HTML + 纯文本双份。Gmail/Outlook 要用**应用专用密码** |
+| **邮件**（主） | `./scripts/setup_email.sh` | HTML + 纯文本双份。交互式配置，密码不经过命令历史 |
 | Telegram | `TELEGRAM_BOT_TOKEN` + `TELEGRAM_CHAT_ID` | 自动分页（4096 上限），附 md 全文 |
 | 飞书群 | `LARK_WEBHOOK` | 交互卡片 |
 | 飞书私聊 | `LARK_USER_ID` | 摘要 + md 附件，走 lark-cli |
@@ -260,9 +260,16 @@ python3 pipeline/shows_table.py      # ← 核对这一步不要跳过
 （重跑意味着重新转录、重新调模型，还会把已成功的渠道发第二遍）。
 
 ```bash
+./scripts/setup_email.sh                   # 交互式配好邮件并发一封测试
 python3 pipeline/deliver.py --dry-run      # 检查配置和渲染，不实发
 python3 pipeline/deliver.py --only email   # 只发邮件
 ```
+
+**Gmail / Outlook 必须用应用专用密码，不是登录密码。** Gmail 从 2022 年 5 月起
+不再接受账号密码做 SMTP 认证，用登录密码会固定返回
+`535 Username and Password not accepted`。生成入口：
+[两步验证](https://myaccount.google.com/signinoptions/twosv) ->
+[应用专用密码](https://myaccount.google.com/apppasswords)。
 
 ---
 
